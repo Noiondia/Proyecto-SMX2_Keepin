@@ -10,6 +10,7 @@
 
 
 Introducción
+
 1. Descripción general del proyecto web
 ¿De qué trata tu web?
 Explica brevemente el propósito de tu página web (por ejemplo: tienda online, blog, red social, catálogo, etc.).
