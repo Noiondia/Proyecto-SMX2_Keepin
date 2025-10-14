@@ -1,12 +1,19 @@
 Índice.
 
- Introducción.
- Briefing de ideas.
- Abstract.
- Tecnologías a utilizar.
- Arquitectura del sofware.
- Conclusiones.
- Bibliografia.
+Introducción.
+
+Briefing de ideas.
+
+Abstract.
+
+Tecnologías a utilizar.
+
+Arquitectura del sofware.
+
+Conclusiones.
+
+Bibliografia.
+
 
 
 
