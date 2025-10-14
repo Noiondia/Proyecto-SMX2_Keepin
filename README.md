@@ -1,15 +1,15 @@
 Índice
- Introducción
- Briefing de ideas
- Abstract
- Tecnologías a utilizar
- Arquitectura del sofware
- Conclusiones
- Bibliografia
+ Introducción.
+ Briefing de ideas.
+ Abstract.
+ Tecnologías a utilizar.
+ Arquitectura del sofware.
+ Conclusiones.
+ Bibliografia.
 
 
 
-Introducción
+Introducción.
 
 1. Descripción general del proyecto web
 ¿De qué trata tu web?
