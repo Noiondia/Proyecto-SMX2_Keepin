@@ -1,4 +1,4 @@
-Índice
+Índice.
  Introducción.
  Briefing de ideas.
  Abstract.
