@@ -117,6 +117,8 @@ No tenemos claro algunos de los tipos de datos de algunos atributos, como las im
 Briefing de ideas
 
 Idea seleccionada
+
+
 Nuestra idea fue hacer un juego clicker y con el diseño grafico de CSS todo en una pagina web como el juego Cookie clicker
 Justificar la elección de esa idea
 Como 3 alumnos que nos gusta mucho jugar a videojuegos elegimos hacer uno.
@@ -143,22 +145,20 @@ Igualmente la parte de diseño grafico decidimos hacerla con ASCII ya que nos ex
 
 
 Tecnologías a utilizar
-Hoy se hace
+
 
 
 
 Arquitectura del sofware
-En poroceso
+
  
 
 
 Conclusiones
-Mo tenemos por ahora
 
 
 
 Bibliografia
-Aun no tenemos
 
 
 
