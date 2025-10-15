@@ -17,7 +17,7 @@ Bibliografia.
 
 
 
-Introducción.
+<h2><b>Introducción.</b></h2>
 
 1. Descripción general del proyecto web
 ¿De qué trata tu web?
@@ -114,7 +114,7 @@ No tenemos claro algunos de los tipos de datos de algunos atributos, como las im
 
 
 
-Briefing de ideas
+<h2><b>Briefing de ideas</b></h2>
 
 Idea seleccionada
 
@@ -136,7 +136,7 @@ https://www.youtube.com/watch?v=_6N18g3ewnw
 
 
 
-Abstract
+<h2><b>Abstract</b></h2>
 
 Somos TDGamblers un equipo formado por 3 chavales que querian hacer un juego divertido tanto para jugar como para divertirnos haciendolo. 
 Nuestra idea fue hacer un clicker, como el cookie clicker, ya que es un juego que creemos que es un juego facil de programar.
@@ -144,21 +144,21 @@ Igualmente la parte de diseño grafico decidimos hacerla con ASCII ya que nos ex
 
 
 
-Tecnologías a utilizar
+<h2><b>Tecnologías a utilizar</b></h2>
 
 
 
 
-Arquitectura del sofware
+<h2><b>Arquitectura del sofware</b></h2>
 
  
 
 
-Conclusiones
+<h2><b>Conclusiones</b></h2>
 
 
 
-Bibliografia
+<h2><b>Bibliografia</b></h2>
 
 
 
