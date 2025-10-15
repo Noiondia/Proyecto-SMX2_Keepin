@@ -4,11 +4,11 @@
 
 2.Briefing de ideas.
 
-3.Abstract.
+3.Arquitectura del sofware.
 
 4.Tecnologías a utilizar.
 
-5.Arquitectura del sofware.
+5.Abstract.
 
 6.Conclusiones.
 
