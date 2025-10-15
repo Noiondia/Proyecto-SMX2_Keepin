@@ -1,4 +1,4 @@
-Índice.
+<h2><b>Índice.</b></h2>
 
 Introducción.
 
