@@ -1,19 +1,26 @@
 <h2><b>Índice.</b></h2>
 
-Introducción.
+1.Introducción.
 
-Briefing de ideas.
+2.Briefing de ideas.
 
-Abstract.
+3.Abstract.
 
-Tecnologías a utilizar.
+4.Tecnologías a utilizar.
 
-Arquitectura del sofware.
+5.Arquitectura del sofware.
 
-Conclusiones.
+6.Conclusiones.
 
-Bibliografia.
+7.Bibliografia.
 
+
+
+<h2><b>Abstract</b></h2>
+
+Somos TDGamblers un equipo formado por 3 chavales que querian hacer un juego divertido tanto para jugar como para divertirnos haciendolo. 
+Nuestra idea fue hacer un clicker, como el cookie clicker, ya que es un juego que creemos que es un juego facil de programar.
+Igualmente la parte de diseño grafico decidimos hacerla con ASCII ya que nos explicaron que hacerlo de otra forma seria mas dificil.
 
 
 
@@ -133,14 +140,6 @@ Conocimiento de programacion sencilla y saber hacer cosas con CSS
 Recursos (Bibliografía, webgrafía, vídeos, cursos o demás multimedia)
 Videos de youtube.
 https://www.youtube.com/watch?v=_6N18g3ewnw
-
-
-
-<h2><b>Abstract</b></h2>
-
-Somos TDGamblers un equipo formado por 3 chavales que querian hacer un juego divertido tanto para jugar como para divertirnos haciendolo. 
-Nuestra idea fue hacer un clicker, como el cookie clicker, ya que es un juego que creemos que es un juego facil de programar.
-Igualmente la parte de diseño grafico decidimos hacerla con ASCII ya que nos explicaron que hacerlo de otra forma seria mas dificil.
 
 
 
