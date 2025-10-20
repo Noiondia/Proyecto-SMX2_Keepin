@@ -128,8 +128,8 @@ No tenemos claro algunos de los tipos de datos de algunos atributos, como las im
 <h2><b>Mockup</b></h2>
 El "Mockup" es el diseño de nuestra pagina web, en este canva se ve cada pestaña a la que se puede acceder <br>
 <a>
-<a href:
-https=//www.canva.com/design/DAG1F2ysP9o/7bUcy5KVDBnAHS9omU6SOg/edit?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton>Mockup
+<a href=
+https://www.canva.com/design/DAG1F2ysP9o/7bUcy5KVDBnAHS9omU6SOg/edit?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton>Mockup
 </a> <br>
 Y este es el mapa de navegación, que explica cada botón clicable que hace y a que parte de la pagina lleva <br>
 <a>
