@@ -121,7 +121,7 @@ No tenemos claro algunos de los tipos de datos de algunos atributos, como las im
 
 
 
-<h2><b>Briefing de ideas</b></h2>
+
 
 
 
@@ -136,7 +136,7 @@ Y este es el mapa de navegación, que explica cada botón clicable que hace y a 
 	<a href=https://www.canva.com/design/DAG18031_jA/C4MuK8jjUzAV3fNcieW8WA/edit?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton>Mapa de navegación
 </a>
 
-
+<h2><b>Briefing de ideas</b></h2>
 
 Idea seleccionada
 
