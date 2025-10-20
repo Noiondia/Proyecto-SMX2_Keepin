@@ -125,6 +125,13 @@ No tenemos claro algunos de los tipos de datos de algunos atributos, como las im
 
 Idea seleccionada
 
+<h2><b>Mockup</b></h2>
+
+https://www.canva.com/design/DAG1F2ysP9o/7bUcy5KVDBnAHS9omU6SOg/edit?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+<h2><b>Mapa de navegacion</b></h2>
+
+https://www.canva.com/design/DAG18031_jA/C4MuK8jjUzAV3fNcieW8WA/edit?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 Nuestra idea fue hacer un juego clicker y con el diseño grafico de CSS todo en una pagina web como el juego Cookie clicker
 Justificar la elección de esa idea
