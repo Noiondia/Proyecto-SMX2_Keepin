@@ -15,7 +15,7 @@
 
 4.Tecnologías a utilizar
 
-5.Mockup y mapa de navegacion
+5.Mockup y mapa de navegación
 
 6.Abstract
 
