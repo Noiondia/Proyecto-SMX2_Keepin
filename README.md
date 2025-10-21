@@ -1,3 +1,10 @@
+
+
+<img width="839" height="839" alt="image" src="https://github.com/user-attachments/assets/e8f34a15-372c-45fc-9547-aaa39bd4f4b2" />
+
+
+
+
 <h2><b>Índice.</b></h2>
 
 1.Introducción.
