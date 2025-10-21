@@ -157,6 +157,10 @@ En el mockup, la primera pagina que sale es la pagina principal, cuyo UNICO obje
 
 
 <br>Dentro del juego hay varias pestañas pero todas estan enfocadas en la misma, las tres paginas de dentro del juego, son variaciones de la misma, no  seràn diferentes pestañas, en caso de la pagina de quipación de personajes serà un pop up que aparecerà en la misma pagina. En verdad, la pagina web entera, solo tendrà dos paginas, el inicio y el juego<br>
+
+<img width="1133" height="636" alt="image" src="https://github.com/user-attachments/assets/be5c4eb5-51b1-495b-a34f-0a38a0234507" />
+Esta imagen es dentro del juego, todas las otras pestañas de dentro del juego son canvios o pop ups dentro de esta.
+
 <a href="https://www.canva.com/design/DAG1F2ysP9o/7bUcy5KVDBnAHS9omU6SOg/edit?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Mockup</a> <br>
 
 Y este es el mapa de navegación, que explica cada botón clicable que hace y a qué parte de la página lleva <br>
