@@ -7,19 +7,21 @@
 
 <h2><b>Índice</b></h2>
 
-1.Introducción.
+1.Introducción
 
-2.Briefing de ideas.
+2.Briefing de ideas
 
-3.Arquitectura del sofware.
+3.Arquitectura del sofware
 
-4.Tecnologías a utilizar.
+4.Tecnologías a utilizar
 
-5.Abstract.
+5.Mockup y mapa de navegacion
 
-6.Conclusiones.
+6.Abstract
 
-7.Bibliografia.
+7.Conclusiones
+
+8.Bibliografia
 
 
 
