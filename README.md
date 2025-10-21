@@ -157,14 +157,12 @@ En el mockup, la primera pagina que sale es la pagina principal, cuyo UNICO obje
 
 
 <br>Dentro del juego hay varias pestañas pero todas estan enfocadas en la misma, las tres paginas de dentro del juego, son variaciones de la misma, no  seràn diferentes pestañas, en caso de la pagina de quipación de personajes serà un pop up que aparecerà en la misma pagina. En verdad, la pagina web entera, solo tendrà dos paginas, el inicio y el juego<br>
-<a>
-<a href=
-https://www.canva.com/design/DAG1F2ysP9o/7bUcy5KVDBnAHS9omU6SOg/edit?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton>Mockup
-</a> <br>
-Y este es el mapa de navegación, que explica cada botón clicable que hace y a que parte de la pagina lleva <br>
-<a>
-	<a href=https://www.canva.com/design/DAG18031_jA/C4MuK8jjUzAV3fNcieW8WA/edit?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton>Mapa de navegación
-</a>
+<a href="https://www.canva.com/design/DAG1F2ysP9o/7bUcy5KVDBnAHS9omU6SOg/edit?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Mockup</a> <br>
+
+Y este es el mapa de navegación, que explica cada botón clicable que hace y a qué parte de la página lleva <br>
+
+<a href="https://www.canva.com/design/DAG18031_jA/C4Muk8jjUzAV3fNcieW8WA/edit?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Mapa de navegación</a>
+
 
 <h2><b>Tecnologías a utilizar</b></h2>
 
