@@ -150,9 +150,9 @@ Videos de youtube.
 https://www.youtube.com/watch?v=_6N18g3ewnw
 
 <h2><b>Mockup</b></h2>
-El <em>"Mockup"</em> es el diseño de nuestra pagina web, en este canva se ve cada pestaña a la que se puede acceder.
-La tipografia que hemos escogido, (times new roman) creemos que es la que mas se adapta al ASCII, que es en lo que nos hemos basado para crear el diseño de la pagina.
-En el mockup, la primera pagina que sale es la pagina principal, cuyo UNICO objetivo es que el usuario cree se cuenta o inicie sesión y entre al juego.<br><br>
+El <em>"Mockup"</em> es el diseño de nuestra página web, en este canva se ve cada pestaña a la que se puede acceder.
+La tipografía que hemos escogido, (times new roman) creemos que es la que más se adapta al ASCII, que es en lo que nos hemos basado para crear el diseño de la página.
+En el mockup, la primera página que sale es la página principal, cuyo ÚNICO objetivo es que el usuario cree su cuenta o inicie sesión y entre al juego.<br><br>
 <img width="1134" height="637" alt="image" src="https://github.com/user-attachments/assets/d1bcce97-39d3-4eee-9052-6b7afaf9a6b8" />
 
 
