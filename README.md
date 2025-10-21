@@ -5,7 +5,7 @@
 
 
 
-<h2><b>Índice.</b></h2>
+<h2><b>Índice</b></h2>
 
 1.Introducción.
 
@@ -31,7 +31,7 @@ Igualmente la parte de diseño grafico decidimos hacerla con ASCII ya que nos ex
 
 
 
-<h2><b>Introducción.</b></h2>
+<h2><b>Introducción</b></h2>
 
 1. Descripción general del proyecto web
 ¿De qué trata tu web?
