@@ -68,26 +68,26 @@ Mejoras compradas de cada jugador: Esto forma parte del progreso del jugador, es
 <br>Efecto del personaje - Cada personaje aplicarà un cambio al juego, parecido al de las mejoras
 <br>-Comentarios: queremos que la gente que juegue a nuestra página pueda dejar comentarios para saber su opinión y por si quieren hacer sugerencias.
 
-Datos que se deben guardar de cada entidad (atributos)
-Para cada entidad identificada en el punto anterior, describe qué información concreta se necesita guardar.
-Usuario:
- 	La cuenta de los jugadores
-Nombre de usuario (Varcha)
-Correo electrónico (Varcha)
-Contraseña (Varcha)
-	Partida:
-Puntos actuales de cada jugador (INT)
-Mejoras compradas de cada jugador (Varcha)
-Personajes comprados por cada jugador (Varcha)
-	Mejoras
-Nombre de la mejora (Varcha)
-Descripción de la mejora (Varcha)
-Efecto de la mejora (Varcha
-	Personajes
-Nombre del personaje (varcha)
-Descripción del personaje (Varcha
-Efecto del personaje (Varcha)
-Imagen del personaje ()
+<br>Datos que se deben guardar de cada entidad (atributos)
+<br>Para cada entidad identificada en el punto anterior, describe qué información concreta se necesita guardar.
+<br>Usuario:
+ 	<br>La cuenta de los jugadores
+<br>Nombre de usuario (Varcha)
+<br>Correo electrónico (Varcha)
+<br>Contraseña (Varcha)
+	<br>Partida:
+<br>Puntos actuales de cada jugador (INT)
+<br>Mejoras compradas de cada jugador (Varcha)
+<br>Personajes comprados por cada jugador (Varcha)
+	<br>Mejoras
+<br>Nombre de la mejora (Varcha)
+<br>Descripción de la mejora (Varcha)
+<br>Efecto de la mejora (Varcha
+	<br>Personajes
+<br>Nombre del personaje (varcha)
+<br>Descripción del personaje (Varcha
+<br>Efecto del personaje (Varcha)
+<br>Imagen del personaje ()
 
 4. Relaciones entre las entidades
 El usuario puede obtener puntos y comprar mejoras con los puntos. 
