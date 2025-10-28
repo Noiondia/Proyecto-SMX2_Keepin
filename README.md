@@ -49,13 +49,12 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 
 Identificación de entidades principales
 
--Usuario: El nombre de usuario es imprescindible para que el usuario pueda registrarse
+-Usuario 
+<br>El nombre de usuario es imprescindible para que el usuario pueda registrarse
 <br>-Contraseña: Para que una cuenta sea segura, necesita una contraseña, así que se va a necesitar una para crear la cuenta
 <br>-Correo electrónico: el correo electrónico es importante por si el usuario se olvida de su contraseña, para poder recuperarla sin tener que crear otra cuenta
 <br>-Partida: Consta de todos los elementos importantes que se tienen que guardar sobre la partida de cada jugador
 <br>Puntos actuales de cada jugador: Esto forma parte del progreso de cada jugador, son los puntos que te da al hacer clic a Jorge
-
-Mejoras compradas de cada jugador: Esto forma parte del progreso del jugador, es lo que te permite que cada clic te de mas puntos, y es la principal manera de progresar en el juego.
 
 -Mejoras
 <br>Nombre de la mejora  	-Cada mejora tiene un nombre para identificarla
@@ -96,23 +95,23 @@ El usuario puede enviar mensajes para obtener feedback.
 El usuario puede comprar personajes, que luego se quedan guardados en personajes comprados por el jugador
 
 Ejemplo de datos (simulación)
-Usuario:
+Usuario
 Nombre: Shugus
 Correo: Shugus@gmail.com
 Contraseña: 1234
-Partida:
+Partida
 Puntos: 200
 Mejoras: Mejora 1, Mejora 3, Mejora 4 (ejemplos)
 Personajes: Personaje 1, personaje 3, personaje 15
-Mejora:
+Mejora
 Nombre: Acelerador de partículas
 Descripción: Forjado por los antiguos herreros ugandianos.
 Efecto: Cada segundo, da 500 puntos
-Personaje:
+Personaje
 Nombre: Ben Kenobi
 Descripción: Antiguo guerrero en la guerra, ahora retirado y viviendo la vida de granjero
 Efecto: Da 15 zanahorias cada 30 segundos.
-Imagen:
+Imagen
 
 Reflexiones, dificultades y dudas que tienes sobre la base de datos
 Las partes mas complicadas han sido listar los identificadores.
