@@ -50,10 +50,10 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 Identificación de entidades principales
 
 -Usuario: El nombre de usuario es imprescindible para que el usuario pueda registrarse
--Contraseña: Para que una cuenta sea segura, necesita una contraseña, así que se va a necesitar una para crear la cuenta
--Correo electrónico: el correo electrónico es importante por si el usuario se olvida de su contraseña, para poder recuperarla sin tener que crear otra cuenta
--Partida: Consta de todos los elementos importantes que se tienen que guardar sobre la partida de cada jugador
-Puntos actuales de cada jugador: Esto forma parte del progreso de cada jugador, son los puntos que te da al hacer clic a Jorge
+<br>-Contraseña: Para que una cuenta sea segura, necesita una contraseña, así que se va a necesitar una para crear la cuenta
+<br>-Correo electrónico: el correo electrónico es importante por si el usuario se olvida de su contraseña, para poder recuperarla sin tener que crear otra cuenta
+<br>-Partida: Consta de todos los elementos importantes que se tienen que guardar sobre la partida de cada jugador
+<br>Puntos actuales de cada jugador: Esto forma parte del progreso de cada jugador, son los puntos que te da al hacer clic a Jorge
 
 Mejoras compradas de cada jugador: Esto forma parte del progreso del jugador, es lo que te permite que cada clic te de mas puntos, y es la principal manera de progresar en el juego.
 
