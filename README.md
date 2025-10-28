@@ -70,12 +70,12 @@ Mejoras compradas de cada jugador: Esto forma parte del progreso del jugador, es
 
 <br>Datos que se deben guardar de cada entidad (atributos)
 <br>Para cada entidad identificada en el punto anterior, describe qué información concreta se necesita guardar.
-<br>Usuario:
+<br>Usuario
  	<br>La cuenta de los jugadores
 <br>Nombre de usuario (Varcha)
 <br>Correo electrónico (Varcha)
 <br>Contraseña (Varcha)
-	<br>Partida:
+	<br>Partida
 <br>Puntos actuales de cada jugador (INT)
 <br>Mejoras compradas de cada jugador (Varcha)
 <br>Personajes comprados por cada jugador (Varcha)
@@ -89,13 +89,13 @@ Mejoras compradas de cada jugador: Esto forma parte del progreso del jugador, es
 <br>Efecto del personaje (Varcha)
 <br>Imagen del personaje ()
 
-4. Relaciones entre las entidades
+Relaciones entre las entidades
 El usuario puede obtener puntos y comprar mejoras con los puntos. 
 El usuario puede ver sus mejoras, que hace cada mejora, ver sus personajes y que hacen.
 El usuario puede enviar mensajes para obtener feedback.
 El usuario puede comprar personajes, que luego se quedan guardados en personajes comprados por el jugador
 
-5. Ejemplo de datos (simulación)
+Ejemplo de datos (simulación)
 Usuario:
 Nombre: Shugus
 Correo: Shugus@gmail.com
@@ -114,7 +114,7 @@ Descripción: Antiguo guerrero en la guerra, ahora retirado y viviendo la vida d
 Efecto: Da 15 zanahorias cada 30 segundos.
 Imagen:
 
-6. Reflexiones, dificultades y dudas que tienes sobre la base de datos
+Reflexiones, dificultades y dudas que tienes sobre la base de datos
 Las partes mas complicadas han sido listar los identificadores.
 Una parte que se complico entender fue las relaciones entre entidades.
 En la base de datos se van a tener que poner imágenes de los personajes, cosa que no sabemos hacer.
