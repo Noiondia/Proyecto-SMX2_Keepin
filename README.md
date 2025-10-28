@@ -1,10 +1,3 @@
-<style>
-html{
-  scroll-behavior: smooth;
-}
-</style>
-
-
 <link rel="stylesheet" href="CSS.css">
 
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/e8f34a15-372c-45fc-9547-aaa39bd4f4b2" />
