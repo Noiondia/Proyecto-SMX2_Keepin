@@ -57,22 +57,18 @@ Identificación de entidades principales
 
 Mejoras compradas de cada jugador: Esto forma parte del progreso del jugador, es lo que te permite que cada clic te de mas puntos, y es la principal manera de progresar en el juego.
 
--Mejoras:
-Nombre de la mejora  	-Cada mejora tiene un nombre para identificarla
-Descripción de la mejora - Cada mejora tiene una descripción, para saber     que hace
-Efecto de la mejora - Cada mejora tiene un efecto, aplica un cambio al juego.
--Personajes: 
-Nombre del personaje - Cada personaje tiene un nombre para identificarlo
-Descripción del personaje - Cada personaje tiene una descripción, incluyendo la mejora que aplica, personalidad o la ropa que lleva.
-Imagen del personaje - Cada personaje se representarà dentro del juego con una imagen
-Efecto del personaje - Cada personaje aplicarà un cambio al juego, parecido al de las mejoras
--Comentarios: queremos que la gente que juegue a nuestra página pueda dejar comentarios para saber su opinión y por si quieren hacer sugerencias.
-Para cada tabla, responde:
-¿Qué tema de información almacena? -> Esto nos dará el nombre de la Tabla.
-¿Por qué necesitas guardarla en la base de datos? -> Esto nos ayudará a entender si 
-es necesario guardar esta información o no.
+-Mejoras
+<br>Nombre de la mejora  	-Cada mejora tiene un nombre para identificarla
+<br>Descripción de la mejora - Cada mejora tiene una descripción, para saber     que hace
+<br>Efecto de la mejora - Cada mejora tiene un efecto, aplica un cambio al juego.
+<br>-Personajes
+<br>Nombre del personaje - Cada personaje tiene un nombre para identificarlo
+<br>Descripción del personaje - Cada personaje tiene una descripción, incluyendo la mejora que aplica, personalidad o la ropa que lleva.
+<br>Imagen del personaje - Cada personaje se representarà dentro del juego con una imagen
+<br>Efecto del personaje - Cada personaje aplicarà un cambio al juego, parecido al de las mejoras
+<br>-Comentarios: queremos que la gente que juegue a nuestra página pueda dejar comentarios para saber su opinión y por si quieren hacer sugerencias.
 
-3. Datos que se deben guardar de cada entidad (atributos)
+Datos que se deben guardar de cada entidad (atributos)
 Para cada entidad identificada en el punto anterior, describe qué información concreta se necesita guardar.
 Usuario:
  	La cuenta de los jugadores
