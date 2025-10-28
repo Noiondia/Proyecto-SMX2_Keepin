@@ -113,14 +113,14 @@ Identificación de entidades principales
 <br>Efecto: Da 15 zanahorias cada 30 segundos.
 <br>Imagen
 
-Reflexiones, dificultades y dudas que tienes sobre la base de datos
-Las partes mas complicadas han sido listar los identificadores.
-Una parte que se complico entender fue las relaciones entre entidades.
-En la base de datos se van a tener que poner imágenes de los personajes, cosa que no sabemos hacer.
-No tenemos claro los efectos de los personajes y las mejoras, ya que van a ser ecuaciones
-Ejemplo: Cuando compres esta mejora, +5% de puntos por segundo
-No tenemos claro cómo vamos a listar las mejoras y los personajes de cada jugador, si por nombre, identificador, o cualquier otra cosa.
-No tenemos claro algunos de los tipos de datos de algunos atributos, como las imagenes de los personajes, o el efecto de personajes y mejoras.
+<br>Reflexiones, dificultades y dudas que tienes sobre la base de datos
+<br>Las partes mas complicadas han sido listar los identificadores.
+<br>Una parte que se complico entender fue las relaciones entre entidades.
+<br>En la base de datos se van a tener que poner imágenes de los personajes, cosa que no sabemos hacer.
+<br>No tenemos claro los efectos de los personajes y las mejoras, ya que van a ser ecuaciones
+<br>Ejemplo: Cuando compres esta mejora, +5% de puntos por segundo
+<br>No tenemos claro cómo vamos a listar las mejoras y los personajes de cada jugador, si por nombre, identificador, o cualquier otra cosa.
+<br>No tenemos claro algunos de los tipos de datos de algunos atributos, como las imagenes de los personajes, o el efecto de personajes y mejoras.
 
 </section>
 
