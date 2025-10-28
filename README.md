@@ -40,21 +40,15 @@ Igualmente la parte de diseño gráfico decidimos hacerla con ASCII ya que nos e
 
 <h2><b>Introducción</b></h2>
 <section id="Introducción">
-1. Descripción general del proyecto web
-¿De qué trata tu web?
-Explica brevemente el propósito de tu página web (por ejemplo: tienda online, blog, red social, catálogo, etc.).
 
 Será un juego sencillo, un clicker, un juego donde el objetivo es hacer click a jorge, el cual te da unos puntos a cada click, con esos puntos podrás comprar mejoras para conseguir aún más puntos hasta comprar todas las mejoras.
 El objetivo será comprar todas las mejoras y para eso el juego ofrecerá un guardado de partida, usando el correo electrónico.
 Utilizamos como referencia un juego llamado cookie clicker que tiene un objetivo parecido al que tenemos en nuestro juego, clicar un botón, ganar puntos y comprar mejoras para progresar en el juego.
 
-¿Qué funcionalidades ofrecerá a los usuarios?
-Crear una cuenta, poner comentarios sobre la página y el servicio en si, clicar a jorge y comprar mejoras.
 Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, agregaremos más contenido a la pagina.
 
-2. Identificación de entidades principales
-¿Qué elementos importantes hay en tu web que necesitan almacenarse?
-Por ejemplo: usuarios, productos, pedidos, entradas del blog, comentarios, etc.
+Identificación de entidades principales
+
 -Usuario: El nombre de usuario es imprescindible para que el usuario pueda registrarse
 -Contraseña: Para que una cuenta sea segura, necesita una contraseña, así que se va a necesitar una para crear la cuenta
 -Correo electrónico: el correo electrónico es importante por si el usuario se olvida de su contraseña, para poder recuperarla sin tener que crear otra cuenta
