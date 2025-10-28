@@ -13,11 +13,13 @@
 
 <a href="#Briefing">Briefing de ideas</a>
 
+<a href="#Mockup">Mockup</a>
+
 Arquitectura del sofware
 
 Tecnologías a utilizar
 
-<a href="#Mockup">Mockup</a>
+
 
 Abstract
 
