@@ -1,5 +1,5 @@
 <style>
-html {
+html{
   scroll-behavior: smooth;
 }
 </style>
