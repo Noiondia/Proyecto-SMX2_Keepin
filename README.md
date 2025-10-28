@@ -166,11 +166,11 @@ Esta imagen es dentro del juego, todas las otras pestañas de dentro del juego s
 Esto es el link directo al canva donde esta montado el mockup
 
 
-<a href="https://www.canva.com/design/DAG1F2ysP9o/7bUcy5KVDBnAHS9omU6SOg/edit?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Mockup</a> <br>
+<a href="[https://www.canva.com/design/DAG1F2ysP9o/7bUcy5KVDBnAHS9omU6SOg/edit?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](https://www.canva.com/design/DAG1F2ysP9o/HVIxXKCW6WBMsEc9UaL6FA/view?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4815d8178d)">Mockup</a> <br>
 
 Y este es el mapa de navegación, que explica cada botón clicable que hace y a qué parte de la página lleva <br>
 
-<a href="https://www.canva.com/design/DAG18031_jA/C4Muk8jjUzAV3fNcieW8WA/edit?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Mapa de navegación</a>
+<a href="[https://www.canva.com/design/DAG18031_jA/C4Muk8jjUzAV3fNcieW8WA/edit?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](https://www.canva.com/design/DAG18031_jA/xM7zD7MZ9NcQ2PMzfyEBWA/view?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h578cf79f8b)">Mapa de navegación</a>
 </section>
 
 <h2><b>Tecnologías a utilizar</b></h2>
