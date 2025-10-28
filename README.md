@@ -9,13 +9,15 @@
 
 <a href="#Abstract">Abstract</a>
 
-Briefing de ideas
+<a href="#Introducción">Introducción</a>
+
+<a href="#Briefing">Briefing de ideas</a>
 
 Arquitectura del sofware
 
 Tecnologías a utilizar
 
-Mockup y mapa de navegación
+<a href="#Mockup">Mockup</a>
 
 Abstract
 
@@ -35,7 +37,7 @@ Igualmente la parte de diseño gráfico decidimos hacerla con ASCII ya que nos e
 
 
 <h2><b>Introducción</b></h2>
-
+<section id="Introducción">
 1. Descripción general del proyecto web
 ¿De qué trata tu web?
 Explica brevemente el propósito de tu página web (por ejemplo: tienda online, blog, red social, catálogo, etc.).
@@ -129,10 +131,10 @@ Ejemplo: Cuando compres esta mejora, +5% de puntos por segundo
 No tenemos claro cómo vamos a listar las mejoras y los personajes de cada jugador, si por nombre, identificador, o cualquier otra cosa.
 No tenemos claro algunos de los tipos de datos de algunos atributos, como las imagenes de los personajes, o el efecto de personajes y mejoras.
 
-
+</section>
 
 <h2><b>Briefing de ideas</b></h2>
-
+<section id="Briefing">
 Idea seleccionada
 
 Nuestra idea fue hacer un juego clicker y con el diseño grafico de CSS todo en una pagina web como el juego Cookie clicker
@@ -149,8 +151,10 @@ Conocimiento de programacion sencilla y saber hacer cosas con CSS
 Recursos (Bibliografía, webgrafía, vídeos, cursos o demás multimedia)
 Videos de youtube.
 https://www.youtube.com/watch?v=_6N18g3ewnw
+</section>
 
 <h2><b>Mockup</b></h2>
+<section id="Mockup">
 El <em>"Mockup"</em> es el diseño de nuestra página web, en este canva se ve cada pestaña a la que se puede acceder.
 La tipografía que hemos escogido, (times new roman) creemos que es la que más se adapta al ASCII, que es en lo que nos hemos basado para crear el diseño de la página.
 En el mockup, la primera página que sale es la página principal, cuyo ÚNICO objetivo es que el usuario cree su cuenta o inicie sesión y entre al juego.<br><br>
@@ -171,7 +175,7 @@ Esto es el link directo al canva donde esta montado el mockup
 Y este es el mapa de navegación, que explica cada botón clicable que hace y a qué parte de la página lleva <br>
 
 <a href="https://www.canva.com/design/DAG18031_jA/C4Muk8jjUzAV3fNcieW8WA/edit?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Mapa de navegación</a>
-
+</section>
 
 <h2><b>Tecnologías a utilizar</b></h2>
 
