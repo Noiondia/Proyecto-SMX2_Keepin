@@ -88,30 +88,30 @@ Identificación de entidades principales
 <br>Efecto del personaje (Varcha)
 <br>Imagen del personaje ()
 
-Relaciones entre las entidades
-El usuario puede obtener puntos y comprar mejoras con los puntos. 
-El usuario puede ver sus mejoras, que hace cada mejora, ver sus personajes y que hacen.
-El usuario puede enviar mensajes para obtener feedback.
-El usuario puede comprar personajes, que luego se quedan guardados en personajes comprados por el jugador
+<br>Relaciones entre las entidades
+<br>El usuario puede obtener puntos y comprar mejoras con los puntos. 
+<br>El usuario puede ver sus mejoras, que hace cada mejora, ver sus personajes y que hacen.
+<br>El usuario puede enviar mensajes para obtener feedback.
+<br>El usuario puede comprar personajes, que luego se quedan guardados en personajes comprados por el jugador
 
-Ejemplo de datos (simulación)
-Usuario
-Nombre: Shugus
-Correo: Shugus@gmail.com
-Contraseña: 1234
-Partida
-Puntos: 200
-Mejoras: Mejora 1, Mejora 3, Mejora 4 (ejemplos)
-Personajes: Personaje 1, personaje 3, personaje 15
-Mejora
-Nombre: Acelerador de partículas
-Descripción: Forjado por los antiguos herreros ugandianos.
-Efecto: Cada segundo, da 500 puntos
-Personaje
-Nombre: Ben Kenobi
-Descripción: Antiguo guerrero en la guerra, ahora retirado y viviendo la vida de granjero
-Efecto: Da 15 zanahorias cada 30 segundos.
-Imagen
+<br>Ejemplo de datos (simulación)
+<br>Usuario
+<br>Nombre: Shugus
+<br>Correo: Shugus@gmail.com
+<br>Contraseña: 1234
+<br>Partida
+<br>Puntos: 200
+<br>Mejoras: Mejora 1, Mejora 3, Mejora 4 (ejemplos)
+<br>Personajes: Personaje 1, personaje 3, personaje 15
+<br>Mejora
+<br>Nombre: Acelerador de partículas
+<br>Descripción: Forjado por los antiguos herreros ugandianos.
+<br>Efecto: Cada segundo, da 500 puntos
+<br>Personaje
+<br>Nombre: Ben Kenobi
+<br>Descripción: Antiguo guerrero en la guerra, ahora retirado y viviendo la vida de granjero
+<br>Efecto: Da 15 zanahorias cada 30 segundos.
+<br>Imagen
 
 Reflexiones, dificultades y dudas que tienes sobre la base de datos
 Las partes mas complicadas han sido listar los identificadores.
