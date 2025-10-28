@@ -32,8 +32,8 @@ Bibliografia
 <h2><b>Abstract</b></h2>
 <section id="Abstract">
 
-Somos TDGamblers un equipo formado por 3 chavales que querían hacer un juego divertido tanto para jugar como para divertirnos haciéndolo. 
-Nuestra idea fue hacer un clicker, como el cookie clicker, ya que es un juego que creemos que es relativamente fácil de programar.
+Somos TDGamblers, un equipo formado por 3 chavales que querían hacer un juego divertido tanto para jugar como para divertirnos haciéndolo. 
+Nuestra idea fue hacer un clicker, como el Cookie Clicker, ya que es un juego que creemos que es relativamente fácil de programar.
 Igualmente la parte de diseño gráfico decidimos hacerla con ASCII ya que nos explicaron que hacerlo de otra forma sería mas difícil.
 </section>
 
