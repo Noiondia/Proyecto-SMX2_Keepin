@@ -7,30 +7,31 @@
 
 <h2><b>Índice</b></h2>
 
-1.Introducción
+<a href="#capitulo1">Abstract</a>
 
-2.Briefing de ideas
+Briefing de ideas
 
-3.Arquitectura del sofware
+Arquitectura del sofware
 
-4.Tecnologías a utilizar
+Tecnologías a utilizar
 
-5.Mockup y mapa de navegación
+Mockup y mapa de navegación
 
-6.Abstract
+Abstract
 
-7.Conclusiones
+Conclusiones
 
-8.Bibliografia
+Bibliografia
 
 
 
 <h2><b>Abstract</b></h2>
+<section id="Abstract">
 
 Somos TDGamblers un equipo formado por 3 chavales que querían hacer un juego divertido tanto para jugar como para divertirnos haciéndolo. 
 Nuestra idea fue hacer un clicker, como el cookie clicker, ya que es un juego que creemos que es relativamente fácil de programar.
 Igualmente la parte de diseño gráfico decidimos hacerla con ASCII ya que nos explicaron que hacerlo de otra forma sería mas difícil.
-
+</section>
 
 
 <h2><b>Introducción</b></h2>
