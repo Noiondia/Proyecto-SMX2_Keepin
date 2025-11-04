@@ -15,6 +15,8 @@
 
 <a href="#Mockup">Mockup</a>
 
+<a href="#Identificación de entidades principales">Identificación de entidades principales</a>
+
 Arquitectura del sofware
 
 Tecnologías a utilizar
@@ -46,9 +48,10 @@ El objetivo será comprar todas las mejoras y para eso el juego ofrecerá un gua
 Utilizamos como referencia un juego llamado cookie clicker que tiene un objetivo parecido al que tenemos en nuestro juego, clicar un botón, ganar puntos y comprar mejoras para progresar en el juego.
 
 Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, agregaremos más contenido a la pagina.
+</section>
 
-Identificación de entidades principales
-
+<h2><b></b>Identificación de entidades principales</h2></b>
+<section id="Identificación de entidades principales">
 -Usuario 
 <br>El nombre de usuario es imprescindible para que el usuario pueda registrarse
 <br>-Contraseña: Para que una cuenta sea segura, necesita una contraseña, así que se va a necesitar una para crear la cuenta
