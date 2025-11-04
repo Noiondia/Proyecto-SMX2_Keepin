@@ -184,6 +184,6 @@ Y este es el mapa de navegación, que explica cada botón clicable que hace y a 
 
 
 <h2><b>Bibliografia</b></h2>
-<a href="https://cookieclicker.com/">"Cookie clicker"</a>
-<a href="https://chatgpt.com/">"Chat GPT"</a>
-<a href="https://gist.github.com/dasdo/9ff71c5c0efa037441b6">"Comandos de github"</a>
+<a href="https://cookieclicker.com/">"Cookie clicker"</a><br>
+<a href="https://chatgpt.com/">"Chat GPT"</a><br>
+<a href="https://gist.github.com/dasdo/9ff71c5c0efa037441b6">"Comandos de github"</a><br>
