@@ -165,12 +165,14 @@ Esta imagen es dentro del juego, todas las otras pestañas de dentro del juego s
 Esto es el link directo al canva donde esta montado el mockup
 
 
-Equilibrio del diseño, colores, estructura
+<b>Equilibrio del diseño, colores, estructura</b>
 
 El diseño de la pagina web es original nuestro peró en cambio el juego si que nos inspiramos en el juego cookie cliker.
+
 <br>Para la paleta de colores elegimos usar blanco y negro ya que es el que se utiliza para ASCII
 
-Colores y tipografía
+<b>Colores y tipografía</b>
+
 <br>La tipografia que esta en el mockup es temporal ya que la que queremos usar es una llamada Matrix.ttf
 
 
