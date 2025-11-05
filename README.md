@@ -162,7 +162,7 @@ En el mockup, la primera página que sale es la página principal, cuyo ÚNICO o
 Esta imagen es dentro del juego, todas las otras pestañas de dentro del juego son canvios o pop ups dentro de esta.
 <br>
 
-Esto es el link directo al canva donde esta montado el mockup
+
 
 
 <b>Equilibrio del diseño, colores, estructura</b>
@@ -173,6 +173,10 @@ Para la paleta de colores elegimos usar blanco y negro ya que es el que se utili
 <b>Colores y tipografía</b>
 <br>La tipografia que esta en el mockup es temporal ya que la que queremos usar es una llamada Matrix.ttf
 
+<b>Componentes de interfaz</b>
+Todos los botones y componentes de navegacion estan listados y descritos en el mapa de navegabilidad
+
+Esto es el link directo al canva donde esta montado el mockup
 
 <a href="https://www.canva.com/design/DAG1F2ysP9o/HVIxXKCW6WBMsEc9UaL6FA/view?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4815d8178d">Mockup</a> <br>
 
