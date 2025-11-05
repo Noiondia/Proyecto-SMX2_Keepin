@@ -132,18 +132,18 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 Idea seleccionada
 
 Nuestra idea fue hacer un juego clicker y con el diseño grafico de CSS todo en una pagina web como el juego Cookie clicker
-Justificar la elección de esa idea
-Como 3 alumnos que nos gusta mucho jugar a videojuegos elegimos hacer uno.
-Hasta donde quiero llegar con el proyecto
-Nuestra idea seria hacer un juego funcional que te entretenga durante unas horas haciendo click y mejorando la produccion.
-A quién va dirigido este proyecto 
-Va dirigido a toda persona que este aburrida pero no quiera descargarse juegos sino solo jugar en una pagina web.
-Módulos del ciclo que tengan que ver con el proyecto
-Aplicaciones web, Programacion (Optativa)
-Materiales necesarios 
-Conocimiento de programacion sencilla y saber hacer cosas con CSS
-Recursos (Bibliografía, webgrafía, vídeos, cursos o demás multimedia)
-Videos de youtube.
+<br>Justificar la elección de esa idea
+<br>Como 3 alumnos que nos gusta mucho jugar a videojuegos elegimos hacer uno.
+<br>Hasta donde quiero llegar con el proyecto
+<br>Nuestra idea seria hacer un juego funcional que te entretenga durante unas horas haciendo click y mejorando la produccion.
+<br>A quién va dirigido este proyecto 
+<br>Va dirigido a toda persona que este aburrida pero no quiera descargarse juegos sino solo jugar en una pagina web.
+<br>Módulos del ciclo que tengan que ver con el proyecto
+<br>Aplicaciones web, Programacion (Optativa)
+<br>Materiales necesarios 
+<br>Conocimiento de programacion sencilla y saber hacer cosas con CSS
+<br>Recursos (Bibliografía, webgrafía, vídeos, cursos o demás multimedia)
+<br>Videos de youtube.
 https://www.youtube.com/watch?v=_6N18g3ewnw
 </section>
 
