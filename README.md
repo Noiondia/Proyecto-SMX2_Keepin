@@ -131,7 +131,7 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 <section id="Briefing">
 Idea seleccionada
 
-Nuestra idea fue hacer un juego clicker y con el diseño grafico de CSS todo en una pagina web como el juego Cookie clicker
+<b>Nuestra idea fue hacer un juego clicker y con el diseño grafico de CSS todo en una pagina web como el juego Cookie clicker</b>
 <b><br>Justificar la elección de esa idea</b>
 <br>Como 3 alumnos que nos gusta mucho jugar a videojuegos elegimos hacer uno.
 <b><br>Hasta donde quiero llegar con el proyecto</b>
