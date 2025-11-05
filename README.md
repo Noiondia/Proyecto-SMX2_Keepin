@@ -171,7 +171,7 @@ El diseño de la pagina web es original nuestro peró en cambio el juego si que 
 Para la paleta de colores elegimos usar blanco y negro ya que es el que se utiliza para ASCII
 
 <b>Colores y tipografía</b>
-La tipografia que esta en el mockup es temporal ya que la que queremos usar es una llamada Matrix.ttf
+<br>La tipografia que esta en el mockup es temporal ya que la que queremos usar es una llamada Matrix.ttf
 
 
 <a href="https://www.canva.com/design/DAG1F2ysP9o/HVIxXKCW6WBMsEc9UaL6FA/view?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4815d8178d">Mockup</a> <br>
