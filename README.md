@@ -173,7 +173,7 @@ Para la paleta de colores elegimos usar blanco y negro ya que es el que se utili
 <b>Colores y tipografía</b>
 <br>La tipografia que esta en el mockup es temporal ya que la que queremos usar es una llamada Matrix.ttf
 
-<b>Componentes de interfaz</b>
+<b>Componentes de interfaz</b> <br>
 Todos los botones y componentes de navegacion estan listados y descritos en el mapa de navegabilidad
 
 Esto es el link directo al canva donde esta montado el mockup
