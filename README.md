@@ -17,7 +17,7 @@
 
 <a href="#Identificación de entidades principales">Identificación de entidades principales</a>
 
-Arquitectura del sofware
+<a href="#Arquitectura">Arquitectura del sofware</a>
 
 Tecnologías a utilizar
 
@@ -191,10 +191,12 @@ Y este es el mapa de navegación, que explica cada botón clicable que hace y a 
 
 
 <h2><b>Arquitectura del sofware</b></h2>
+ <section id="Arquitectura">
 
- 
 
 
+
+</section>
 <h2><b>Conclusiones</b></h2>
 
 
