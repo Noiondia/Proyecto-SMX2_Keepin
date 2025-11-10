@@ -285,6 +285,42 @@ Copias de seguridad: Zarek
 <br>Hacer la página web
 <br>Hacer los servidores con los datos
 
+<h2><b>Arquitectura del sistema</b></h2>
+
+Componente de sistema
+Tecnología o framework 
+(elige de la lista o añade el que vayas a utilizar)
+Versión
+Hardware
+Modelo, procesador, RAM, espacio en disco, adaptadores de red
+
+
+Sistema operativo
+¿Qué SO? ¿libre o propietario?
+Windows y Ubuntu
+Interfaz de usuario (Frontend)
+HTML, CSS, JavaScript, bibliotecas y frameworks como React, Angular o Vue.js.
+HTML y CSS
+Lógica de negocio (Backend)
+Lenguajes de programación como PHP, Python, Java, Node.js, frameworks como Django, Flask, Spring (Java), Express (Node.js).
+Python 3.14
+Servidor web
+Apache, Nginx, Microsoft IIS.
+Apache*
+Base de datos
+MySQL, PostgreSQL, MongoDB, Firebase, SQLite.
+MySQL
+Sistema gestor de base de datos
+MySQLWorkbench, PHPMyAdmin, Access, Oracle SQL, MongoDB Atlas.
+MySQL Workbench
+Servicios de APIs
+REST, GraphQL, SOAP o APIs concretas
+
+
+
+
+
+
 <h2><b>Bibliografia</b></h2>
 <section id="Bibliografia">
 <a href="https://cookieclicker.com/">Cookie clicker</a><br>
