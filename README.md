@@ -288,7 +288,6 @@ Copias de seguridad: Zarek
 <h2><b>Arquitectura del sistema</b></h2>
 
 <br>Tecnología o framework 
-<br>
 <br>Componente de sistema
 <br><b>Hardware</b>
 <br>Tecnología o framework
@@ -298,43 +297,36 @@ Copias de seguridad: Zarek
 
 Componente de sistema
 <br><b>Sistema operativo</b>
-<br>
 <br>Tecnología o framework
 <br>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.
 
 Componente de sistema
 <br><b>Interfaz de usuario (Frontend)</b>
-<br>
 <br>Tecnología o framework
 <br>Para la interfaz se utilizara html5 y CSS.
 
 Componente de sistema
 <br><b>Lógica de negocio (Backend)</b>
-<br>
 <br>Tecnología o framework
 <br>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.
 
 Componente de sistema
 <br><b>Servidor web </b>
-<br>
 <br>Tecnología o framework
 <br>Apache
 
 Componente de sistema
 <br><b>Base de datos </b>
-<br>
 <br>Tecnología o framework
 <br>Para la base de datos usaremos MySQL.
 
 Componente de sistema
 <br><b>Sistema gestor de base de datos </b>
-<br>
 <br>Tecnología o framework>
 <br>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench
 
 Componente de sistema
 <br>><b>Servicios> </b>
-<br>
 <br>Tecnología o framework
 <br>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench
 
