@@ -312,7 +312,7 @@ Copias de seguridad: Zarek
 <br><b>Para la base de datos usaremos MySQL.</b>
 
 <br><b>Sistema gestor de base de datos </b>
-<br>Tecnología o framework>
+<br>Tecnología o framework
 <br><b>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench </b>
 
 <br><b>Servicios> </b>
