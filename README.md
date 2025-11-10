@@ -201,6 +201,77 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <h2><b>Conclusiones</b></h2>
 
 
+<h2><b>Funcionalidades</b></h2>
+
+ID
+Prioridad
+Objetivo
+Funcionalidad
+Fecha Entrega
+Estado
+ID1
+Media
+Registrar usuarios….
+Deberá crearse un sistema de registro de usuarios y posterior login que guarde información individual del usuario (ldap)
+20/02/2026
+Pendiente
+ID2
+Media
+Hacer el codigo del juego
+
+
+
+
+Pendiente
+ID3
+Media
+Diseño gráfico
+
+
+
+
+Pendiente
+ID4
+Media
+Front End
+
+
+
+
+Pendiente
+ID5
+Alta
+Copias de seguridad
+
+
+
+
+Pendiente
+ID6
+Alta
+Enlazar los servidores con la página web
+
+
+
+
+Pendiente
+
+
+Donde:
+ID: número asignado de tarea
+
+Prioridad: Prioridad que se le da a la tarea, puede ser Baja, Media o Alta. Ver esquema de Gestión de Proyecto.
+
+Requisito: Narrativa de cliente que describe en que consiste el requerimiento de proyecto.
+
+Funcionalidad: La funcionalidad de la app que va a cumplir con el objetivo de requisito previamente descrito.
+
+Disparador: evento u objeto (gráfico o no) que va a hacer que se realice la función descrita.
+
+Fecha: aproximada de entrega
+
+Estado: Activo, pendiente o cancelado.
+
 
 <h2><b>Bibliografia</b></h2>
 <section id="Bibliografia">
