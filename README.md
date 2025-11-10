@@ -219,15 +219,10 @@ ID2
 Media
 Hacer el codigo del juego
 
-
-
-
 Pendiente
 ID3
 Media
 Diseño gráfico
-
-
 
 
 Pendiente
@@ -236,14 +231,10 @@ Media
 Front End
 
 
-
-
 Pendiente
 ID5
 Alta
 Copias de seguridad
-
-
 
 
 Pendiente
@@ -251,11 +242,7 @@ ID6
 Alta
 Enlazar los servidores con la página web
 
-
-
-
 Pendiente
-
 
 Donde:
 ID: número asignado de tarea
