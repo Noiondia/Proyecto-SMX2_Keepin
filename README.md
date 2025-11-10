@@ -297,19 +297,19 @@ Copias de seguridad: Zarek
 
 
 Componente de sistema
-<br><b>Sistema operativo </b>
+<br><b>Sistema operativo</b>
 <br>
 <br>Tecnología o framework
 <br>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.
 
 Componente de sistema
-<br><b>Interfaz de usuario (Frontend) </b>
+<br><b>Interfaz de usuario (Frontend)</b>
 <br>
 <br>Tecnología o framework
 <br>Para la interfaz se utilizara html5 y CSS.
 
 Componente de sistema
-<br><b>Lógica de negocio (Backend) </b>
+<br><b>Lógica de negocio (Backend)</b>
 <br>
 <br>Tecnología o framework
 <br>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.
