@@ -309,7 +309,12 @@ Copias de seguridad: Zarek
 <br><b>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench </b>
 
 <br><b>Servicios> </b>
-<br><b> No tenemos ni idea </b>
+<br>
+En total vamos a usar 4 maquinas virtuales<br>
+1 Para DNS y DHCP<br>
+1 Para Apache<br>
+1 Para MySQL<br>
+1 Para TrueNAS<br>
 
 <h2><b>Bibliografia</b></h2>
 <section id="Bibliografia">
