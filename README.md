@@ -323,3 +323,5 @@ En total vamos a usar 4 maquinas virtuales<br>
 <a href="https://cookieclicker.com/">Cookie clicker</a><br>
 <a href="https://chatgpt.com/">Chat GPT</a><br>
 <a href="https://gist.github.com/dasdo/9ff71c5c0efa037441b6">Comandos de github</a><br>
+<a href="https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365">Microsoft Visio</a>
+<a href="https://www.canva.com/templates">Canva</a>
