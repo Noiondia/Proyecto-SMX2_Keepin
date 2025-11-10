@@ -256,6 +256,35 @@ Fecha: aproximada de entrega
 Estado: Activo, pendiente o cancelado.
 
 
+
+<h2><b>Listado de tareas</b></h2>
+Las tareas que tenemos que hacer serian Base de datos, código del juego, diseño gráfico, front end, copias de seguridad, enlazar los servidores con la página web.
+
+<br> Para eso hemos echo esta lista con todas las subtareas y las personas responsables.
+Base de datos: Gerard
+Hacer la base de datos en Mysql
+Hacer el servidor donde se guarda toda la información.
+
+Código del juego: Hugo
+Aprender python
+Hacer el código.
+
+Diseño gráfico:Zarek
+Hacer los sprites en ASCII
+
+Front End: Hugo
+Hacer el diseño de la página web
+Elegir paleta de colores.
+
+Copias de seguridad: Zarek
+Hacer el ubuntu server
+Tener las carpetas para las copias de seguridad
+
+
+Enlazar los servidores con la página web: Gerard
+Hacer la página web
+Hacer los servidores con los datos
+
 <h2><b>Bibliografia</b></h2>
 <section id="Bibliografia">
 <a href="https://cookieclicker.com/">Cookie clicker</a><br>
