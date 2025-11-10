@@ -307,7 +307,9 @@ Copias de seguridad: Zarek
 
 <br><b>Sistema gestor de base de datos </b>
 <br><b>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench </b>
-
+<h3>Diagrama de la red</h3>
+<img width="1767" height="957" alt="image" src="https://github.com/user-attachments/assets/4cd414e3-2a01-4a66-885e-ece73a0dee94" />
+Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router
 <br><b>Servicios> </b>
 <br>
 En total vamos a usar 4 maquinas virtuales<br>
