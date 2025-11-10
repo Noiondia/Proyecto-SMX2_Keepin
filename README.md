@@ -297,24 +297,24 @@ Modelo, procesador, RAM, espacio en disco, adaptadores de red
 
 Sistema operativo
 ¿Qué SO? ¿libre o propietario?
-Windows y Ubuntu
-Interfaz de usuario (Frontend)
-HTML, CSS, JavaScript, bibliotecas y frameworks como React, Angular o Vue.js.
-HTML y CSS
-Lógica de negocio (Backend)
-Lenguajes de programación como PHP, Python, Java, Node.js, frameworks como Django, Flask, Spring (Java), Express (Node.js).
-Python 3.14
-Servidor web
-Apache, Nginx, Microsoft IIS.
-Apache*
-Base de datos
-MySQL, PostgreSQL, MongoDB, Firebase, SQLite.
-MySQL
-Sistema gestor de base de datos
-MySQLWorkbench, PHPMyAdmin, Access, Oracle SQL, MongoDB Atlas.
-MySQL Workbench
-Servicios de APIs
-REST, GraphQL, SOAP o APIs concretas
+<br>Windows y Ubuntu
+<br>Interfaz de usuario (Frontend)
+<br>HTML, CSS, JavaScript, bibliotecas y frameworks como React, Angular o Vue.js.
+<br>HTML y CSS
+<br>Lógica de negocio (Backend)
+<br>Lenguajes de programación como PHP, Python, Java, Node.js, frameworks como Django, Flask, Spring (Java), Express (Node.js).
+<br>Python 3.14
+<br>Servidor web
+<br>Apache, Nginx, Microsoft IIS.
+<br>Apache*
+<br>Base de datos
+<br>MySQL, PostgreSQL, MongoDB, Firebase, SQLite.
+<br>MySQL
+<br>Sistema gestor de base de datos
+<br>MySQLWorkbench, PHPMyAdmin, Access, Oracle SQL, MongoDB Atlas.
+<br>MySQL Workbench
+<br>Servicios de APIs
+<br>REST, GraphQL, SOAP o APIs concretas
 
 
 
