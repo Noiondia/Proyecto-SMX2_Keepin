@@ -287,56 +287,55 @@ Copias de seguridad: Zarek
 
 <h2><b>Arquitectura del sistema</b></h2>
 
-Componente de sistema
 <br>Tecnología o framework 
 <br>
-<b>Componente de sistema</b>
-<br>Hardware
-<br><b>Tecnología o framework </b>
+<b>Componente de sistema
+<br><b>Hardware </b>
+<br>Tecnología o framework
 <br>Modelo del procesador, RAM, espacio en disco, adaptadores de red
 
 
 
 Componente de sistema
-<br>Sistema operativo
+<br><b>Sistema operativo </b>
 <br>
-<br><b>Tecnología o framework </b>
+<br>Tecnología o framework
 <br>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.
 
 Componente de sistema
-<br>Interfaz de usuario (Frontend)
+<br><b>Interfaz de usuario (Frontend) </b>
 <br>
-<br><b>Tecnología o framework </b>
+<br>Tecnología o framework
 <br>Para la interfaz se utilizara html5 y CSS.
 
 Componente de sistema
-<br>Lógica de negocio (Backend)
+<br><b>Lógica de negocio (Backend) </b>
 <br>
-<br><b>Tecnología o framework </b>
+<br>Tecnología o framework
 <br>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.
 
 Componente de sistema
-<br>Servidor web
+<br><b>Servidor web </b>
 <br>
-<br><b>Tecnología o framework </b>
+<br>Tecnología o framework
 <br>Apache
 
 Componente de sistema
-<br>Base de datos
+<br><b>Base de datos </b>
 <br>
-<br><b>Tecnología o framework </b>
+<br>Tecnología o framework
 <br>Para la base de datos usaremos MySQL.
 
 Componente de sistema
-<br>Sistema gestor de base de datos
+<br><b>Sistema gestor de base de datos </b>
 <br>
-<br><b>Tecnología o framework </b>
+<br>Tecnología o framework>
 <br>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench
 
 Componente de sistema
-<br>Servicios
+<br>><b>Servicios> </b>
 <br>
-<br><b>Tecnología o framework </b>
+<br>Tecnología o framework
 <br>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench
 
 <h2><b>Bibliografia</b></h2>
