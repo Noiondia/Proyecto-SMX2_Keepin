@@ -289,15 +289,23 @@ Copias de seguridad: Zarek
 
 Componente de sistema
 Tecnología o framework 
-Versión
 <br>
 <b>Componente de sistema</b>
 <br>Hardware
 <br><b>Tecnología o framework </b>
 <br>Modelo del procesador, RAM, espacio en disco, adaptadores de red
 
+
+
 Componente de sistema
 Sistema operativo
+<br>
+<br><b>Tecnología o framework </b>
+<br>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.
+
+
+Componente de sistema
+
 ¿Qué SO? ¿libre o propietario?
 <br>Windows y Ubuntu
 <br>Interfaz de usuario (Frontend)
