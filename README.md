@@ -292,16 +292,22 @@ Copias de seguridad: Zarek
 
 <br><b>Sistema operativo</b>
 <br><b>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.</b>
+
 <br><b>Interfaz de usuario (Frontend)</b>
 <br><b>Para la interfaz se utilizara html5 y CSS.</b>
+
 <br><b>Lógica de negocio (Backend)</b>
 <br><b>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.</b>
+
 <br><b>Servidor web </b>
 <br><b>Apache</b>
+
 <br><b>Base de datos </b>
 <br><b>Para la base de datos usaremos MySQL.</b>
+
 <br><b>Sistema gestor de base de datos </b>
 <br><b>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench </b>
+
 <br><b>Servicios> </b>
 <br><b> No tenemos ni idea </b>
 
