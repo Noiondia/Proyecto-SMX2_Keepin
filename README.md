@@ -261,29 +261,29 @@ Estado: Activo, pendiente o cancelado.
 Las tareas que tenemos que hacer serian Base de datos, código del juego, diseño gráfico, front end, copias de seguridad, enlazar los servidores con la página web.
 
 <br> Para eso hemos echo esta lista con todas las subtareas y las personas responsables.
-Base de datos: Gerard
-Hacer la base de datos en Mysql
-Hacer el servidor donde se guarda toda la información.
+<br>Base de datos: Gerard
+<br>Hacer la base de datos en Mysql
+<br>Hacer el servidor donde se guarda toda la información.
 
 Código del juego: Hugo
-Aprender python
-Hacer el código.
+<br>Aprender python
+<br>Hacer el código.
 
 Diseño gráfico:Zarek
-Hacer los sprites en ASCII
+<br>Hacer los sprites en ASCII
 
 Front End: Hugo
-Hacer el diseño de la página web
-Elegir paleta de colores.
+<br>Hacer el diseño de la página web
+<br>Elegir paleta de colores.
 
 Copias de seguridad: Zarek
-Hacer el ubuntu server
-Tener las carpetas para las copias de seguridad
+<br>Hacer el ubuntu server
+<br>Tener las carpetas para las copias de seguridad
 
 
-Enlazar los servidores con la página web: Gerard
-Hacer la página web
-Hacer los servidores con los datos
+<br>Enlazar los servidores con la página web: Gerard
+<br>Hacer la página web
+<br>Hacer los servidores con los datos
 
 <h2><b>Bibliografia</b></h2>
 <section id="Bibliografia">
