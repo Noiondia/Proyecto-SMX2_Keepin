@@ -290,7 +290,7 @@ Copias de seguridad: Zarek
 <br>Tecnología o framework 
 <br>
 <b>Componente de sistema
-<br><b>Hardware </b>
+<br><b>Hardware</b>
 <br>Tecnología o framework
 <br>Modelo del procesador, RAM, espacio en disco, adaptadores de red
 
