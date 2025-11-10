@@ -303,8 +303,41 @@ Sistema operativo
 <br><b>Tecnología o framework </b>
 <br>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.
 
+Componente de sistema
+Interfaz de usuario (Frontend)
+<br>
+<br><b>Tecnología o framework </b>
+<br>Para la interfaz se utilizara html5 y CSS.
 
+Componente de sistema
+Lógica de negocio (Backend)
+<br>
+<br><b>Tecnología o framework </b>
+<br>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.
 
+Componente de sistema
+Servidor web
+<br>
+<br><b>Tecnología o framework </b>
+<br>Apache
+
+Componente de sistema
+Base de datos
+<br>
+<br><b>Tecnología o framework </b>
+<br>Para la base de datos usaremos MySQL.
+
+Componente de sistema
+Sistema gestor de base de datos
+<br>
+<br><b>Tecnología o framework </b>
+<br>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench
+
+Componente de sistema
+Servicios
+<br>
+<br><b>Tecnología o framework </b>
+<br>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench
 
 <h2><b>Bibliografia</b></h2>
 <section id="Bibliografia">
