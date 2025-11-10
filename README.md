@@ -289,12 +289,14 @@ Copias de seguridad: Zarek
 
 Componente de sistema
 Tecnología o framework 
-(elige de la lista o añade el que vayas a utilizar)
 Versión
+
+<b>Componente de sistema</b>
 Hardware
-Modelo, procesador, RAM, espacio en disco, adaptadores de red
+<b>Tecnología o framework </b>
+<br>Modelo del procesador, RAM, espacio en disco, adaptadores de red
 
-
+Componente de sistema
 Sistema operativo
 ¿Qué SO? ¿libre o propietario?
 <br>Windows y Ubuntu
