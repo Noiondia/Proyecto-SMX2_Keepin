@@ -289,35 +289,35 @@ Copias de seguridad: Zarek
 
 <br><b>Hardware</b>
 <br>Tecnología o framework
-<br>Modelo del procesador, RAM, espacio en disco, adaptadores de red
+<br><b>Modelo del procesador, RAM, espacio en disco, adaptadores de red</b>
 
 <br><b>Sistema operativo</b>
 <br>Tecnología o framework
-<br>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.
+<br><b>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.</b>
 
 <br><b>Interfaz de usuario (Frontend)</b>
 <br>Tecnología o framework
-<br>Para la interfaz se utilizara html5 y CSS.
+<br><b>Para la interfaz se utilizara html5 y CSS.</b>
 
 <br><b>Lógica de negocio (Backend)</b>
 <br>Tecnología o framework
-<br>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.
+<br><b>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.</b>
 
 <br><b>Servidor web </b>
 <br>Tecnología o framework
-<br>Apache
+<br><b>Apache</b>
 
 <br><b>Base de datos </b>
 <br>Tecnología o framework
-<br>Para la base de datos usaremos MySQL.
+<br><b>Para la base de datos usaremos MySQL.</b>
 
 <br><b>Sistema gestor de base de datos </b>
 <br>Tecnología o framework>
-<br>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench
+<br><b>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench </b>
 
-<br>><b>Servicios> </b>
+<br><b>Servicios> </b>
 <br>Tecnología o framework
-<br>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench
+<br><b> No tenemos ni idea </b>
 
 <h2><b>Bibliografia</b></h2>
 <section id="Bibliografia">
