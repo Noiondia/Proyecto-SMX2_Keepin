@@ -293,7 +293,7 @@ Versión
 <br>
 <b>Componente de sistema</b>
 <br>Hardware
-<b>Tecnología o framework </b>
+<br><b>Tecnología o framework </b>
 <br>Modelo del procesador, RAM, espacio en disco, adaptadores de red
 
 Componente de sistema
