@@ -216,33 +216,34 @@ Registrar usuarios.
 Deberá crearse un sistema de registro de usuarios y posterior login que guarde información individual del usuario (ldap)
 Pendiente
 
+
 <br>ID2
 Media
 Hacer el codigo del juego
-
 Pendiente
+
+
 ID3
 Media
 Diseño gráfico
-
-
 Pendiente
+
+
 ID4
 Media
 Front End
-
-
 Pendiente
+
+
 ID5
 Alta
 Copias de seguridad
-
-
 Pendiente
+
+
 ID6
 Alta
 Enlazar los servidores con la página web
-
 Pendiente
 
 Donde:
