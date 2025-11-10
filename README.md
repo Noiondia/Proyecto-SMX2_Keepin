@@ -209,13 +209,14 @@ Objetivo
 Funcionalidad
 Fecha Entrega
 Estado
-ID1
+
+<br>ID1
 Media
-Registrar usuarios….
+Registrar usuarios.
 Deberá crearse un sistema de registro de usuarios y posterior login que guarde información individual del usuario (ldap)
-20/02/2026
 Pendiente
-ID2
+
+<br>ID2
 Media
 Hacer el codigo del juego
 
