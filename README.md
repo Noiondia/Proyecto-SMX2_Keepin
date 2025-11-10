@@ -203,48 +203,41 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 
 <h2><b>Funcionalidades</b></h2>
 
-ID
-Prioridad
-Objetivo
-Funcionalidad
-Fecha Entrega
-Estado
-
 <br>ID1
-Media
-Registrar usuarios.
-Deberá crearse un sistema de registro de usuarios y posterior login que guarde información individual del usuario (ldap)
-Pendiente
+<br>Media
+<br>Registrar usuarios.
+<br>Deberá crearse un sistema de registro de usuarios y posterior login que guarde información individual del usuario (ldap)
+<br>Pendiente
 
 
 <br>ID2
-Media
-Hacer el codigo del juego
-Pendiente
+<br>Media
+<br>Hacer el codigo del juego
+<br>Pendiente
 
 
-ID3
-Media
-Diseño gráfico
-Pendiente
+<br>ID3
+<br>Media
+<br>Diseño gráfico
+<br>Pendiente
 
 
-ID4
-Media
-Front End
-Pendiente
+<br>ID4
+<br>Media
+<br>Front End
+<br>Pendiente
 
 
-ID5
-Alta
-Copias de seguridad
-Pendiente
+<br>ID5
+<br>Alta
+<br>Copias de seguridad
+<br>Pendiente
 
 
-ID6
-Alta
-Enlazar los servidores con la página web
-Pendiente
+<br>ID6
+<br>Alta
+<br>Enlazar los servidores con la página web
+<br>Pendiente
 
 Donde:
 ID: número asignado de tarea
