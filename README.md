@@ -304,31 +304,6 @@ Sistema operativo
 <br>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.
 
 
-Componente de sistema
-
-¿Qué SO? ¿libre o propietario?
-<br>Windows y Ubuntu
-<br>Interfaz de usuario (Frontend)
-<br>HTML, CSS, JavaScript, bibliotecas y frameworks como React, Angular o Vue.js.
-<br>HTML y CSS
-<br>Lógica de negocio (Backend)
-<br>Lenguajes de programación como PHP, Python, Java, Node.js, frameworks como Django, Flask, Spring (Java), Express (Node.js).
-<br>Python 3.14
-<br>Servidor web
-<br>Apache, Nginx, Microsoft IIS.
-<br>Apache*
-<br>Base de datos
-<br>MySQL, PostgreSQL, MongoDB, Firebase, SQLite.
-<br>MySQL
-<br>Sistema gestor de base de datos
-<br>MySQLWorkbench, PHPMyAdmin, Access, Oracle SQL, MongoDB Atlas.
-<br>MySQL Workbench
-<br>Servicios de APIs
-<br>REST, GraphQL, SOAP o APIs concretas
-
-
-
-
 
 
 <h2><b>Bibliografia</b></h2>
