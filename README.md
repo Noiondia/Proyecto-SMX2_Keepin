@@ -65,6 +65,7 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 <br>Los conocimientos que más pondremos en práctica realizados durante el curso serán los aprendidos en aplicaciones web y en la optativa de programación, pues será lo que más nos ayude a poder programar el juego y crear la página web, aunque también utilizaremos elementos de redes para copias de seguridad y los servidores.
 <br>
 <br>Necesitaremos conocimientos básicos de Python para programar el juego, HTML y CSS para la página web y varias máquinas virtuales para Apache, MySQL, TrueNAS y DHCP y DNS.
+<br>
 <br>A continuación adjuntamos un vídeo que nos ha ayudado a aprender de Python para la programación del juego.
 https://www.youtube.com/watch?v=_6N18g3ewnw
 </section>
