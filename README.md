@@ -45,7 +45,7 @@ Aunque al contrario que Cookie Clicker, decidimos hacer el diseño gráfico en A
 <h2><b>Introducción</b></h2>
 <section id="Introducción">
 
-Será un juego sencillo, un clicker, donde el objetivo es hacer click a jorge y ganar puntos con esto, puntos con los que se podrán comprar mejoras y desbloquear personajes, montando un equipo con efectos únicos que nos harán ganar más y más puntos cada vez.
+Será un juego sencillo, un clicker, donde el objetivo es hacer click a Jorge y ganar puntos con esto, puntos con los que se podrán comprar mejoras y desbloquear personajes, montando un equipo con efectos únicos que nos harán ganar más y más puntos cada vez.
 El objetivo será conseguir la mayor cantidad de puntos posibles, utilizando las mejoras desbloqueadas y los personajes en el equipo, para lo que habrá un guardado de partida en el que se utilizará el correo electrónico.
 Utilizamos como referencia un juego llamado cookie clicker, ya que tiene un objetivo parecido al de nuestro juego, hacer click a un botón, ganar puntos y comprar mejoras para progresar en el juego.
 
@@ -55,7 +55,7 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 <h2><b>Briefing de ideas</b></h2>
 <section id="Briefing">
 <br>
-<b>Nuestra idea es hacer un juego clicker, con gráficos en ASCII y todo en una página web como el juego Cookie Clicker</b>
+<b>Nuestra idea es hacer un juego clicker, con gráficos en ASCII y todo en una página web como el juego Cookie Clicker.</b>
 <br>Somos 3 alumnos a los que nos apasionan los videojuegos, el hecho de jugarlos y la idea de poder llegar a hacer una propio, por lo que hemos visto este proyecto como una gran oportunidad para hacer eso realidad, incluso si es uno relativamente simple.
 <br>
 <br>Queremos que el juego sea funcional y divertido, cuanto más lo alarguemos más trabajo nos dará, por lo que lo más probable es que nos quedemos con poder brindar algunas horas de entretenimiento, bastantes mejoras y personajes con efectos únicos.
@@ -76,13 +76,13 @@ El <em>"Mockup"</em> es el diseño de nuestra página web, en este canva se ve c
 La tipografía que hemos escogido, (times new roman) creemos que es la que más se adapta al ASCII, que es en lo que nos hemos basado para crear el diseño de la página.
 La tipografia del Mockup se cambiara a futuro. 
 En el mockup, la primera página que sale es la página principal, cuyo ÚNICO objetivo es que el usuario cree su cuenta o inicie sesión y entre al juego.<br>
-<br>Dentro del juego hay varias pestañas pero todas estan enfocadas en la misma, las tres paginas de dentro del juego, son variaciones de la misma, no  seràn diferentes pestañas, en caso de la pagina de quipación de personajes serà un pop up que aparecerà en la misma pagina. En verdad, la pagina web entera, solo tendrà dos paginas, el inicio y el juego<br>
+<br>Dentro del juego hay varias pestañas pero todas estan enfocadas en la misma, las tres paginas de dentro del juego, son variaciones de la misma, no  seràn diferentes pestañas, en caso de la pagina de quipación de personajes serà un pop up que aparecerà en la misma pagina. En verdad, la pagina web entera, solo tendrà dos paginas, el inicio y el juego.<br>
 <img width="1134" height="637" alt="image" src="https://github.com/user-attachments/assets/d1bcce97-39d3-4eee-9052-6b7afaf9a6b8" />
 
 
 
 <img width="1133" height="636" alt="image" src="https://github.com/user-attachments/assets/be5c4eb5-51b1-495b-a34f-0a38a0234507" />
-Esta imagen es dentro del juego, todas las otras pestañas de dentro del juego son canvios o pop ups dentro de esta.
+Esta imágen es de dentro del juego, todas las otras pestañas del juego son cambios o pop ups dentro de esta.
 <br>
 
 
@@ -90,20 +90,20 @@ Esta imagen es dentro del juego, todas las otras pestañas de dentro del juego s
 
 <b>Equilibrio del diseño, colores, estructura</b>
 
-El diseño de la pagina web es original nuestro peró en cambio el juego si que nos inspiramos en el juego cookie cliker.
-Para la paleta de colores elegimos usar blanco y negro ya que es el que se utiliza para ASCII
+El diseño de la pagina web es original nuestro, pero en cambio para el juego sí que nos inspiramos en el juego cookie cliker.
+Para la paleta de colores decidimos usar blanco y negro ya que es el que se utiliza más comunmente para ASCII.
 
 <b>Colores y tipografía</b>
-<br>La tipografia que esta en el mockup es temporal ya que la que queremos usar es una llamada Matrix.ttf
+<br>La tipografía que está en el mockup es temporal, ya que la que queremos usar es una llamada Matrix.ttf.
 
 <b>Componentes de interfaz</b> <br>
-Todos los botones y componentes de navegacion estan listados y descritos en el mapa de navegabilidad
+Todos los botones y componentes de navegación están listados y descritos en el mapa de navegabilidad.
 
-Esto es el link directo al canva donde esta montado el mockup
+Esto es el link directo al canva donde está montado el mockup.
 
 <a href="https://www.canva.com/design/DAG1F2ysP9o/HVIxXKCW6WBMsEc9UaL6FA/view?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4815d8178d">Mockup</a> <br>
 
-Y este es el mapa de navegación, que explica cada botón clicable que hace y a qué parte de la página lleva <br>
+Y este es el mapa de navegación, que explica cada botón clicable, qué hace y a qué parte de la página lleva.<br>
 
 <a href="https://www.canva.com/design/DAG18031_jA/xM7zD7MZ9NcQ2PMzfyEBWA/view?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h578cf79f8b">Mapa de navegación</a>
 </section>
@@ -113,11 +113,10 @@ Y este es el mapa de navegación, que explica cada botón clicable que hace y a 
 <h2><b></b>Identificación de entidades principales</h2></b>
 <section id="Identificación de entidades principales">
 -Usuario 
-<br>El nombre de usuario es imprescindible para que el usuario pueda registrarse
-<br>-Contraseña: Para que una cuenta sea segura, necesita una contraseña, así que se va a necesitar una para crear la cuenta
-<br>-Correo electrónico: el correo electrónico es importante por si el usuario se olvida de su contraseña, para poder recuperarla sin tener que crear otra cuenta
-<br>-Partida: Consta de todos los elementos importantes que se tienen que guardar sobre la partida de cada jugador
-<br>Puntos actuales de cada jugador: Esto forma parte del progreso de cada jugador, son los puntos que te da al hacer clic a Jorge
+<br>-Contraseña: Para que una cuenta sea segura, necesita una contraseña, así que se va a necesitar una para crear la cuenta.
+<br>-Correo electrónico: El correo electrónico hará el funcionamiento de nombre de usuario, guardando la información de cada jugador.
+<br>-Partida: Consta de todos los elementos importantes que se tienen que guardar sobre la partida de cada jugador.
+<br>Puntos actuales de cada jugador: Esto forma parte del progreso de cada jugador, son los puntos que te da al hacer clic a Jorge.
 
 -Mejoras
 <br>Nombre de la mejora  	-Cada mejora tiene un nombre para identificarla
