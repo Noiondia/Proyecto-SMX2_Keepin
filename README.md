@@ -27,8 +27,6 @@ Funcionalidades
 
 Listado de tareas
 
-Abstract
-
 Conclusiones
 
 <a href="#Bibliografia">Bibliografía</a>
@@ -299,7 +297,6 @@ Copias de seguridad: Zarek
 <br>Enlazar los servidores con la página web: Gerard
 <br>Hacer la página web
 <br>Hacer los servidores con los datos
-
 <br>
 <h2><b>Conclusiones</b></h2>
 <br>
