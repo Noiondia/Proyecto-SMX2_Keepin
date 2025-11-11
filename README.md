@@ -52,6 +52,26 @@ Utilizamos como referencia un juego llamado cookie clicker que tiene un objetivo
 Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, agregaremos más contenido a la pagina.
 </section>
 
+<h2><b>Briefing de ideas</b></h2>
+<section id="Briefing">
+Idea seleccionada
+
+<b>Nuestra idea fue hacer un juego clicker y con el diseño grafico de CSS todo en una pagina web como el juego Cookie clicker</b>
+<b><br>Justificar la elección de esa idea</b>
+<br>Como 3 alumnos que nos gusta mucho jugar a videojuegos elegimos hacer uno.
+<b><br>Hasta donde quiero llegar con el proyecto</b>
+<br>Nuestra idea seria hacer un juego funcional que te entretenga durante unas horas haciendo click y mejorando la produccion.
+<b><br>A quién va dirigido este proyecto </b>
+<br>Va dirigido a toda persona que este aburrida pero no quiera descargarse juegos sino solo jugar en una pagina web.
+<b><br>Módulos del ciclo que tengan que ver con el proyecto</b>
+<br>Aplicaciones web, Programacion (Optativa)
+<b><br>Materiales necesarios </b>
+<br>Conocimiento de programacion sencilla y saber hacer cosas con CSS
+<b><br>Recursos (Bibliografía, webgrafía, vídeos, cursos o demás multimedia)</b>
+<br>Videos de youtube.
+https://www.youtube.com/watch?v=_6N18g3ewnw
+</section>
+
 <h2><b></b>Identificación de entidades principales</h2></b>
 <section id="Identificación de entidades principales">
 -Usuario 
@@ -127,26 +147,6 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 <br>No tenemos claro cómo vamos a listar las mejoras y los personajes de cada jugador, si por nombre, identificador, o cualquier otra cosa.
 <br>No tenemos claro algunos de los tipos de datos de algunos atributos, como las imagenes de los personajes, o el efecto de personajes y mejoras.
 
-</section>
-
-<h2><b>Briefing de ideas</b></h2>
-<section id="Briefing">
-Idea seleccionada
-
-<b>Nuestra idea fue hacer un juego clicker y con el diseño grafico de CSS todo en una pagina web como el juego Cookie clicker</b>
-<b><br>Justificar la elección de esa idea</b>
-<br>Como 3 alumnos que nos gusta mucho jugar a videojuegos elegimos hacer uno.
-<b><br>Hasta donde quiero llegar con el proyecto</b>
-<br>Nuestra idea seria hacer un juego funcional que te entretenga durante unas horas haciendo click y mejorando la produccion.
-<b><br>A quién va dirigido este proyecto </b>
-<br>Va dirigido a toda persona que este aburrida pero no quiera descargarse juegos sino solo jugar en una pagina web.
-<b><br>Módulos del ciclo que tengan que ver con el proyecto</b>
-<br>Aplicaciones web, Programacion (Optativa)
-<b><br>Materiales necesarios </b>
-<br>Conocimiento de programacion sencilla y saber hacer cosas con CSS
-<b><br>Recursos (Bibliografía, webgrafía, vídeos, cursos o demás multimedia)</b>
-<br>Videos de youtube.
-https://www.youtube.com/watch?v=_6N18g3ewnw
 </section>
 
 <h2><b>Mockup</b></h2>
