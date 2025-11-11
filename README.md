@@ -23,6 +23,10 @@ Tecnologías a utilizar
 
 Diagrama de la red
 
+Funcionalidades
+
+Listado de tareas
+
 Abstract
 
 Conclusiones
