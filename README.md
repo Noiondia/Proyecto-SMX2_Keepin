@@ -237,6 +237,7 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 Las tareas que tenemos que hacer serian Base de datos, código del juego, diseño gráfico, front end, copias de seguridad, enlazar los servidores con la página web.
 
 <br> Para eso hemos echo esta lista con todas las subtareas y las personas responsables.
+<br>
 <br>Base de datos: Gerard
 <br>Hacer la base de datos en Mysql
 <br>Hacer el servidor donde se guarda toda la información.
