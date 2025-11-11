@@ -299,6 +299,7 @@ Copias de seguridad: Zarek
 <br>Hacer los servidores con los datos
 <br>
 <h2><b>Conclusiones</b></h2>
+Ha sido muy entretenido e interesante y sobre todo hemos aprendido mucho.
 <br>
 <h2><b>Bibliografia</b></h2>
 <section id="Bibliografia">
