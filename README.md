@@ -19,7 +19,7 @@
 
 <a href="#Arquitectura del sofware">Arquitectura del sofware</a>
 
-Tecnologías a utilizar
+<a href="#Tecnologías a utilizar">Tecnologías a utilizar
 
 Diagrama de la red
 
