@@ -21,13 +21,13 @@
 
 <a href="#Tecnologías a utilizar">Tecnologías a utilizar
 
-Diagrama de la red
+<a href="#Diagrama de la red">Diagrama de la red
 
-Funcionalidades
+<a href="#Funcionalidades">Funcionalidades
 
-Listado de tareas
+<a href="#Listado de tareas">Listado de tareas
 
-Conclusiones
+<a href="#Conclusiones">Conclusiones
 
 <a href="#Bibliografia">Bibliografía</a>
 
@@ -216,7 +216,7 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <br>
 </section>
 <h3>Diagrama de la red</h3>
-
+<section id="Diagrama de la red">
 <br>Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router<br>
 <br><b>Servicios </b>
 <br>
@@ -231,7 +231,7 @@ En total vamos a usar 4 maquinas virtuales<br>
 
 
 <h2><b>Funcionalidades</b></h2>
-
+<section id="Funcionalidades">
 <br>ID1
 <br>Prioridad: Media
 <br>Objetivo: Registrar usuarios.
@@ -268,10 +268,11 @@ En total vamos a usar 4 maquinas virtuales<br>
 <br>Objetivo: Enlazar los servidores con la página web
 <br>Estado: Pendiente
 <br>Fecha Entrega: ----
-
+</section>
 
 
 <h2><b>Listado de tareas</b></h2>
+<section id="Listado de tareas">
 Las tareas que tenemos que hacer serían Base de datos, código del juego, diseño gráfico, front end, copias de seguridad, enlazar los servidores con la página web.
 <br>
 <br> Para eso hemos hecho esta lista con todas las subtareas y las personas responsables.
@@ -300,9 +301,12 @@ Copias de seguridad: Zarek
 <br>Hacer la página web
 <br>Hacer los servidores con los datos
 <br>
+</section>
 <h2><b>Conclusiones</b></h2>
+<section id="Conclusiones">
 Ha sido muy entretenido e interesante y sobre todo hemos aprendido mucho.
 <br>
+</section>
 <h2><b>Bibliografia</b></h2>
 <section id="Bibliografia">
 <a href="https://cookieclicker.com/">Cookie clicker</a><br>
