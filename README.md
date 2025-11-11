@@ -72,6 +72,46 @@ Idea seleccionada
 https://www.youtube.com/watch?v=_6N18g3ewnw
 </section>
 
+<h2><b>Mockup</b></h2>
+<section id="Mockup">
+El <em>"Mockup"</em> es el diseño de nuestra página web, en este canva se ve cada pestaña a la que se puede acceder.
+La tipografía que hemos escogido, (times new roman) creemos que es la que más se adapta al ASCII, que es en lo que nos hemos basado para crear el diseño de la página.
+La tipografia del Mockup se cambiara a futuro. 
+En el mockup, la primera página que sale es la página principal, cuyo ÚNICO objetivo es que el usuario cree su cuenta o inicie sesión y entre al juego.<br><br>
+<img width="1134" height="637" alt="image" src="https://github.com/user-attachments/assets/d1bcce97-39d3-4eee-9052-6b7afaf9a6b8" />
+
+
+<br>Dentro del juego hay varias pestañas pero todas estan enfocadas en la misma, las tres paginas de dentro del juego, son variaciones de la misma, no  seràn diferentes pestañas, en caso de la pagina de quipación de personajes serà un pop up que aparecerà en la misma pagina. En verdad, la pagina web entera, solo tendrà dos paginas, el inicio y el juego<br>
+
+<img width="1133" height="636" alt="image" src="https://github.com/user-attachments/assets/be5c4eb5-51b1-495b-a34f-0a38a0234507" />
+Esta imagen es dentro del juego, todas las otras pestañas de dentro del juego son canvios o pop ups dentro de esta.
+<br>
+
+
+
+
+<b>Equilibrio del diseño, colores, estructura</b>
+
+El diseño de la pagina web es original nuestro peró en cambio el juego si que nos inspiramos en el juego cookie cliker.
+Para la paleta de colores elegimos usar blanco y negro ya que es el que se utiliza para ASCII
+
+<b>Colores y tipografía</b>
+<br>La tipografia que esta en el mockup es temporal ya que la que queremos usar es una llamada Matrix.ttf
+
+<b>Componentes de interfaz</b> <br>
+Todos los botones y componentes de navegacion estan listados y descritos en el mapa de navegabilidad
+
+Esto es el link directo al canva donde esta montado el mockup
+
+<a href="https://www.canva.com/design/DAG1F2ysP9o/HVIxXKCW6WBMsEc9UaL6FA/view?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4815d8178d">Mockup</a> <br>
+
+Y este es el mapa de navegación, que explica cada botón clicable que hace y a qué parte de la página lleva <br>
+
+<a href="https://www.canva.com/design/DAG18031_jA/xM7zD7MZ9NcQ2PMzfyEBWA/view?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h578cf79f8b">Mapa de navegación</a>
+</section>
+
+<h2><b>Tecnologías a utilizar</b></h2>
+
 <h2><b></b>Identificación de entidades principales</h2></b>
 <section id="Identificación de entidades principales">
 -Usuario 
@@ -148,48 +188,6 @@ https://www.youtube.com/watch?v=_6N18g3ewnw
 <br>No tenemos claro algunos de los tipos de datos de algunos atributos, como las imagenes de los personajes, o el efecto de personajes y mejoras.
 
 </section>
-
-<h2><b>Mockup</b></h2>
-<section id="Mockup">
-El <em>"Mockup"</em> es el diseño de nuestra página web, en este canva se ve cada pestaña a la que se puede acceder.
-La tipografía que hemos escogido, (times new roman) creemos que es la que más se adapta al ASCII, que es en lo que nos hemos basado para crear el diseño de la página.
-La tipografia del Mockup se cambiara a futuro. 
-En el mockup, la primera página que sale es la página principal, cuyo ÚNICO objetivo es que el usuario cree su cuenta o inicie sesión y entre al juego.<br><br>
-<img width="1134" height="637" alt="image" src="https://github.com/user-attachments/assets/d1bcce97-39d3-4eee-9052-6b7afaf9a6b8" />
-
-
-<br>Dentro del juego hay varias pestañas pero todas estan enfocadas en la misma, las tres paginas de dentro del juego, son variaciones de la misma, no  seràn diferentes pestañas, en caso de la pagina de quipación de personajes serà un pop up que aparecerà en la misma pagina. En verdad, la pagina web entera, solo tendrà dos paginas, el inicio y el juego<br>
-
-<img width="1133" height="636" alt="image" src="https://github.com/user-attachments/assets/be5c4eb5-51b1-495b-a34f-0a38a0234507" />
-Esta imagen es dentro del juego, todas las otras pestañas de dentro del juego son canvios o pop ups dentro de esta.
-<br>
-
-
-
-
-<b>Equilibrio del diseño, colores, estructura</b>
-
-El diseño de la pagina web es original nuestro peró en cambio el juego si que nos inspiramos en el juego cookie cliker.
-Para la paleta de colores elegimos usar blanco y negro ya que es el que se utiliza para ASCII
-
-<b>Colores y tipografía</b>
-<br>La tipografia que esta en el mockup es temporal ya que la que queremos usar es una llamada Matrix.ttf
-
-<b>Componentes de interfaz</b> <br>
-Todos los botones y componentes de navegacion estan listados y descritos en el mapa de navegabilidad
-
-Esto es el link directo al canva donde esta montado el mockup
-
-<a href="https://www.canva.com/design/DAG1F2ysP9o/HVIxXKCW6WBMsEc9UaL6FA/view?utm_content=DAG1F2ysP9o&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4815d8178d">Mockup</a> <br>
-
-Y este es el mapa de navegación, que explica cada botón clicable que hace y a qué parte de la página lleva <br>
-
-<a href="https://www.canva.com/design/DAG18031_jA/xM7zD7MZ9NcQ2PMzfyEBWA/view?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h578cf79f8b">Mapa de navegación</a>
-</section>
-
-<h2><b>Tecnologías a utilizar</b></h2>
-
-
 
 
 <h2><b>Arquitectura del sofware</b></h2>
