@@ -191,7 +191,7 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <br>
 
 <h3>Diagrama de la red</h3>
-<br><img width="960" height="631" alt="image" src="https://github.com/user-attachments/assets/e3d6b1f8-640c-4233-a381-1c7ae5e98806" />
+
 <br>Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router<br>
 <br><b>Servicios </b>
 <br>
@@ -200,6 +200,7 @@ En total vamos a usar 4 maquinas virtuales<br>
 1 Para Apache<br>
 1 Para MySQL<br>
 1 Para TrueNAS<br>
+<br><img width="960" height="631" alt="image" src="https://github.com/user-attachments/assets/e3d6b1f8-640c-4233-a381-1c7ae5e98806" />
 </section>
 
 
