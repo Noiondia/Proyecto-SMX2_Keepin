@@ -284,8 +284,6 @@ Copias de seguridad: Zarek
 <br><b>Sistema gestor de base de datos </b>
 <br><b>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench </b>
 <h3>Diagrama de la red</h3>
-<img width="960" height="631" alt="image" src="https://github.com/user-attachments/assets/e3d6b1f8-640c-4233-a381-1c7ae5e98806" />
-
 Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router<br>
 <br><b>Servicios </b>
 <br>
@@ -294,6 +292,10 @@ En total vamos a usar 4 maquinas virtuales<br>
 1 Para Apache<br>
 1 Para MySQL<br>
 1 Para TrueNAS<br>
+
+<br><img width="960" height="631" alt="image" src="https://github.com/user-attachments/assets/e3d6b1f8-640c-4233-a381-1c7ae5e98806" />
+
+
 
 <h2><b>Bibliografia</b></h2>
 <section id="Bibliografia">
