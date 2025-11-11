@@ -17,7 +17,7 @@
 
 <a href="#Identificación de entidades principales">Identificación de entidades principales</a>
 
-<a href="#Arquitectura">Arquitectura del sofware</a>
+<a href="#Arquitectura del sofware">Arquitectura del sofware</a>
 
 Tecnologías a utilizar
 
