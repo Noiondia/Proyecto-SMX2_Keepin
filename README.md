@@ -21,7 +21,9 @@
 
 Tecnologías a utilizar
 
+Diagrama de la red
 
+Arquitectura del sistema
 
 Abstract
 
