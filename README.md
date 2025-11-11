@@ -186,10 +186,10 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 
 <b> Relaciones de la base de datos</b>
 Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entidades, y las relaciones entre ellas.
-<a href="https://www.canva.com/design/DAG4AIVR89Y/UAvlDlBaG4e5NRyWNftTmg/view?utm_content=DAG4AIVR89Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa1bf1f112">Mapa de relaciones</a>
+<br><a href="https://www.canva.com/design/DAG4AIVR89Y/UAvlDlBaG4e5NRyWNftTmg/view?utm_content=DAG4AIVR89Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa1bf1f112">Mapa de relaciones</a>
 
 </section>
-<h2><b>Conclusiones</b></h2>
+
 
 
 <h2><b>Funcionalidades</b></h2>
@@ -295,9 +295,9 @@ En total vamos a usar 4 maquinas virtuales<br>
 1 Para TrueNAS<br>
 
 <br><img width="960" height="631" alt="image" src="https://github.com/user-attachments/assets/e3d6b1f8-640c-4233-a381-1c7ae5e98806" />
-
-
-
+<br>
+<h2><b>Conclusiones</b></h2>
+<br>
 <h2><b>Bibliografia</b></h2>
 <section id="Bibliografia">
 <a href="https://cookieclicker.com/">Cookie clicker</a><br>
