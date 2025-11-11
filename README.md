@@ -23,8 +23,6 @@ Tecnologías a utilizar
 
 Diagrama de la red
 
-Arquitectura del sistema
-
 Abstract
 
 Conclusiones
@@ -79,10 +77,9 @@ En el mockup, la primera página que sale es la página principal, cuyo ÚNICO o
 <br>Dentro del juego hay varias pestañas pero todas estan enfocadas en la misma, las tres paginas de dentro del juego, son variaciones de la misma, no  seràn diferentes pestañas, en caso de la pagina de quipación de personajes serà un pop up que aparecerà en la misma pagina. En verdad, la pagina web entera, solo tendrà dos paginas, el inicio y el juego.<br>
 <img width="1134" height="637" alt="image" src="https://github.com/user-attachments/assets/d1bcce97-39d3-4eee-9052-6b7afaf9a6b8" />
 
-
+Esta imágen es de dentro del juego, todas las otras pestañas del juego son cambios o pop ups dentro de esta.
 
 <img width="1133" height="636" alt="image" src="https://github.com/user-attachments/assets/be5c4eb5-51b1-495b-a34f-0a38a0234507" />
-Esta imágen es de dentro del juego, todas las otras pestañas del juego son cambios o pop ups dentro de esta.
 <br>
 
 
@@ -107,8 +104,6 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 
 <a href="https://www.canva.com/design/DAG18031_jA/xM7zD7MZ9NcQ2PMzfyEBWA/view?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h578cf79f8b">Mapa de navegación</a>
 </section>
-
-<h2><b>Tecnologías a utilizar</b></h2>
 
 <h2><b></b>Identificación de entidades principales</h2></b>
 <section id="Identificación de entidades principales">
@@ -237,21 +232,6 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <br>Estado: Pendiente
 <br>Fecha Entrega: ----
 
-Donde:
-ID: número asignado de tarea
-
-Prioridad: Prioridad que se le da a la tarea, puede ser Baja, Media o Alta. Ver esquema de Gestión de Proyecto.
-
-Requisito: Narrativa de cliente que describe en que consiste el requerimiento de proyecto.
-
-Funcionalidad: La funcionalidad de la app que va a cumplir con el objetivo de requisito previamente descrito.
-
-Disparador: evento u objeto (gráfico o no) que va a hacer que se realice la función descrita.
-
-Fecha: aproximada de entrega
-
-Estado: Activo, pendiente o cancelado.
-
 
 
 <h2><b>Listado de tareas</b></h2>
@@ -266,7 +246,7 @@ Código del juego: Hugo
 <br>Aprender python
 <br>Hacer el código.
 
-Diseño gráfico:Zarek
+Diseño gráfico: Zarek
 <br>Hacer los sprites en ASCII
 
 Front End: Hugo
@@ -282,7 +262,7 @@ Copias de seguridad: Zarek
 <br>Hacer la página web
 <br>Hacer los servidores con los datos
 
-<h2><b>Arquitectura del sistema</b></h2>
+<h2><b>Tecnologías a utilizar</b></h2>
 
 <br><b>Hardware</b>
 <br><b>Modelo del procesador, RAM, espacio en disco, adaptadores de red</b>
