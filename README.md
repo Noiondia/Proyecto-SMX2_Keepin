@@ -184,14 +184,15 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 
 
 <h2><b>Arquitectura del sofware</b></h2>
- <section id="Arquitectura">
+ <section id="Arquitectura del sofware">
 
 <b> Relaciones de la base de datos</b>
 Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entidades, y las relaciones entre ellas.
 <br><a href="https://www.canva.com/design/DAG4AIVR89Y/UAvlDlBaG4e5NRyWNftTmg/view?utm_content=DAG4AIVR89Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa1bf1f112">Mapa de relaciones</a>
+</section>
 <br>
 <h2><b>Tecnologías a utilizar</b></h2>
-
+<section id="Tecnologías a utilizar">
 <br><b>Hardware</b>
 <br><b>Modelo del procesador, RAM, espacio en disco, adaptadores de red</b>
 
@@ -213,6 +214,7 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <br><b>Sistema gestor de base de datos </b>
 <br><b>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench </b>
 <br>
+</section>
 <h3>Diagrama de la red</h3>
 
 <br>Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router<br>
