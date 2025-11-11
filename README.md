@@ -187,9 +187,30 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <b> Relaciones de la base de datos</b>
 Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entidades, y las relaciones entre ellas.
 <br><a href="https://www.canva.com/design/DAG4AIVR89Y/UAvlDlBaG4e5NRyWNftTmg/view?utm_content=DAG4AIVR89Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa1bf1f112">Mapa de relaciones</a>
-
 <br>
+<h2><b>Tecnologías a utilizar</b></h2>
 
+<br><b>Hardware</b>
+<br><b>Modelo del procesador, RAM, espacio en disco, adaptadores de red</b>
+
+<br><b>Sistema operativo</b>
+<br><b>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.</b>
+
+<br><b>Interfaz de usuario (Frontend)</b>
+<br><b>Para la interfaz se utilizara html5 y CSS.</b>
+
+<br><b>Lógica de negocio (Backend)</b>
+<br><b>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.</b>
+
+<br><b>Servidor web </b>
+<br><b>Apache</b>
+
+<br><b>Base de datos </b>
+<br><b>Para la base de datos usaremos MySQL.</b>
+
+<br><b>Sistema gestor de base de datos </b>
+<br><b>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench </b>
+<br>
 <h3>Diagrama de la red</h3>
 
 <br>Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router<br>
@@ -274,29 +295,6 @@ Copias de seguridad: Zarek
 <br>Enlazar los servidores con la página web: Gerard
 <br>Hacer la página web
 <br>Hacer los servidores con los datos
-
-<h2><b>Tecnologías a utilizar</b></h2>
-
-<br><b>Hardware</b>
-<br><b>Modelo del procesador, RAM, espacio en disco, adaptadores de red</b>
-
-<br><b>Sistema operativo</b>
-<br><b>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.</b>
-
-<br><b>Interfaz de usuario (Frontend)</b>
-<br><b>Para la interfaz se utilizara html5 y CSS.</b>
-
-<br><b>Lógica de negocio (Backend)</b>
-<br><b>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.</b>
-
-<br><b>Servidor web </b>
-<br><b>Apache</b>
-
-<br><b>Base de datos </b>
-<br><b>Para la base de datos usaremos MySQL.</b>
-
-<br><b>Sistema gestor de base de datos </b>
-<br><b>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench </b>
 
 <br>
 <h2><b>Conclusiones</b></h2>
