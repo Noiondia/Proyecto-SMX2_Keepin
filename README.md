@@ -29,27 +29,27 @@ Abstract
 
 Conclusiones
 
-<a href="#Bibliografia">Bibliografia</a>
+<a href="#Bibliografia">Bibliografía</a>
 
 
 
 <h2><b>Abstract</b></h2>
 <section id="Abstract">
 
-Somos TDGamblers, un equipo formado por 3 chavales que querían hacer un juego divertido tanto para jugar como para divertirnos haciéndolo. 
-Nuestra idea fue hacer un clicker, como el Cookie Clicker, ya que es un juego que creemos que es relativamente fácil de programar.
-Igualmente la parte de diseño gráfico decidimos hacerla con ASCII ya que nos explicaron que hacerlo de otra forma sería mas difícil.
+Somos TDGamblers, un equipo formado por 3 chicos que querían hacer un juego divertido, tanto para jugar como para pasarlo bien haciéndolo. 
+Nuestra idea fue hacer un juego clicker, como por ejemplo Cookie Clicker, ya que que creemos que es relativamente fácil de programar, accesible para que lo entienda todo el mundo y muy divertido a pesar de todo.
+Aunque al contrario que Cookie Clicker, decidimos hacer el diseño gráfico en ASCII para simplificar las cosas y a la vez darle un estilo más original.
 </section>
 
 
 <h2><b>Introducción</b></h2>
 <section id="Introducción">
 
-Será un juego sencillo, un clicker, un juego donde el objetivo es hacer click a jorge, el cual te da unos puntos a cada click, con esos puntos podrás comprar mejoras para conseguir aún más puntos hasta comprar todas las mejoras.
-El objetivo será comprar todas las mejoras y para eso el juego ofrecerá un guardado de partida, usando el correo electrónico.
-Utilizamos como referencia un juego llamado cookie clicker que tiene un objetivo parecido al que tenemos en nuestro juego, clicar un botón, ganar puntos y comprar mejoras para progresar en el juego.
+Será un juego sencillo, un clicker, donde el objetivo es hacer click a jorge y ganar puntos con esto, puntos con los que se podrán comprar mejoras y desbloquear personajes, montando un equipo con efectos únicos que nos harán ganar más y más puntos cada vez.
+El objetivo será conseguir la mayor cantidad de puntos posibles, utilizando las mejoras desbloqueadas y los personajes en el equipo, para lo que habrá un guardado de partida en el que se utilizará el correo electrónico.
+Utilizamos como referencia un juego llamado cookie clicker, ya que tiene un objetivo parecido al de nuestro juego, hacer click a un botón, ganar puntos y comprar mejoras para progresar en el juego.
 
-Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, agregaremos más contenido a la pagina.
+Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, agregaremos más contenido a la página.
 </section>
 
 <h2><b>Briefing de ideas</b></h2>
