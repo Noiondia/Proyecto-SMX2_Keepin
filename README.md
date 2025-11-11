@@ -54,11 +54,16 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 
 <h2><b>Briefing de ideas</b></h2>
 <section id="Briefing">
+<br>
 <b>Nuestra idea es hacer un juego clicker, con gráficos en ASCII y todo en una página web como el juego Cookie Clicker</b>
 <br>Somos 3 alumnos a los que nos apasionan los videojuegos, el hecho de jugarlos y la idea de poder llegar a hacer una propio, por lo que hemos visto este proyecto como una gran oportunidad para hacer eso realidad, incluso si es uno relativamente simple.
+<br>
 <br>Queremos que el juego sea funcional y divertido, cuanto más lo alarguemos más trabajo nos dará, por lo que lo más probable es que nos quedemos con poder brindar algunas horas de entretenimiento, bastantes mejoras y personajes con efectos únicos.
+<br>
 <br>No tenemos un público objetivo en concreto, alguien a quien le gusten otros juegos similares estará más interesado en el proyecto que alguien que nunca los ha probado, como es lógico, pero nuestro juego será sencillo y muy accesible para todo el mundo para que cualquiera pueda disfrutarlo.
+<br>
 <br>Los conocimientos que más pondremos en práctica realizados durante el curso serán los aprendidos en aplicaciones web y en la optativa de programación, pues será lo que más nos ayude a poder programar el juego y crear la página web, aunque también utilizaremos elementos de redes para copias de seguridad y los servidores.
+<br>
 <br>Necesitaremos conocimientos básicos de Python para programar el juego, HTML y CSS para la página web y varias máquinas virtuales para Apache, MySQL, TrueNAS y DHCP y DNS.
 <br>A continuación adjuntamos un vídeo que nos ha ayudado a aprender de Python para la programación del juego.
 https://www.youtube.com/watch?v=_6N18g3ewnw
