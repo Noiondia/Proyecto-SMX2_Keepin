@@ -194,24 +194,24 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <h2><b>Tecnologías a utilizar</b></h2>
 <section id="Tecnologías a utilizar">
 <br><b>VM trueNas</b>
-RAM: 2048 MB
-espacio en disco: 2 disco de 10 GB
-adaptadores de red: Puente
+<br>RAM: 2048 MB
+<br>espacio en disco: 2 disco de 10 GB
+<br>adaptadores de red: Puente
 
 <br><b>VM Ubuntu server (Apache, PHP)</b>
-RAM: 2048 MB
-espacio en disco: 1 disco duro de 15 GB
-adaptadores de red: Puente
+<br>RAM: 2048 MB
+<br>espacio en disco: 1 disco duro de 15 GB
+<br>adaptadores de red: Puente
 
 <br><bVM Ubuntu server (DNS)</b>
-RAM: 4096 MB
-espacio en disco: 1 disco duro de 15 GB
-adaptadores de red: Puente
+<br>RAM: 4096 MB
+<br>espacio en disco: 1 disco duro de 15 GB
+<br>adaptadores de red: Puente
 
 <br><b>VM Ubuntu server (DMySQL)</b>
-RAM: 2048 MB
-espacio en disco: 1 disco duro de 50 GB
-adaptadores de red: Puente
+<br>RAM: 2048 MB
+<br>espacio en disco: 1 disco duro de 50 GB
+<br>adaptadores de red: Puente
 
 <br><b>Sistema operativo</b>
 <br><b>Se utilizara ubuntu par ahacer las copias de seguiradad y windows 11 para todo lo demas.</b>
