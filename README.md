@@ -242,7 +242,8 @@ En total vamos a usar 4 maquinas virtuales<br>
 1 Para Apache<br>
 1 Para MySQL<br>
 1 Para TrueNAS<br>
-<br><img width="960" height="631" alt="image" src="https://github.com/user-attachments/assets/e3d6b1f8-640c-4233-a381-1c7ae5e98806" />
+<br><img width="1234" height="723" alt="image" src="https://github.com/user-attachments/assets/4a3c5dc4-e7f7-415c-87af-3f0e6cbde28f" />
+
 </section>
 
 
