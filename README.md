@@ -301,7 +301,9 @@ Las tareas que tenemos que hacer serían Base de datos, código del juego, dise�
 
 Código del juego: Hugo
 <br>Aprender python
-<br>Hacer el código.
+<br>Hacer que cada click se registre y te sume los puntos.
+<br>
+<br>Programar que los puntos se restren al comprar una mejora o presonaje.
 
 Diseño gráfico: Zarek
 <br>Hacer los sprites en ASCII
