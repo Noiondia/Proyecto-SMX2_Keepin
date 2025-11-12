@@ -203,7 +203,7 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <br>espacio en disco: 1 disco duro de 15 GB
 <br>adaptadores de red: Puente
 
-<br><bVM Ubuntu server (DNS)</b>
+<br><b>VM Ubuntu server (DNS)</b>
 <br>RAM: 4096 MB
 <br>espacio en disco: 1 disco duro de 15 GB
 <br>adaptadores de red: Puente
