@@ -332,7 +332,6 @@ Copias de seguridad: Zarek
 </section>
 <h2><b>Conclusiones</b></h2>
 <section id="Conclusiones">
-Ha sido muy entretenido e interesante y sobre todo hemos aprendido mucho.
 <br>
 </section>
 <h2><b>Bibliografia</b></h2>
