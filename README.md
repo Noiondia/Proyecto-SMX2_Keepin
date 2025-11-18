@@ -213,10 +213,10 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 
 <br><b>Sistema operativo</b>
 <br><b>Utilizaremos diversos sistemas operativos dependiendo de las necesidades.</b>
-<br>Para copias de seguridad utilzaremos TrueNAS ya que es mas seguro y potente.
-<br>Se utilzara un total de 3 ubuntu server. Uno para la pagina Web, con PHP, Apache y HTML5 con CSS.
-<br>Otro sera el servidor DNS con Pi hole.
-<br>Y el ultimo sera el que tenga toda la informacion, se utilzara MySQL y phpMyAdmin.
+<br>Para copias de seguridad utilizaremos TrueNAS, ya que es más seguro y potente.
+<br>Se utilizará un total de 3 Ubuntu server. Uno para la página web, con PHP, Apache y HTML5, con CSS.
+<br>Otro será el servidor DNS con Pi hole.
+<br>Y el último será el que tenga toda la información, se utilizará MySQL y phpMyAdmin
 
 <br><b>Interfaz de usuario (Frontend)</b>
 <br><b>Para la interfaz se utilizara html5 y CSS.</b>
@@ -301,11 +301,11 @@ Las tareas que tenemos que hacer serían Base de datos, código del juego, dise�
 <br>Hacer la base de datos en Mysql
 <br>Hacer el servidor donde se guarda toda la información.
 
-Servidor Web:
-<br>Instalacion y configuracion del servidor con S.0 Devian*.
-<br>Instalacion y configuracion PHP version 8.3 que es la mas actual.
+Servidor web:
+<br>Instalación y configuración del servidor con S.0 Devian*.
+<br>Instalación y configuración PHP versión 8.3, que es la más actual.
 <br>Testear PHP ( <?php phpinfo (); ?> )
-<br>Instalar y configurar Apache version 2.4.65.
+<br>Instalar y configurar Apache versión 2.4.65.
 
 Código del juego: Hugo
 <br>Aprender python
