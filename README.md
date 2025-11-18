@@ -215,10 +215,10 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 
 <br><b>Sistema operativo</b>
 <br><b>Utilizaremos diversos sistemas operativos dependiendo de las necesidades.</b>
-Para copias de seguridad utilzaremos TrueNAS ya que es mas seguro y potente.
-Se utilzara un total de 3 ubuntu server. Uno para la pagina Web, con PHP, Apache y HTML5 con CSS.
-Otro sera el servidor DNS con Pi hole.
-Y el ultimo sera el que tenga toda la informacion, se utilzara MySQL y phpMyAdmin.
+<br>Para copias de seguridad utilzaremos TrueNAS ya que es mas seguro y potente.
+<br>Se utilzara un total de 3 ubuntu server. Uno para la pagina Web, con PHP, Apache y HTML5 con CSS.
+<br>Otro sera el servidor DNS con Pi hole.
+<br>Y el ultimo sera el que tenga toda la informacion, se utilzara MySQL y phpMyAdmin.
 
 <br><b>Interfaz de usuario (Frontend)</b>
 <br><b>Para la interfaz se utilizara html5 y CSS.</b>
