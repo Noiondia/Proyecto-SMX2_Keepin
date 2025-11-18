@@ -219,7 +219,10 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <br>Y el último será el que tenga toda la información, se utilizará MySQL y phpMyAdmin
 
 <br><b>Interfaz de usuario (Frontend)</b>
-<br><b>Para la interfaz se utilizara html5 y CSS.</b>
+<details>
+<summary>¿Qué es HTML5?</summary>
+<br>Es el código estándar para hacer la estructura y el contenido de nuestra página web.
+</details>
 
 <br><b>Lógica de negocio (Backend)</b>
 <br><b>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.</b>
