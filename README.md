@@ -310,8 +310,8 @@ Las tareas que tenemos que hacer serían Base de datos, código del juego, dise�
 <br>Hacer la base de datos en Mysql
 <br>Hacer el servidor donde se guarda toda la información.
 
-Servidor web:
-<br>Instalación y configuración del servidor con S.0 Devian*.
+<br>Servidor web:
+<br>Instalación y configuración del servidor con S.0 Ubuntu Server.
 <br>Instalación y configuración PHP versión 8.3, que es la más actual.
 <br>Testear PHP ( <?php phpinfo (); ?> )
 <br>Instalar y configurar Apache versión 2.4.65.
