@@ -237,7 +237,8 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <br><b>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.</b>
 
 <br><b>Servidor web </b>
-<br><b>Apache</b>
+<br>Tendremos varios servidores web dependiendo de nuestras necesidades.
+<br>
 
 <br><b>Base de datos </b>
 <br><b>Para la base de datos usaremos MySQL.</b>
