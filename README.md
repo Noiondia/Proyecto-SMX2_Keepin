@@ -243,14 +243,30 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 </details>
 
 <br><b>Servidor web </b>
-<br>Tendremos varios servidores web dependiendo de nuestras necesidades.
-<br>
-
+<details>
+<summary>Servidores</summary>
+<br><b>Como tenemos 4 maquinas virtuales cada maquina tendra una utilidad diferente.</b>
+Para la pagina web se utilizara Apache y php
+El DNS se utiliza Pihole
+La base de datos usamos MySQL y phpMyAdmin
+Por ultimo para las copais de seguridad usaremos TrueNAS
+<br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
+</details>
 <br><b>Base de datos </b>
-<br><b>Para la base de datos usaremos MySQL.</b>
+<details>
+<summary>MySQL</summary>
+<br><b>La elección de MySQL es porque es sencillo de aprender. Aparte de que al usar HTML5 y CSS, si usamos también MySQL aseguramos de que se integre bien toda la información necesaria.</b>
+<br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
+</details>
 
 <br><b>Sistema gestor de base de datos </b>
-<br><b>Aunque no sabemos mucho de esto nos recomendaron utilziar MySQLWorkbench </b>
+<details>
+<summary>MySQLWorkbench</summary>
+<br><b>     </b>
+<br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
+</details>
+
+
 <br>
 </section>
 <h3>Diagrama de la red</h3>
