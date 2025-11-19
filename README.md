@@ -236,7 +236,11 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 </details>
 
 <br><b>Lógica de negocio (Backend)</b>
-<br><b>Como nuestra idea es hacer un juego tenemos que usar el Python con la version 3.14.</b>
+<details>
+<summary>Python</summary>
+<br><b>Nuestro objetivo es desarrollar un juego entretenido para nuestros usuarios. Hemos elegido Python como lenguaje de programación, ya que la curva de aprendizaje es sencilla y lo rapido de desarrollo.</b>
+<br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
+</details>
 
 <br><b>Servidor web </b>
 <br>Tendremos varios servidores web dependiendo de nuestras necesidades.
