@@ -221,13 +221,15 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <br><b>Interfaz de usuario (Frontend)</b>
 <details>
 <summary>¿Qué es HTML5?</summary>
-<br>HTML (Lenguaje de Marcado de Hipertexto) es el lenguaje de código que se utiliza para estructurar el contenido de una página web
+<br>HTML (Lenguaje de Marcado de Hipertexto) es el lenguaje de código que se utiliza para estructurar el contenido de una página web.
+<br>Usaremos HTML5, ya que es el lenguaje que se utiliza para hacer páginas, aparte de sus beneficios en la compatibilidad con múltiples dispositivos.
 <br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
 </details>
 
 <details>
-<summary>¿Qué es css?</summary>
+<summary>¿Qué es CSS?</summary>
 <br>CSS, o Hojas de Estilo en Cascada, es el lenguaje de estilos que define la apariencia visual de los documentos web, como su color, fuentes y disposición.
+<br> Se usará CSS, ya que para el estilo de la página web es necesario. Aparte de que separa la estructura del contenido (HTML) de su presentación visual.
 <br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
 </details>
 
