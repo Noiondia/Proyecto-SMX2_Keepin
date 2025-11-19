@@ -246,10 +246,10 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <details>
 <summary>Servidores</summary>
 <br><b>Como tenemos 4 maquinas virtuales cada maquina tendra una utilidad diferente.</b>
-Para la pagina web se utilizara Apache y php
-El DNS se utiliza Pihole
-La base de datos usamos MySQL y phpMyAdmin
-Por ultimo para las copais de seguridad usaremos TrueNAS
+<br>Para la pagina web se utilizara Apache y php
+<br>El DNS se utiliza Pihole
+<br>La base de datos usamos MySQL y phpMyAdmin
+<br>Por ultimo para las copais de seguridad usaremos TrueNAS
 <br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
 </details>
 <br><b>Base de datos </b>
