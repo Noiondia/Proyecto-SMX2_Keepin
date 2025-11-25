@@ -76,6 +76,9 @@ https://www.youtube.com/watch?v=_6N18g3ewnw
 </details>
 
 <h2><b>Mockup</b></h2>
+
+<details>
+<summary>Mockup</summary>
 <section id="Mockup">
 El <em>"Mockup"</em> es el diseño de nuestra página web, en este canva se ve cada pestaña a la que se puede acceder.
 La tipografía que hemos escogido, (times new roman) creemos que es la que más se adapta al ASCII, que es en lo que nos hemos basado para crear el diseño de la página.
@@ -110,7 +113,7 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 
 <a href="https://www.canva.com/design/DAG18031_jA/xM7zD7MZ9NcQ2PMzfyEBWA/view?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h578cf79f8b">Mapa de navegación</a>
 </section>
-
+</details>
 <h2><b></b>Base de datos</h2></b>
 <section id="Base de datos">
 
