@@ -180,8 +180,6 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 
 </section>
 
-<h2><b>Arquitectura del sofware</b></h2>
- <section id="Arquitectura del sofware">
 
 <b> Relaciones de la base de datos</b>
 <h2><b>Diagrama de la base de datos</b></h2>
