@@ -15,7 +15,7 @@
 
 <a href="#Identificación de entidades principales">Identificación de entidades principales</a>
 
-<a href="#Arquitectura del sofware">Arquitectura del sofware</a>
+<a href="#Diagrama de la base de datos">Diagrama de la base de datos</a>
 
 <a href="#Tecnologías a utilizar">Tecnologías a utilizar
 
@@ -180,9 +180,12 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 
 </section>
 
+<h2><b>Arquitectura del sofware</b></h2>
+
 
 <b> Relaciones de la base de datos</b>
 <h2><b>Diagrama de la base de datos</b></h2>
+ <section id="Diagrama de la base de datos">
 Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
 <br><a href="https://www.canva.com/design/DAG4AIVR89Y/UAvlDlBaG4e5NRyWNftTmg/view?utm_content=DAG4AIVR89Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa1bf1f112">Mapa de relaciones</a>
 </section>
