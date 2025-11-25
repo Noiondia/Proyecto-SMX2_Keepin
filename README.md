@@ -13,7 +13,7 @@
 
 <a href="#Mockup">Mockup</a>
 
-<a href="#Identificación de entidades principales">Identificación de entidades principales</a>
+<a href="#Base de datos">Base de datos</a>
 
 <a href="#Diagrama de la base de datos">Diagrama de la base de datos</a>
 
@@ -104,13 +104,29 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <a href="https://www.canva.com/design/DAG18031_jA/xM7zD7MZ9NcQ2PMzfyEBWA/view?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h578cf79f8b">Mapa de navegación</a>
 </section>
 
-<h2><b></b>Identificación de entidades principales</h2></b>
-<section id="Identificación de entidades principales">
+<h2><b></b>Base de datos</h2></b>
+<section id="Base de datos">
+
+
+<h3><b>Diagrama de la base de datos</b></h3>
+ <section id="Diagrama de la base de datos">
+Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
+<br><a href="https://www.canva.com/design/DAG4AIVR89Y/UAvlDlBaG4e5NRyWNftTmg/view?utm_content=DAG4AIVR89Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa1bf1f112">Mapa de relaciones</a>
+</section>
+
+<h3><b>Identidades principales</b></h3>
+ <section id="Identidades principales">
+
+
+
+<summary>Usuario</summary>
+<details>
 -Usuario 
 <br>-Contraseña: Para que una cuenta sea segura, necesita una contraseña, así que se va a necesitar una para crear la cuenta.
 <br>-Correo electrónico: El correo electrónico hará el funcionamiento de nombre de usuario, guardando la información de cada jugador.
 <br>-Partida: Consta de todos los elementos importantes que se tienen que guardar sobre la partida de cada jugador.
 <br>Puntos actuales de cada jugador: Esto forma parte del progreso de cada jugador, son los puntos que te da al hacer clic a Jorge.
+</details>
 
 -Mejoras
 <br>Nombre de la mejora  	-Cada mejora tiene un nombre para identificarla
@@ -221,7 +237,7 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 <br>HTML (Lenguaje de Marcado de Hipertexto) es el lenguaje de código que se utiliza para estructurar el contenido de una página web.
 
 <br>Usaremos HTML5, ya que es el lenguaje que se utiliza para hacer páginas web, aparte de sus beneficios en la compatibilidad con múltiples dispositivos, aparte de que es un lenguaje ya estandarizado para la creación de páginas web.
-<br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 </details>
 
 <details>
@@ -229,16 +245,12 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 <br>CSS, o Hojas de Estilo en Cascada, es el lenguaje de estilos que define la apariencia visual de los documentos web, como su color, fuentes y disposición.
 
 <br> Es imprescindible el uso de CSS para el desarrollo, ya que es el estándar para la presentación visual de la web. CSS separa el contenido (HTML) de la apariencia, permitiendo estilizar la página con facilidad. Gracias a esta separación, se puede lograr un diseño mucho más atractivo que optimice la experiencia del usuario.
-<br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
 </details>
-
 <br><b>Lógica de negocio (Backend)</b>
 <details>
 <summary>Python</summary>
 <br><b>Nuestro objetivo es desarrollar un juego entretenido para nuestros usuarios. Hemos elegido Python como lenguaje de programación, ya que la curva de aprendizaje es sencilla y lo rapido de desarrollo.</b>
-<br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
 </details>
-
 <br><b>Servidor web </b>
 <details>
 <summary>Servidores</summary>
@@ -247,14 +259,11 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 <br>El DNS se utiliza Pihole
 <br>La base de datos usamos MySQL y phpMyAdmin
 <br>Por ultimo para las copais de seguridad usaremos TrueNAS
-<br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
-</details>
 <br><b>Base de datos </b>
 <details>
 <summary>MySQL</summary>
 <br><b>MySQL es un sistema de gestión de bases de datos relacionales.</b>
 <br><b>La elección de MySQL es porque es sencillo de aprender. Aparte de que al usar HTML5 y CSS, si usamos también MySQL aseguramos de que se integre bien toda la información necesaria.</b>
-<br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
 </details>
 
 <br><b>Sistema gestor de base de datos </b>
@@ -262,7 +271,6 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 <summary>MySQLWorkbench</summary>
 <br><b>MySQL Workbench es una herramienta visual unificada que permite a los desarrolladores, arquitectos y administradores de bases de datos gestionar y diseñar bases de datos MySQL.</b>
 <br><b>Para la gestión de datos usaremos MySQLWorkbench, ya que para principiantes es más visual y, a la hora de hacer el código de la base de datos, MySQLWorkbench ya te lo da hecho.</b>
-<br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
 </details>
 
 
