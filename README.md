@@ -262,7 +262,7 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <br><b>Sistema gestor de base de datos </b>
 <details>
 <summary>MySQLWorkbench</summary>
-<br><b>     </b>
+<br><b>Para la gestión de datos usaremos MySQLWorkbench, ya que para principiantes es más visual y, a la hora de hacer el código de la base de datos, MySQLWorkbench ya te lo da hecho.</b>
 <br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
 </details>
 
