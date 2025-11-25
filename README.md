@@ -180,12 +180,12 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 
 </section>
 
-
 <h2><b>Arquitectura del sofware</b></h2>
  <section id="Arquitectura del sofware">
 
 <b> Relaciones de la base de datos</b>
-Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entidades, y las relaciones entre ellas.
+<h2><b>Diagrama de la base de datos</b></h2>
+Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
 <br><a href="https://www.canva.com/design/DAG4AIVR89Y/UAvlDlBaG4e5NRyWNftTmg/view?utm_content=DAG4AIVR89Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa1bf1f112">Mapa de relaciones</a>
 </section>
 <br>
