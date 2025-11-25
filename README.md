@@ -56,7 +56,9 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 
 <h2><b>Briefing de ideas</b></h2>
 <section id="Briefing">
-<br>
+
+<details>
+<summary>Briefing de ideas</summary>
 <b>Nuestra idea es hacer un juego clicker, con gráficos en ASCII y todo en una página web como el juego Cookie Clicker.</b>
 <br>Somos 3 alumnos a los que nos apasionan los videojuegos, el hecho de jugarlos y la idea de poder llegar a hacer una propio, por lo que hemos visto este proyecto como una gran oportunidad para hacer eso realidad, incluso si es uno relativamente simple.
 <br>
@@ -71,6 +73,7 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 <br>A continuación adjuntamos un vídeo que nos ha ayudado a aprender de Python para la programación del juego.
 https://www.youtube.com/watch?v=_6N18g3ewnw
 </section>
+</details>
 
 <h2><b>Mockup</b></h2>
 <section id="Mockup">
