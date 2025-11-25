@@ -255,6 +255,7 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <br><b>Base de datos </b>
 <details>
 <summary>MySQL</summary>
+<br><b>MySQL es un sistema de gestión de bases de datos relacionales.</b>
 <br><b>La elección de MySQL es porque es sencillo de aprender. Aparte de que al usar HTML5 y CSS, si usamos también MySQL aseguramos de que se integre bien toda la información necesaria.</b>
 <br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
 </details>
@@ -262,6 +263,7 @@ Este es el mapa de relaciones de la base de datos, aqui se pueden ver las entida
 <br><b>Sistema gestor de base de datos </b>
 <details>
 <summary>MySQLWorkbench</summary>
+<br><b>MySQL Workbench es una herramienta visual unificada que permite a los desarrolladores, arquitectos y administradores de bases de datos gestionar y diseñar bases de datos MySQL.</b>
 <br><b>Para la gestión de datos usaremos MySQLWorkbench, ya que para principiantes es más visual y, a la hora de hacer el código de la base de datos, MySQLWorkbench ya te lo da hecho.</b>
 <br>--------------------------------------------------------------------------------------------------------------------------------------------------------------
 </details>
