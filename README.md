@@ -318,6 +318,8 @@ En total vamos a usar 4 maquinas virtuales<br>
 
 
 <h2><b>Funcionalidades</b></h2>
+<details>
+<summary>Funcionalidades</summary>
 <section id="Funcionalidades">
 <br>ID1
 <br>Prioridad: Media
@@ -357,8 +359,10 @@ En total vamos a usar 4 maquinas virtuales<br>
 <br>Fecha Entrega: ----
 </section>
 
-
+</details>
 <h2><b>Listado de tareas</b></h2>
+<details>
+<summary>Listado de tareas</summary>
 <section id="Listado de tareas">
 Las tareas que tenemos que hacer serían Base de datos, código del juego, diseño gráfico, front end, copias de seguridad, enlazar los servidores con la página web.
 <br>
@@ -397,14 +401,21 @@ Copias de seguridad: Zarek
 <br>Hacer los servidores con los datos
 <br>
 </section>
+</details>
 <h2><b>Conclusiones</b></h2>
 <section id="Conclusiones">
+<details>
+<summary>Conclusiones</summary>
 <br>
 </section>
+</details>
 <h2><b>Bibliografia</b></h2>
+<details>
+<summary>Bibliografia</summary>
 <section id="Bibliografia">
 <a href="https://cookieclicker.com/">Cookie clicker</a><br>
 <a href="https://chatgpt.com/">Chat GPT</a><br>
 <a href="https://gist.github.com/dasdo/9ff71c5c0efa037441b6">Comandos de github</a><br>
 <a href="https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365">Microsoft Visio</a>
 <br><a href="https://www.canva.com/templates">Canva</a>
+</details>
