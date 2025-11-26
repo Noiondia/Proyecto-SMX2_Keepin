@@ -128,9 +128,11 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 </section>
 </details>
 
-<h3><b>Identidades principales</b></h3>
- <section id="Identidades principales">
 
+<h3><b>Identidades principales</b></h3>
+<details>
+ <section id="Identidades principales">
+<summary>Identidades principales</summary>
 
 
 <summary>Usuario</summary>
@@ -209,7 +211,7 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 <br>No tenemos claro algunos de los tipos de datos de algunos atributos, como las imagenes de los personajes, o el efecto de personajes y mejoras.
 
 </section>
-
+</section>
 <h2><b>Diagrama de la base de datos</b></h2>
  <section id="Diagrama de la base de datos">
 Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
