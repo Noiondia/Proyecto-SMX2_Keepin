@@ -131,7 +131,6 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 
 <h3><b>Identidades principales</b></h3>
 <details>
- <section id="Identidades principales">
 <summary>Identidades principales</summary>
 
 
