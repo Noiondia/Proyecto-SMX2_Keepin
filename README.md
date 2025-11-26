@@ -30,11 +30,9 @@
 <a href="#Bibliografia">Bibliografía</a>
 
 
-
-<h2><b>Abstract</b></h2>
-<section id="Abstract">
 <details>
-<summary>Abstract</summary>
+<summary><h2><b>Abstract</b></h2></summary>
+<section id="Abstract">
 Somos TDGamblers, un equipo formado por 3 chicos que querían hacer un juego divertido, tanto para jugar como para pasarlo bien haciéndolo. 
 Nuestra idea fue hacer un juego clicker, como por ejemplo Cookie Clicker, ya que que creemos que es relativamente fácil de programar, accesible para que lo entienda todo el mundo y muy divertido a pesar de todo.
 Aunque al contrario que Cookie Clicker, decidimos hacer el diseño gráfico en ASCII para simplificar las cosas y a la vez darle un estilo más original.
