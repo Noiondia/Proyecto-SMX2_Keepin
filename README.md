@@ -39,7 +39,7 @@ Aunque al contrario que Cookie Clicker, decidimos hacer el diseño gráfico en A
 </section>
 </details>
 
-<h2><b>Introducción</b></h2>
+<summary><h2><b>Introducción</b></h2></summary>
 <section id="Introducción">
 
 <details>
@@ -52,7 +52,6 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 </section>
 </details>
 
-<h2><b>Briefing de ideas</b></h2>
 <section id="Briefing">
 
 <details>
@@ -77,7 +76,7 @@ https://www.youtube.com/watch?v=_6N18g3ewnw
 
 <details>
 <summary>Mockup</summary>
-<section id="Mockup">
+<summary><section id="Mockup">
 El <em>"Mockup"</em> es el diseño de nuestra página web, en este canva se ve cada pestaña a la que se puede acceder.
 La tipografía que hemos escogido, (times new roman) creemos que es la que más se adapta al ASCII, que es en lo que nos hemos basado para crear el diseño de la página.
 La tipografia del Mockup se cambiara a futuro. 
@@ -116,7 +115,7 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <section id="Base de datos">
 
 
-<h3><b>Diagrama de la base de datos</b></h3>
+<summary><h3><b>Diagrama de la base de datos</b></h3></summary>
 
 <details>
 <summary>Diagrama de la base de datos</summary>
@@ -127,7 +126,7 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 </details>
 
 
-<h3><b>Identidades principales</b></h3>
+<summary><h3><b>Identidades principales</b></h3></summary>
 <details>
 <summary>Identidades principales</summary>
 
@@ -209,7 +208,7 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 </details>
 </section>
 
-<h2><b>Diagrama de la base de datos</b></h2>
+<summary><h2><b>Diagrama de la base de datos</b></h2></summary>
 <details>
 <summary>Diagrama de la base de datos</summary>
  <section id="Diagrama de la base de datos">
@@ -219,7 +218,7 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 </details>
 <br>
 
-<h2><b>Tecnologías a utilizar</b></h2>
+<summary><h2><b>Tecnologías a utilizar</b></h2></summary>
 <details>
 <summary>Diagrama de la base de datos</summary>
 <section id="Tecnologías a utilizar">
@@ -297,7 +296,7 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 </section>
 </details>
 
-<h3>Diagrama de la red</h3>
+<summary><h3>Diagrama de la red</h3></summary>
 <details>
 <summary>Diagrama de la red</summary>
 <section id="Diagrama de la red">
@@ -315,7 +314,7 @@ En total vamos a usar 4 maquinas virtuales<br>
 </details>
 
 
-<h2><b>Funcionalidades</b></h2>
+<summary><h2><b>Funcionalidades</b></h2></summary>
 <details>
 <summary>Funcionalidades</summary>
 <section id="Funcionalidades">
@@ -358,7 +357,7 @@ En total vamos a usar 4 maquinas virtuales<br>
 </section>
 
 </details>
-<h2><b>Listado de tareas</b></h2>
+<summary><h2><b>Listado de tareas</b></h2></summary>
 <details>
 <summary>Listado de tareas</summary>
 <section id="Listado de tareas">
@@ -400,14 +399,14 @@ Copias de seguridad: Zarek
 <br>
 </section>
 </details>
-<h2><b>Conclusiones</b></h2>
+<summary><h2><b>Conclusiones</b></h2></summary>
 <section id="Conclusiones">
 <details>
 <summary>Conclusiones</summary>
 <br>
 </section>
 </details>
-<h2><b>Bibliografia</b></h2>
+<summary><h2><b>Bibliografia</b></h2></summary>
 <details>
 <summary>Bibliografia</summary>
 <section id="Bibliografia">
