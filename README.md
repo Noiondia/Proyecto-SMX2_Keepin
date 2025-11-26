@@ -220,7 +220,10 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 </section>
 </details>
 <br>
+
 <h2><b>Tecnologías a utilizar</b></h2>
+<details>
+<summary>Diagrama de la base de datos</summary>
 <section id="Tecnologías a utilizar">
 <br><b>VM trueNas</b>
 <br>RAM: 2048 MB
@@ -294,6 +297,7 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 
 <br>
 </section>
+</details>
 <h3>Diagrama de la red</h3>
 <section id="Diagrama de la red">
 <br>Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router<br>
