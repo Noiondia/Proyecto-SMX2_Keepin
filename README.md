@@ -298,7 +298,10 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 <br>
 </section>
 </details>
+
 <h3>Diagrama de la red</h3>
+<details>
+<summary>Diagrama de la red</summary>
 <section id="Diagrama de la red">
 <br>Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router<br>
 <br><b>Servicios </b>
@@ -311,7 +314,7 @@ En total vamos a usar 4 maquinas virtuales<br>
 <br><img width="1234" height="723" alt="image" src="https://github.com/user-attachments/assets/4a3c5dc4-e7f7-415c-87af-3f0e6cbde28f" />
 
 </section>
-
+</details>
 
 
 <h2><b>Funcionalidades</b></h2>
