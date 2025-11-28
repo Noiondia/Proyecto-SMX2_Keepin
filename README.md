@@ -43,8 +43,6 @@ Aunque al contrario que Cookie Clicker, decidimos hacer el diseño gráfico en A
 <section id="Introducción">
 
 <details>
-<summary>Introducción</summary>
-
 Será un juego sencillo, un clicker, donde el objetivo es hacer click a Jorge y ganar puntos con esto, puntos con los que se podrán comprar mejoras y desbloquear personajes, montando un equipo con efectos únicos que nos harán ganar más y más puntos cada vez.
 El objetivo será conseguir la mayor cantidad de puntos posibles, utilizando las mejoras desbloqueadas y los personajes en el equipo, para lo que habrá un guardado de partida en el que se utilizará el correo electrónico.
 Utilizamos como referencia un juego llamado cookie clicker, ya que tiene un objetivo parecido al de nuestro juego, hacer click a un botón, ganar puntos y comprar mejoras para progresar en el juego.
