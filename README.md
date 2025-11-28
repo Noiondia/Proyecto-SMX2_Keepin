@@ -235,8 +235,6 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 <br><b>Para la gestión de datos usaremos MySQLWorkbench, ya que para principiantes es más visual y, a la hora de hacer el código de la base de datos, MySQLWorkbench ya te lo da hecho.</b>
 </details>
 
-
-<br>
 </section>
 </details>
 
