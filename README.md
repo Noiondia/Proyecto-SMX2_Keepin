@@ -18,8 +18,6 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 </section>
 
 
-<section id="Briefing">
-
 <h2><b>Briefing de ideas</b></h2>
 <b>Nuestra idea es hacer un juego clicker, con gráficos en ASCII y todo en una página web como el juego Cookie Clicker.</b>
 <br>Somos 3 alumnos a los que nos apasionan los videojuegos, el hecho de jugarlos y la idea de poder llegar a hacer una propio, por lo que hemos visto este proyecto como una gran oportunidad para hacer eso realidad, incluso si es uno relativamente simple.
@@ -78,25 +76,19 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <h2><b></b>Base de datos</h2></b>
 <section id="Base de datos">
 
-
+<details>
 <summary><h3><b>Diagrama de la base de datos</b></h3></summary>
 
-<details>
-<summary>Diagrama de la base de datos</summary>
- <section id="Diagrama de la base de datos">
 Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
 <br><a href="https://www.canva.com/design/DAG4AIVR89Y/UAvlDlBaG4e5NRyWNftTmg/view?utm_content=DAG4AIVR89Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa1bf1f112">Mapa de relaciones</a>
 </section>
 </details>
 
-
+<details>
 <summary><h3><b>Identidades principales</b></h3></summary>
+
 <details>
-<summary>Identidades principales</summary>
-
-
 <summary>Usuario</summary>
-<details>
 -Usuario 
 <br>-Contraseña: Para que una cuenta sea segura, necesita una contraseña, así que se va a necesitar una para crear la cuenta.
 <br>-Correo electrónico: El correo electrónico hará el funcionamiento de nombre de usuario, guardando la información de cada jugador.
