@@ -173,9 +173,8 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 </details>
 <br>
 
-<summary><h2><b>Tecnologías a utilizar</b></h2></summary>
 <details>
-<summary>Diagrama de la base de datos</summary>
+<summary><h2><b>Tecnologías a utilizar</b></h2></summary>
 <section id="Tecnologías a utilizar">
 <br><b>VM trueNas</b>
 <br>RAM: 2048 MB
@@ -251,9 +250,9 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 </section>
 </details>
 
-<summary><h3>Diagrama de la red</h3></summary>
 <details>
-<summary>Diagrama de la red</summary>
+<summary><h3>Diagrama de la red</h3></summary>
+
 <section id="Diagrama de la red">
 <br>Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router<br>
 <br><b>Servicios </b>
@@ -268,10 +267,9 @@ En total vamos a usar 4 maquinas virtuales<br>
 </section>
 </details>
 
-
-<summary><h2><b>Funcionalidades</b></h2></summary>
 <details>
-<summary>Funcionalidades</summary>
+<summary><h2><b>Funcionalidades</b></h2></summary>
+
 <section id="Funcionalidades">
 <br>ID1
 <br>Prioridad: Media
@@ -312,9 +310,9 @@ En total vamos a usar 4 maquinas virtuales<br>
 </section>
 
 </details>
-<summary><h2><b>Listado de tareas</b></h2></summary>
+
 <details>
-<summary>Listado de tareas</summary>
+<summary><h2><b>Listado de tareas</b></h2></summary>
 <section id="Listado de tareas">
 Las tareas que tenemos que hacer serían Base de datos, código del juego, diseño gráfico, front end, copias de seguridad, enlazar los servidores con la página web.
 <br>
