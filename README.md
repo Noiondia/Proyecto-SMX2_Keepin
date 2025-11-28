@@ -88,7 +88,9 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Puntos actuales de cada jugador: Esto forma parte del progreso de cada jugador, son los puntos que te da al hacer clic a Jorge.
 </details>
 
--Mejoras
+
+<summary>Mejoras</summary>
+<details>
 <br>Nombre de la mejora  	-Cada mejora tiene un nombre para identificarla
 <br>Descripción de la mejora - Cada mejora tiene una descripción, para saber     que hace
 <br>Efecto de la mejora - Cada mejora tiene un efecto, aplica un cambio al juego.
@@ -97,8 +99,15 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Descripción del personaje - Cada personaje tiene una descripción, incluyendo la mejora que aplica, personalidad o la ropa que lleva.
 <br>Imagen del personaje - Cada personaje se representarà dentro del juego con una imagen
 <br>Efecto del personaje - Cada personaje aplicarà un cambio al juego, parecido al de las mejoras
-<br>-Comentarios: queremos que la gente que juegue a nuestra página pueda dejar comentarios para saber su opinión y por si quieren hacer sugerencias.
+</details>
 
+<summary>Comentarios</summary>
+<details>
+<br>Comentarios: queremos que la gente que juegue a nuestra página pueda dejar comentarios para saber su opinión y por si quieren hacer sugerencias.
+</details>
+
+<summary>Datos a guardar</summary>
+<details>
 <br>Datos que se deben guardar de cada entidad (atributos)
 <br>Para cada entidad identificada en el punto anterior, describe qué información concreta se necesita guardar.
 <br>Usuario
@@ -119,13 +128,19 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Descripción del personaje (Varcha
 <br>Efecto del personaje (Varcha)
 <br>Imagen del personaje ()
+</details>
 
+<summary>Relaciones</summary>
+<details>
 <br>Relaciones entre las entidades
 <br>El usuario puede obtener puntos y comprar mejoras con los puntos. 
 <br>El usuario puede ver sus mejoras, que hace cada mejora, ver sus personajes y que hacen.
 <br>El usuario puede enviar mensajes para obtener feedback.
 <br>El usuario puede comprar personajes, que luego se quedan guardados en personajes comprados por el jugador
+</details>
 
+<summary>Ejemplo</summary>
+<details>
 <br>Ejemplo de datos (simulación)
 <br>Usuario
 <br>Nombre: Shugus
@@ -144,7 +159,9 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Descripción: Antiguo guerrero en la guerra, ahora retirado y viviendo la vida de granjero
 <br>Efecto: Da 15 zanahorias cada 30 segundos.
 <br>Imagen
+</details>
 
+<summary>Reflexiones</summary>
 <br>Reflexiones, dificultades y dudas que tienes sobre la base de datos
 <br>Las partes mas complicadas han sido listar los identificadores.
 <br>Una parte que se complico entender fue las relaciones entre entidades.
@@ -155,6 +172,7 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>No tenemos claro algunos de los tipos de datos de algunos atributos, como las imagenes de los personajes, o el efecto de personajes y mejoras.
 </details>
 </section>
+</details>
 
 <details>
 <summary><h2><b>Diagrama de la base de datos</b></h2></summary>
