@@ -74,15 +74,6 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 </section>
 </details>
 <h2><b></b>Base de datos</h2></b>
-<section id="Base de datos">
-
-<details>
-<summary><h3><b>Diagrama de la base de datos</b></h3></summary>
-
-Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
-<br><a href="https://www.canva.com/design/DAG4AIVR89Y/UAvlDlBaG4e5NRyWNftTmg/view?utm_content=DAG4AIVR89Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa1bf1f112">Mapa de relaciones</a>
-</section>
-</details>
 
 <details>
 <summary><h3><b>Identidades principales</b></h3></summary>
@@ -175,7 +166,6 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 
 <details>
 <summary><h2><b>Tecnologías a utilizar</b></h2></summary>
-<section id="Tecnologías a utilizar">
 <br><b>VM trueNas</b>
 <br>RAM: 2048 MB
 <br>espacio en disco: 2 disco de 10 GB
@@ -253,7 +243,6 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 <details>
 <summary><h3>Diagrama de la red</h3></summary>
 
-<section id="Diagrama de la red">
 <br>Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router<br>
 <br><b>Servicios </b>
 <br>
@@ -270,7 +259,6 @@ En total vamos a usar 4 maquinas virtuales<br>
 <details>
 <summary><h2><b>Funcionalidades</b></h2></summary>
 
-<section id="Funcionalidades">
 <br>ID1
 <br>Prioridad: Media
 <br>Objetivo: Registrar usuarios.
@@ -313,7 +301,6 @@ En total vamos a usar 4 maquinas virtuales<br>
 
 <details>
 <summary><h2><b>Listado de tareas</b></h2></summary>
-<section id="Listado de tareas">
 Las tareas que tenemos que hacer serían Base de datos, código del juego, diseño gráfico, front end, copias de seguridad, enlazar los servidores con la página web.
 <br>
 <br> Para eso hemos hecho esta lista con todas las subtareas y las personas responsables.
