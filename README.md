@@ -352,16 +352,14 @@ Copias de seguridad: Zarek
 <br>
 </section>
 </details>
-<summary><h2><b>Conclusiones</b></h2></summary>
-<section id="Conclusiones">
+
 <details>
-<summary>Conclusiones</summary>
-<br>
+<summary><h2><b>Conclusiones</b></h2></summary>
 </section>
 </details>
-<summary><h2><b>Bibliografia</b></h2></summary>
+
 <details>
-<summary>Bibliografia</summary>
+<summary><h2><b>Bibliografia</b></h2></summary>
 <section id="Bibliografia">
 <a href="https://cookieclicker.com/">Cookie clicker</a><br>
 <a href="https://chatgpt.com/">Chat GPT</a><br>
