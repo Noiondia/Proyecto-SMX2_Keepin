@@ -88,9 +88,9 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Puntos actuales de cada jugador: Esto forma parte del progreso de cada jugador, son los puntos que te da al hacer clic a Jorge.
 </details>
 
-
-<summary>Mejoras</summary>
 <details>
+<summary>Mejoras</summary>
+
 <br>Nombre de la mejora  	-Cada mejora tiene un nombre para identificarla
 <br>Descripción de la mejora - Cada mejora tiene una descripción, para saber     que hace
 <br>Efecto de la mejora - Cada mejora tiene un efecto, aplica un cambio al juego.
@@ -101,13 +101,13 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Efecto del personaje - Cada personaje aplicarà un cambio al juego, parecido al de las mejoras
 </details>
 
-<summary>Comentarios</summary>
 <details>
+<summary>Comentarios</summary>
 <br>Comentarios: queremos que la gente que juegue a nuestra página pueda dejar comentarios para saber su opinión y por si quieren hacer sugerencias.
 </details>
 
-<summary>Datos a guardar</summary>
 <details>
+<summary>Datos a guardar</summary>
 <br>Datos que se deben guardar de cada entidad (atributos)
 <br>Para cada entidad identificada en el punto anterior, describe qué información concreta se necesita guardar.
 <br>Usuario
@@ -130,8 +130,8 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Imagen del personaje ()
 </details>
 
-<summary>Relaciones</summary>
 <details>
+<summary>Relaciones</summary>
 <br>Relaciones entre las entidades
 <br>El usuario puede obtener puntos y comprar mejoras con los puntos. 
 <br>El usuario puede ver sus mejoras, que hace cada mejora, ver sus personajes y que hacen.
@@ -139,8 +139,8 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>El usuario puede comprar personajes, que luego se quedan guardados en personajes comprados por el jugador
 </details>
 
-<summary>Ejemplo</summary>
 <details>
+<summary>Ejemplo</summary>
 <br>Ejemplo de datos (simulación)
 <br>Usuario
 <br>Nombre: Shugus
@@ -161,6 +161,7 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Imagen
 </details>
 
+<details>
 <summary>Reflexiones</summary>
 <br>Reflexiones, dificultades y dudas que tienes sobre la base de datos
 <br>Las partes mas complicadas han sido listar los identificadores.
