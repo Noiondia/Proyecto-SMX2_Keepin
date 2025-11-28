@@ -73,7 +73,8 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <a href="https://www.canva.com/design/DAG18031_jA/xM7zD7MZ9NcQ2PMzfyEBWA/view?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h578cf79f8b">Mapa de navegación</a>
 </section>
 </details>
-<h2><b></b>Base de datos</h2></b>
+<details>
+<summary><h2><b></b>Base de datos</h2></b></summary>
 
 <details>
 <summary><h3><b>Identidades principales</b></h3></summary>
@@ -163,8 +164,9 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 </section>
 </details>
 <br>
-
+</details>
 <details>
+
 <summary><h2><b>Tecnologías a utilizar</b></h2></summary>
 <br><b>VM trueNas</b>
 <br>RAM: 2048 MB
