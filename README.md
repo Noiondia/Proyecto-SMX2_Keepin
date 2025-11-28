@@ -237,6 +237,7 @@ Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las car
 
 </section>
 </details>
+</details>
 
 <details>
 <summary><h3>Diagrama de la red</h3></summary>
