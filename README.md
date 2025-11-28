@@ -1,35 +1,5 @@
 <img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/e8f34a15-372c-45fc-9547-aaa39bd4f4b2" />
 
-
-
-
-<h2><b>Índice</b></h2>
-
-<a href="#Abstract">Abstract</a>
-
-<a href="#Introducción">Introducción</a>
-
-<a href="#Briefing">Briefing de ideas</a>
-
-<a href="#Mockup">Mockup</a>
-
-<a href="#Base de datos">Base de datos</a>
-
-<a href="#Diagrama de la base de datos">Diagrama de la base de datos</a>
-
-<a href="#Tecnologías a utilizar">Tecnologías a utilizar
-
-<a href="#Diagrama de la red">Diagrama de la red
-
-<a href="#Funcionalidades">Funcionalidades
-
-<a href="#Listado de tareas">Listado de tareas
-
-<a href="#Conclusiones">Conclusiones
-
-<a href="#Bibliografia">Bibliografía</a>
-
-
 <details>
 <summary><h2><b>Abstract</b></h2></summary>
 <section id="Abstract">
@@ -39,10 +9,8 @@ Aunque al contrario que Cookie Clicker, decidimos hacer el diseño gráfico en A
 </section>
 </details>
 
-<summary><h2><b>Introducción</b></h2></summary>
-<section id="Introducción">
-
 <details>
+<summary><h2><b>Introducción</b></h2></summary>
 Será un juego sencillo, un clicker, donde el objetivo es hacer click a Jorge y ganar puntos con esto, puntos con los que se podrán comprar mejoras y desbloquear personajes, montando un equipo con efectos únicos que nos harán ganar más y más puntos cada vez.
 El objetivo será conseguir la mayor cantidad de puntos posibles, utilizando las mejoras desbloqueadas y los personajes en el equipo, para lo que habrá un guardado de partida en el que se utilizará el correo electrónico.
 Utilizamos como referencia un juego llamado cookie clicker, ya que tiene un objetivo parecido al de nuestro juego, hacer click a un botón, ganar puntos y comprar mejoras para progresar en el juego.
