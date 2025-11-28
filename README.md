@@ -36,11 +36,11 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 https://www.youtube.com/watch?v=_6N18g3ewnw
 </section>
 </details>
-<h2><b>Mockup</b></h2>
+
 
 <details>
-<summary>Mockup</summary>
-<summary><section id="Mockup">
+<summary><h2><b>Mockup</b></h2></summary>
+
 El <em>"Mockup"</em> es el diseño de nuestra página web, en este canva se ve cada pestaña a la que se puede acceder.
 La tipografía que hemos escogido, (times new roman) creemos que es la que más se adapta al ASCII, que es en lo que nos hemos basado para crear el diseño de la página.
 La tipografia del Mockup se cambiara a futuro. 
