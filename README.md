@@ -16,7 +16,7 @@ El objetivo será conseguir la mayor cantidad de puntos posibles, utilizando las
 Utilizamos como referencia un juego llamado cookie clicker, ya que tiene un objetivo parecido al de nuestro juego, hacer click a un botón, ganar puntos y comprar mejoras para progresar en el juego.
 Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, agregaremos más contenido a la página.
 </section>
-</details>
+
 
 <section id="Briefing">
 
@@ -35,7 +35,7 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 <br>A continuación adjuntamos un vídeo que nos ha ayudado a aprender de Python para la programación del juego.
 https://www.youtube.com/watch?v=_6N18g3ewnw
 </section>
-
+</details>
 <h2><b>Mockup</b></h2>
 
 <details>
