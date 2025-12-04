@@ -178,7 +178,7 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 </details>
 
 <details>
-<summary><h3>Diagrama de la base de datos</h3></summary>
+<summary><h4>Diagrama de la base de datos</h4></summary>
 
 Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
 <br><a href="https://www.canva.com/design/DAG4AIVR89Y/UAvlDlBaG4e5NRyWNftTmg/view?utm_content=DAG4AIVR89Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa1bf1f112">Mapa de relaciones</a>
