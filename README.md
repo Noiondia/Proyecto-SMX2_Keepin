@@ -16,9 +16,10 @@ El objetivo será conseguir la mayor cantidad de puntos posibles, utilizando las
 Utilizamos como referencia un juego llamado cookie clicker, ya que tiene un objetivo parecido al de nuestro juego, hacer click a un botón, ganar puntos y comprar mejoras para progresar en el juego.
 Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, agregaremos más contenido a la página.
 </section>
+</details>
 
-
-<h2><b>Briefing de ideas</b></h2>
+<details>
+<summary><h2><b>Briefing de ideas</b></h2></summary>
 <b>Nuestra idea es hacer un juego clicker, con gráficos en ASCII y todo en una página web como el juego Cookie Clicker.</b>
 <br>Somos 3 alumnos a los que nos apasionan los videojuegos, el hecho de jugarlos y la idea de poder llegar a hacer una propio, por lo que hemos visto este proyecto como una gran oportunidad para hacer eso realidad, incluso si es uno relativamente simple.
 <br>
@@ -33,6 +34,7 @@ Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, ag
 <br>A continuación adjuntamos un vídeo que nos ha ayudado a aprender de Python para la programación del juego.
 https://www.youtube.com/watch?v=_6N18g3ewnw
 </section>
+</details>
 </details>
 
 
@@ -176,7 +178,7 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 </details>
 
 <details>
-<summary><h3><b>Diagrama de la base de datos</b></h3></summary>
+<summary><h3>Diagrama de la base de datos</h3></summary>
 
 Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
 <br><a href="https://www.canva.com/design/DAG4AIVR89Y/UAvlDlBaG4e5NRyWNftTmg/view?utm_content=DAG4AIVR89Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haa1bf1f112">Mapa de relaciones</a>
