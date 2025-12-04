@@ -79,7 +79,7 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <summary><h2><b></b>Base de datos</h2></b></summary>
 
 <details>
-<summary><h3>Identidades principales</h3></summary>
+<summary><h4>Identidades principales</h4></summary>
 
 <details>
 <summary>Usuario</summary>
