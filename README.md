@@ -181,7 +181,7 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <summary><h4>Diagrama de la base de datos</h4></summary>
 
 Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
-Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas rojas discontinuas son las tablas secundarias, y las tablas con lineas azules discontinuas son las funcionalidades
+Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas rojas discontinuas son las tablas secundarias, y las tablas con lineas azules discontinuas son las funcionalidades<br>
 <img width="713" height="675" alt="image" src="https://github.com/user-attachments/assets/36a4ef40-6b85-4980-a61a-62c41b74185c" />
 
 </section>
