@@ -381,4 +381,5 @@ Copias de seguridad: Zarek
 <a href="https://gist.github.com/dasdo/9ff71c5c0efa037441b6">Comandos de github</a><br>
 <a href="https://m365.cloud.microsoft/launch/visio?auth=2&origindomain=microsoft365">Microsoft Visio</a>
 <br><a href="https://www.canva.com/templates">Canva</a>
+<br><a href=https://punkymo.gitbook.io/miwiki>Página alina</a>
 </details>
