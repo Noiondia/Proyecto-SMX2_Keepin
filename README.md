@@ -281,6 +281,10 @@ En total vamos a usar 4 maquinas virtuales<br>
 </details>
 
 <details>
+<summary><h3>Docker</h3></summary>
+Texto de ejemplo
+</details>
+<details>
 <summary><h2><b>Funcionalidades</b></h2></summary>
 
 <br>ID1
