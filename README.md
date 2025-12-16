@@ -265,7 +265,7 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 </details>
 
 <details>
-<summary><h3>Diagrama de la red</h3></summary>
+<summary><h3>Red</h3></summary>
 
 <br>Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router<br>
 <br><b>Servicios </b>
