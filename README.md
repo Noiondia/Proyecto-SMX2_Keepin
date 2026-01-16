@@ -226,7 +226,9 @@ DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de do
 Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
 La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.org/doc/rfc9886/>IETF</a><br>
 <br>DHCP
-
+ DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
+Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
+ISe puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>
 </details>
 
 <br><b>Interfaz de usuario (Frontend)</b>
