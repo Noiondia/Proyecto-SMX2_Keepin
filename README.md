@@ -230,6 +230,10 @@ La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.or
 Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
 ISe puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>
 </details>
+<br>Incidencias
+No sabiamos entrar al pi-hole.
+No conseguiamos poner el PHPmyadmin
+
 
 <br><b>Interfaz de usuario (Frontend)</b>
 <details>
