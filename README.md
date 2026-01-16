@@ -222,7 +222,11 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 <details>
 <summary><br>Guías de uso</summary>
 <br>DNS
+DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
+Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
+La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.org/doc/rfc9886/>IETF</a><br>
 <br>DHCP
+
 </details>
 
 <br><b>Interfaz de usuario (Frontend)</b>
