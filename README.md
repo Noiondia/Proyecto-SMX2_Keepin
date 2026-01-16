@@ -287,7 +287,7 @@ En total vamos a usar 4 maquinas virtuales<br>
 <br>A continuación hemos configurado el primer contenedor con portainer para poder usar un entorno gráfico con docker.
 <br>Foto portainer.
 
-<br>Los servicios.
+<br><h3>Los servicios.</h3>
 <br>Hemos tenido que crear un stack juntando DHCP, nginx, mySQL, PHP y PHPmyadmin. Pi-hole no está en el stack, es un contenedor aparte.
 <br>Foto de los containers y stack.
 
