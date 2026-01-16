@@ -282,7 +282,15 @@ En total vamos a usar 4 maquinas virtuales<br>
 
 <details>
 <summary><h3>Docker</h3></summary>
-Utilizamos Docker, ya que preferimos tener varios containers a tener 4 máquinas virtuales diferentes.
+<br>Utilizamos Docker, ya que preferimos tener varios containers a tener 4 máquinas virtuales diferentes.
+<br>Hemos instalado un ubuntu server y ahí hemos instalado el docker, hemos configurado que el usuario esté en el grupo docker para que no tengamos que usar “sudo” en cada comando de docker.
+<br>A continuación hemos configurado el primer contenedor con portainer para poder usar un entorno gráfico con docker.
+<br>Foto portainer.
+
+<br>Los servicios.
+<br>Hemos tenido que crear un stack juntando DHCP, nginx, mySQL, PHP y PHPmyadmin. Pi-hole no está en el stack, es un contenedor aparte.
+<br>Foto de los containers y stack.
+
 </details>
 <details>
 <summary><h2><b>Funcionalidades</b></h2></summary>
