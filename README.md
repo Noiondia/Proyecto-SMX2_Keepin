@@ -217,6 +217,7 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 <br>Se utilizará un total de 3 Ubuntu server. Uno para la página web, con PHP, Apache y HTML5, con CSS.
 <br>Otro será el servidor DNS con Pi hole.
 <br>Y el último será el que tenga toda la información, se utilizará MySQL y phpMyAdmin
+</details>
 <details>
 <summary><br>Guías de uso</summary>
 <br>DNS
