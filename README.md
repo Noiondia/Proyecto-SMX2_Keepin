@@ -220,7 +220,6 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 </details>
 
 <details>
-<br>Guías de uso
 <summary><br>Guías de uso</summary>
 <br>DNS
 <br>DHCP
