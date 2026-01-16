@@ -219,6 +219,7 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 <br>Y el último será el que tenga toda la información, se utilizará MySQL y phpMyAdmin
 </details>
 
+<br>Guías de uso
 <details>
 <summary><br>Guías de uso</summary>
 <br>DNS
