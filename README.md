@@ -188,78 +188,78 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 </details>
 <details>
 <summary><h4>Codigo SQL</h4></summary>
-La base de datos esta echa con MySQL.
+<br>La base de datos esta echa con MySQL.
 
 <details>
 <summary><h4>Codigo SQL</h4></summary>
-CREATE TABLE efectos (
-    IDhabilidades INT AUTO_INCREMENT PRIMARY KEY,
-    descripcion_efecto TEXT,
-    factor INT
-);
+<br>CREATE TABLE efectos (
+    <br>IDhabilidades INT AUTO_INCREMENT PRIMARY KEY,
+    <br>descripcion_efecto TEXT,
+    <br>factor INT
+<br>);
 
-CREATE TABLE mejoras (
-    mejora_ID INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(50),
-    requisitos TEXT,
-    efecto TEXT,
-    descripción TEXT,
-    imagen VARCHAR(255),
-    efectos_IDhabilidades INT,
-    FOREIGN KEY (efectos_IDhabilidades)
-        REFERENCES efectos(IDhabilidades)
-);
+<br>CREATE TABLE mejoras (
+    <br>mejora_ID INT AUTO_INCREMENT PRIMARY KEY,
+    <br>nombre VARCHAR(50),
+    <br>requisitos TEXT,
+    <br>efecto TEXT,
+    <br>descripción TEXT,
+    <br>imagen VARCHAR(255),
+    <br>efectos_IDhabilidades INT,
+    <br>FOREIGN KEY (efectos_IDhabilidades)
+        <br>REFERENCES efectos(IDhabilidades)
+<br>);
 
-CREATE TABLE personajes (
-    personaje_ID INT AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(50),
-    requisitos TEXT,
-    descripción TEXT,
-    imagen VARCHAR(255),
-    efectos_IDhabilidades INT,
-    FOREIGN KEY (efectos_IDhabilidades)
-        REFERENCES efectos(IDhabilidades)
-);
+<br>CREATE TABLE personajes (
+    <br>personaje_ID INT AUTO_INCREMENT PRIMARY KEY,
+    <br>nombre VARCHAR(50),
+    <br>requisitos TEXT,
+    <br>descripción TEXT,
+    <br>imagen VARCHAR(255),
+    <br>efectos_IDhabilidades INT,
+    <br>FOREIGN KEY (efectos_IDhabilidades)
+        <br>REFERENCES efectos(IDhabilidades)
+<br>);
 
-CREATE TABLE usuarios (
-    usuario_ID INT AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(150),
-    contraseña VARCHAR(150),
-    nombre_usuario VARCHAR(30),
-    jorges_actuales INT
-);
+<br>CREATE TABLE usuarios (
+    <br>usuario_ID INT AUTO_INCREMENT PRIMARY KEY,
+    <br>email VARCHAR(150),
+    <br>contraseña VARCHAR(150),
+    <br>nombre_usuario VARCHAR(30),
+    <br>jorges_actuales INT
+<br>);
 
-CREATE TABLE usuarios_personajes_comprados (
-    usuarios_Usuario_ID INT,
-    personaje_personaje_ID INT,
-    PRIMARY KEY (usuarios_usuario_ID, personaje_personaje_ID),
-    FOREIGN KEY (usuarios_usuario_ID)
-        REFERENCES usuarios(usuario_ID),
-    FOREIGN KEY (personaje_personaje_ID)
-        REFERENCES personajes(personaje_ID)
-);
+<br>CREATE TABLE usuarios_personajes_comprados (
+    <br>usuarios_Usuario_ID INT,
+    <br>personaje_personaje_ID INT,
+    <br>PRIMARY KEY (usuarios_usuario_ID, personaje_personaje_ID),
+    <br>FOREIGN KEY (usuarios_usuario_ID)
+        <br>REFERENCES usuarios(usuario_ID),
+    <br>FOREIGN KEY (personaje_personaje_ID)
+        <br>REFERENCES personajes(personaje_ID)
+<br>);
 
-CREATE TABLE usuarios_personajes_activos (
-    usuarios_usuario_ID INT,
-    personaje_personaje_ID INT,
-    PRIMARY KEY (usuarios_usuario_ID, personaje_personaje_ID),
-    FOREIGN KEY (usuarios_usuario_ID)
-        REFERENCES usuarios(usuario_ID),
-    FOREIGN KEY (personaje_personaje_ID)
-        REFERENCES personajes(personaje_ID)
-);
+<br>CREATE TABLE usuarios_personajes_activos (
+    <br>usuarios_usuario_ID INT,
+    <br>personaje_personaje_ID INT,
+    <br>PRIMARY KEY (usuarios_usuario_ID, personaje_personaje_ID),
+    <br>FOREIGN KEY (usuarios_usuario_ID)
+        <br>REFERENCES usuarios(usuario_ID),
+    <br>FOREIGN KEY (personaje_personaje_ID)
+        <br>REFERENCES personajes(personaje_ID)
+<br>);
 
-CREATE TABLE usuarios_has_mejoras (
-    usuarios_usuario_ID INT,
-    mejoras_mejora_ID INT,
-    mejoras_efectos_IDhabilidades INT,
-    PRIMARY KEY (usuarios_usuario_ID, mejoras_mejora_ID),
-    FOREIGN KEY (usuarios_usuario_ID)
-        REFERENCES usuarios(usuario_ID),
-    FOREIGN KEY (mejoras_mejora_ID)
-        REFERENCES mejoras(mejora_ID),
-    FOREIGN KEY (mejoras_efectos_IDhabilidades)
-		REFERENCES efectos(IDhabilidades);
+<br>CREATE TABLE usuarios_has_mejoras (
+    <br>usuarios_usuario_ID INT,
+    <br>mejoras_mejora_ID INT,
+    <br>mejoras_efectos_IDhabilidades INT,
+    <br>PRIMARY KEY (usuarios_usuario_ID, mejoras_mejora_ID),
+    <br>FOREIGN KEY (usuarios_usuario_ID)
+        <br>REFERENCES usuarios(usuario_ID),
+    <br>FOREIGN KEY (mejoras_mejora_ID)
+        <br>REFERENCES mejoras(mejora_ID),
+    <br>FOREIGN KEY (mejoras_efectos_IDhabilidades)
+		<br>REFERENCES efectos(IDhabilidades);
 </details>
 <details>
 <summary><h4>Diagrama de la base de datos</h4></summary>
