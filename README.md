@@ -357,7 +357,7 @@ No conseguiamos poner el PHPmyadmin
 </section>
 </details>
 </details>
-
+</details>
 <details>
 <summary><h3>Red</h3></summary>
 
