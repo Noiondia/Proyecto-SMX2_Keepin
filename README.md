@@ -264,6 +264,7 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 <details>
 <summary><h4>Diagrama de la base de datos</h4></summary>
 </details>
+</details>
 <br>
 </details>
 <details>
