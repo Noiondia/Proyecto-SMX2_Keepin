@@ -267,7 +267,6 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 <br>
 </details>
 <details>
-</details>
 <summary><h2><b>Tecnologías a utilizar</b></h2></summary>
 <br><b>VM trueNas</b>
 <br>RAM: 2048 MB
