@@ -298,7 +298,7 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 </details>
 
 <details>
-<summary><br>Guías de uso</summary>
+<summary>Guías de uso</summary>
 <br>DNS
 DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
 Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
