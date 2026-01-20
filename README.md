@@ -306,12 +306,11 @@ La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.or
 <br>DHCP
  DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
 Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
-ISe puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>
-</details>
+ISe puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>¡
 <br>Incidencias
 No sabiamos entrar al pi-hole.
 No conseguiamos poner el PHPmyadmin
-
+</details>
 
 <br><b>Interfaz de usuario (Frontend)</b>
 <details>
