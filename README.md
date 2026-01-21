@@ -269,6 +269,9 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 </details>
 <details>
 <summary><h2><b>Tecnologías a utilizar</b></h2></summary>
+Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y no en diferentes maquinas virtuales.
+<img width="1606" height="98" alt="image" src="https://github.com/user-attachments/assets/b38c53e2-67c0-4b8e-94ae-0bc59ea56ee2" />
+
 <br><b>VM trueNas</b>
 <br>RAM: 2048 MB
 <br>espacio en disco: 2 disco de 10 GB
@@ -288,6 +291,13 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 <br>RAM: 2048 MB
 <br>espacio en disco: 1 disco duro de 50 GB
 <br>adaptadores de red: Puente
+
+<br><img width="1587" height="339" alt="image" src="https://github.com/user-attachments/assets/9ec36250-b8f3-41d5-a92b-c058d5cd95bd" />
+ <br>Para poder conectarnos desde la maquina vistual, que es un ubuntu server con ssh ya descargado, al CMD tenemos que poner le comando ssh"nombredelusuario+ip" asi podemos trabajar desde el CMD.
+
+<br>Después nos contectamos al docker por la IP de la maquina virtual. El ultimo numero de la IP, en este caso el 29 cambia cada vez que encendemos la VM de ubuntu server. Por eso haces el comando ip a | grep 192.
+<br><img width="347" height="40" alt="image" src="https://github.com/user-attachments/assets/51464a83-2418-4aac-842a-17eac56017eb" />
+
 
 <br><b>Sistema operativo</b>
 <br><b>Utilizaremos diversos sistemas operativos dependiendo de las necesidades.</b>
