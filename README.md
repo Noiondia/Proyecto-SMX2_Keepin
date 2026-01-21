@@ -292,10 +292,11 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br>espacio en disco: 1 disco duro de 50 GB
 <br>adaptadores de red: Puente
 
+<br>Para conectarnos a la máquina virtual (Ubuntu Server) desde el CMD mediante SSH, debemos usar el comando ssh usuario@ip
 <br><img width="1587" height="339" alt="image" src="https://github.com/user-attachments/assets/9ec36250-b8f3-41d5-a92b-c058d5cd95bd" />
- <br>Para poder conectarnos desde la maquina vistual, que es un ubuntu server con ssh ya descargado, al CMD tenemos que poner le comando ssh"nombredelusuario+ip" asi podemos trabajar desde el CMD.
 
-<br>Después nos contectamos al docker por la IP de la maquina virtual. El ultimo numero de la IP, en este caso el 29 cambia cada vez que encendemos la VM de ubuntu server. Por eso haces el comando ip a | grep 192.
+
+<br>Después nos conectamos a Docker por la IP de la máquina virtual. El último número de la IP (en este caso el 29) cambia cada vez que encendemos la VM de Ubuntu Server. Por eso hacemos el comando ip a | grep 192
 <br><img width="347" height="40" alt="image" src="https://github.com/user-attachments/assets/51464a83-2418-4aac-842a-17eac56017eb" />
 
 
