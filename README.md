@@ -1,4 +1,4 @@
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/e8f34a15-372c-45fc-9547-aaa39bd4f4b2" />
+[Tabla keeping.sql](https://github.com/user-attachments/files/24794006/Tabla.keeping.sql)<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/e8f34a15-372c-45fc-9547-aaa39bd4f4b2" />
 
 <details>
 <summary><h2><b>Abstract</b></h2></summary>
@@ -189,77 +189,112 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 <details>
 <summary><h4>Codigo SQL</h4></summary>
 <br>La base de datos esta echa con MySQL.
+[Uploading CREATE TABLE efectos (
+    IDhabilidades INT AUTO_INCREMENT PRIMARY KEY,
+    descripcion_efecto TEXT,
+    factor INT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE mejoras (
+    Mejora_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(50),
+    Requisitos TEXT,
+    Efecto TEXT,
+    Descripción TEXT,
+    Imagen VARCHAR(255),
+    efectos_IDhabilidades INT,
+    CONSTRAINT fk_mejoras_efectos
+        FOREIGN KEY (efectos_IDhabilidades)
+        REFERENCES efectos(IDhabilidades)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE personajes (
+    Personaje_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Nombre VARCHAR(50),
+    Requisitos TEXT,
+    Descripción TEXT,
+    Imagen VARCHAR(255),
+    efectos_IDhabilidades INT,
+    CONSTRAINT fk_personajes_efectos
+        FOREIGN KEY (efectos_IDhabilidades)
+        REFERENCES efectos(IDhabilidades)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE usuarios (
+    Usuario_ID INT AUTO_INCREMENT PRIMARY KEY,
+    Email VARCHAR(150),
+    Contraseña VARCHAR(150),
+    Nombre_usuario VARCHAR(30),
+    Jorges_actuales INT
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE usuarios_personajes_comprados (
+    Usuarios_Usuario_ID INT,
+    PERSONAJES_Personaje_ID INT,
+    PRIMARY KEY (Usuarios_Usuario_ID, PERSONAJES_Personaje_ID),
+    CONSTRAINT fk_upc_usuario
+        FOREIGN KEY (Usuarios_Usuario_ID)
+        REFERENCES usuarios(Usuario_ID)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    CONSTRAINT fk_upc_personaje
+        FOREIGN KEY (PERSONAJES_Personaje_ID)
+        REFERENCES personajes(Personaje_ID)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE usuarios_personajes_activos (
+    Usuarios_Usuario_ID INT,
+    PERSONAJES_Personaje_ID INT,
+    PRIMARY KEY (Usuarios_Usuario_ID, PERSONAJES_Personaje_ID),
+    CONSTRAINT fk_upa_usuario
+        FOREIGN KEY (Usuarios_Usuario_ID)
+        REFERENCES usuarios(Usuario_ID)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    CONSTRAINT fk_upa_personaje
+        FOREIGN KEY (PERSONAJES_Personaje_ID)
+        REFERENCES personajes(Personaje_ID)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE usuarios_has_mejoras (
+    Usuarios_Usuario_ID INT,
+    MEJORAS_Mejora_ID INT,
+    MEJORAS_efectos_IDhabilidades INT,
+    PRIMARY KEY (Usuarios_Usuario_ID, MEJORAS_Mejora_ID),
+    CONSTRAINT fk_uhm_usuario
+        FOREIGN KEY (Usuarios_Usuario_ID)
+        REFERENCES usuarios(Usuario_ID)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    CONSTRAINT fk_uhm_mejora
+        FOREIGN KEY (MEJORAS_Mejora_ID)
+        REFERENCES mejoras(Mejora_ID)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    CONSTRAINT fk_uhm_efectos
+        FOREIGN KEY (MEJORAS_efectos_IDhabilidades)
+        REFERENCES efectos(IDhabilidades)
+        ON DELETE SET NULL
+        ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+Tabla keeping.sql…]()
 
 <details>
 <summary><h4>Codigo SQL</h4></summary>
-<br>CREATE TABLE efectos (
-    <br>IDhabilidades INT AUTO_INCREMENT PRIMARY KEY,
-    <br>descripcion_efecto TEXT,
-    <br>factor INT
-<br>);
-
-<br>CREATE TABLE mejoras (
-    <br>mejora_ID INT AUTO_INCREMENT PRIMARY KEY,
-    <br>nombre VARCHAR(50),
-    <br>requisitos TEXT,
-    <br>efecto TEXT,
-    <br>descripción TEXT,
-    <br>imagen VARCHAR(255),
-    <br>efectos_IDhabilidades INT,
-    <br>FOREIGN KEY (efectos_IDhabilidades)
-        <br>REFERENCES efectos(IDhabilidades)
-<br>);
-
-<br>CREATE TABLE personajes (
-    <br>personaje_ID INT AUTO_INCREMENT PRIMARY KEY,
-    <br>nombre VARCHAR(50),
-    <br>requisitos TEXT,
-    <br>descripción TEXT,
-    <br>imagen VARCHAR(255),
-    <br>efectos_IDhabilidades INT,
-    <br>FOREIGN KEY (efectos_IDhabilidades)
-        <br>REFERENCES efectos(IDhabilidades)
-<br>);
-
-<br>CREATE TABLE usuarios (
-    <br>usuario_ID INT AUTO_INCREMENT PRIMARY KEY,
-    <br>email VARCHAR(150),
-    <br>contraseña VARCHAR(150),
-    <br>nombre_usuario VARCHAR(30),
-    <br>jorges_actuales INT
-<br>);
-
-<br>CREATE TABLE usuarios_personajes_comprados (
-    <br>usuarios_Usuario_ID INT,
-    <br>personaje_personaje_ID INT,
-    <br>PRIMARY KEY (usuarios_usuario_ID, personaje_personaje_ID),
-    <br>FOREIGN KEY (usuarios_usuario_ID)
-        <br>REFERENCES usuarios(usuario_ID),
-    <br>FOREIGN KEY (personaje_personaje_ID)
-        <br>REFERENCES personajes(personaje_ID)
-<br>);
-
-<br>CREATE TABLE usuarios_personajes_activos (
-    <br>usuarios_usuario_ID INT,
-    <br>personaje_personaje_ID INT,
-    <br>PRIMARY KEY (usuarios_usuario_ID, personaje_personaje_ID),
-    <br>FOREIGN KEY (usuarios_usuario_ID)
-        <br>REFERENCES usuarios(usuario_ID),
-    <br>FOREIGN KEY (personaje_personaje_ID)
-        <br>REFERENCES personajes(personaje_ID)
-<br>);
-
-<br>CREATE TABLE usuarios_has_mejoras (
-    <br>usuarios_usuario_ID INT,
-    <br>mejoras_mejora_ID INT,
-    <br>mejoras_efectos_IDhabilidades INT,
-    <br>PRIMARY KEY (usuarios_usuario_ID, mejoras_mejora_ID),
-    <br>FOREIGN KEY (usuarios_usuario_ID)
-        <br>REFERENCES usuarios(usuario_ID),
-    <br>FOREIGN KEY (mejoras_mejora_ID)
-        <br>REFERENCES mejoras(mejora_ID),
-    <br>FOREIGN KEY (mejoras_efectos_IDhabilidades)
-		<br>REFERENCES efectos(IDhabilidades);
+	
+<br>
 </details>
 <details>
 <summary><h4>Diagrama de la base de datos</h4></summary>
