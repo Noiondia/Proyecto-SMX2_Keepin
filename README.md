@@ -77,6 +77,7 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 </details>
 <details>
 <summary><h2><b></b>Base de datos</h2></b></summary>
+<img width="978" height="841" alt="image" src="https://github.com/user-attachments/assets/e98a95b3-72d6-413a-9a36-79db5ae5b6b5" />
 
 <details>
 <summary><h4>Identidades principales</h4></summary>
