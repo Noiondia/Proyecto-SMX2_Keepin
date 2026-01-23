@@ -205,25 +205,35 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y no en diferentes maquinas virtuales.
 <img width="1606" height="98" alt="image" src="https://github.com/user-attachments/assets/b38c53e2-67c0-4b8e-94ae-0bc59ea56ee2" />
 
-<br><b>VM trueNas</b>
-<br>RAM: 2048 MB
-<br>espacio en disco: 2 disco de 10 GB
-<br>adaptadores de red: Puente
+<br>Nombre: mi_nginx
+<br>Imagen: nginx:latest
+<br>IP:172.18.0.3
+<br>Puerto: 80 : 80
 
-<br><b>VM Ubuntu server (Apache, PHP)</b>
-<br>RAM: 2048 MB
-<br>espacio en disco: 1 disco duro de 15 GB
-<br>adaptadores de red: Puente
+<br>Nombre: mySQL
+<br>Imagen: mysql:8.0.44-debian
+<br>IP:172.18.0.4
+<br>Puerto: -
 
-<br><b>VM Ubuntu server (DNS)</b>
-<br>RAM: 4096 MB
-<br>espacio en disco: 1 disco duro de 15 GB
-<br>adaptadores de red: Puente
+<br>Nombre: PHP
+<br>Imagen: php:8.3.30RC1-fpm-alpine3.23
+<br>IP:172.18.0.5
+<br>Puerto: 8081 : 80
 
-<br><b>VM Ubuntu server (DMySQL)</b>
-<br>RAM: 2048 MB
-<br>espacio en disco: 1 disco duro de 50 GB
-<br>adaptadores de red: Puente
+<br>Nombre: phpMyAdmin
+<br>Imagen: php:8.3.30RC1-fpm-alpine3.23
+<br>IP:172.18.0.2
+<br>Puerto: -
+
+<br>Nombre: Pi-Hole
+<br>Imagen: pihole/pihole:latest
+<br>IP: -
+<br>Puerto: -
+
+<br>Nombre: portainer
+<br>Imagen: portainer/portainer-ce:lts
+<br>IP: 172.17.0.2
+<br>Puerto: 8000: 8000 9443: 9443
 
 <br>Para conectarnos a la máquina virtual (Ubuntu Server) desde el CMD mediante SSH, debemos usar el comando ssh usuario@ip
 <br><img width="1587" height="339" alt="image" src="https://github.com/user-attachments/assets/9ec36250-b8f3-41d5-a92b-c058d5cd95bd" />
