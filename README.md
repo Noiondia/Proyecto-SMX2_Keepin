@@ -268,7 +268,13 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br>DHCP
 <br>DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
 <br>Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
-<br>ISe puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>¡
+<br>Se puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>¡
+<br>En vez de usar el dhcp del pihole, voy a usar otro diferente, ya que el contenedor de pihole, el dns da problemas si esta en modo host, asi que lo vamos a dejar en modo bridge, y como el dhcp pide que este en modo host, vamos a usar otro servicio. ISC DHCP
+ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en el ubuntu server, el cual se basa en dos archivos de configuración, este es el primero, donde se declara el nombre del adaptador de internet por donde se van a dar las ips
+<img width="746" height="427" alt="image" src="https://github.com/user-attachments/assets/24df3da0-0335-4b74-a9ac-be47d2dd91a3" />
+<br>Este otro, que se declaran todas las características del dhcp, las ips, el lease time, el dominio, etc
+<img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
+
 
 <br>Incidencias
 <br>No sabiamos entrar al pi-hole.
