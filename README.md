@@ -254,16 +254,16 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <details>
 <summary>Guías de uso</summary>
 <br>DNS
-DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
-Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
-La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.org/doc/rfc9886/>IETF</a><br>
+<br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
+<br>Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
+<br>La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.org/doc/rfc9886/>IETF</a><br>
 <br>DHCP
- DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
-Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
-ISe puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>¡
+<br>DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
+<br>Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
+<br>ISe puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>¡
 <br>Incidencias
-No sabiamos entrar al pi-hole.
-No conseguiamos poner el PHPmyadmin
+<br>No sabiamos entrar al pi-hole.
+<br>No conseguiamos poner el PHPmyadmin
 </details>
 
 <br><b>Interfaz de usuario (Frontend)</b>
