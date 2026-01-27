@@ -259,6 +259,7 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br>Funcionamiento.
 <br>Esto es la prueba de que el servicio dns esta funcionando
 <br><img width="780" height="152" alt="image" src="https://github.com/user-attachments/assets/4cecd103-d636-40cd-a7be-d26bebba666b" />
+<br>
 <br>Esto es la traduccion dominio ip
 <br><img width="627" height="82" alt="image" src="https://github.com/user-attachments/assets/1e8e2466-3f05-4f12-bac4-e1b0e3a7fdf9" />
 
