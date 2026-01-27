@@ -256,11 +256,19 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br>DNS
 <br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
 <br>Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
+<br>Funcionamiento.
+<br>Esto es la prueba de que el servicio dns esta funcionando
+<img width="780" height="152" alt="image" src="https://github.com/user-attachments/assets/4cecd103-d636-40cd-a7be-d26bebba666b" />
+Esto es la traduccion dominio ip
+<img width="627" height="82" alt="image" src="https://github.com/user-attachments/assets/1e8e2466-3f05-4f12-bac4-e1b0e3a7fdf9" />
+
+
 <br>La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.org/doc/rfc9886/>IETF</a><br>
 <br>DHCP
 <br>DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
 <br>Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
 <br>ISe puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>¡
+
 <br>Incidencias
 <br>No sabiamos entrar al pi-hole.
 <br>No conseguiamos poner el PHPmyadmin
