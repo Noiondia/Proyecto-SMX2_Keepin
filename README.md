@@ -276,13 +276,19 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
 
 <br>Nginx
-<br>Nginx funciona, aunque todavia no se ve la nuestra pagina web en cambio se ve una pagina predeterminada que te da el propio nginx, nosotros lo unico que hicimos fue cambiar el titulo.
+<br>Nginx funciona, aunque todavía no se ve nuestra página web; en cambio, se ve una página predeterminada que te da el propio Nginx. Nosotros, lo único que hicimos fue cambiar el título.
 <img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
 
 
 <br>Incidencias
-<br>No sabiamos entrar al pi-hole.
-<br>No conseguiamos poner el PHPmyadmin
+<br>Al principio no sabiamos entrar al pi-hole.
+<br>Lo conseguimos solucionar el problema ya que Alina nos dijo como y para no olvidarlo lo pusimos en el trello.
+<br>Cuando comenzamos a trabajar con Docker, creamos varios contenedores por separado. Sin embargo, Alina nos comentó que era mejor unificarlos en un solo stack, ya que de esta forma se puede centralizar la configuración y asegurar que todos los servicios queden correctamente interconectados.
+<br>La solución fue sencilla: eliminamos todos los contenedores de Portainer, excepto el de Pi-hole, y luego creamos un stack con el resto de los servicios.
+<br>Las configuraciones de Pi-hole se perdían al apagar el equipo.
+<br>Se detectan problemas en el contenedor de Pi-hole al habilitar simultáneamente los servicios de DHCP y DNS.
+<br>Nginx no aguanta python
+<br>
 </details>
 
 <br><b>Interfaz de usuario (Frontend)</b>
