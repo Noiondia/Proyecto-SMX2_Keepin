@@ -275,6 +275,10 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <br>Este otro, que se declaran todas las características del dhcp, las ips, el lease time, el dominio, etc
 <img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
 
+<br>Nginx
+<br>Nginx funciona, aunque todavia no se ve la nuestra pagina web en cambio se ve una pagina predeterminada que te da el propio nginx, nosotros lo unico que hicimos fue cambiar el titulo.
+<img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
+
 
 <br>Incidencias
 <br>No sabiamos entrar al pi-hole.
