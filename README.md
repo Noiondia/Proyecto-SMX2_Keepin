@@ -235,9 +235,10 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br>IP: 172.17.0.2
 <br>Puerto: 8000: 8000 9443: 9443
 
-<br>Para conectarnos a la máquina virtual (Ubuntu Server) desde el CMD mediante SSH, debemos usar el comando ssh usuario@ip
 <br><img width="1587" height="339" alt="image" src="https://github.com/user-attachments/assets/9ec36250-b8f3-41d5-a92b-c058d5cd95bd" />
 
+<br>Para conectarnos a la máquina virtual (Ubuntu Server) desde el CMD mediante SSH, debemos usar el comando ssh usuario@ip. En la imagen se ve cómo se hace; lo único que se tendría que hacer es cambiar la "x" por la IP de la máquina virtual.
+<br><img width="461" height="62" alt="image" src="https://github.com/user-attachments/assets/34a0dc1b-8fb4-40f2-863c-2bbbd8c3ad93" />
 
 <br>Después nos conectamos a Docker por la IP de la máquina virtual. El último número de la IP (en este caso el 29) cambia cada vez que encendemos la VM de Ubuntu Server. Por eso hacemos el comando ip a | grep 192
 <br><img width="347" height="40" alt="image" src="https://github.com/user-attachments/assets/51464a83-2418-4aac-842a-17eac56017eb" />
