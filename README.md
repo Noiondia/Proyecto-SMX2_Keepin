@@ -283,7 +283,7 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <summary>Seguridad</summary>
 <br>El firewall lo desactivamos
 	<br><img width="604" height="36" alt="image" src="https://github.com/user-attachments/assets/f7512d83-4006-4c3d-b1c8-cd425a0d7d39" />
-<br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. Como se observa en la imagen, el acceso se realiza mediante la dirección http://192.168.135.28/. Para refrescar el sitio omitiendo la caché, utilice la combinación de teclas Ctrl + Shift + R.
+<br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. Como se observa en la imagen, el acceso se realiza mediante la dirección http://192.168.135.28/. Para refrescar el sitio utilice la combinación de teclas Ctrl + Shift + R asi podemos reiniciar la caché
 <br><img width="1918" height="1041" alt="image" src="https://github.com/user-attachments/assets/8e2963a3-9118-49cb-a3e5-ce3e5080fb8d" />
 
 <br>Incidencias
