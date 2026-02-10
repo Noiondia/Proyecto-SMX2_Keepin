@@ -281,7 +281,7 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
 
 <br>Compose
-Este archivo Docker Compose permite orquestar múltiples contenedores para desplegar un stack tecnológico de forma unificada. Su principal ventaja es que facilita la conectividad y el aislamiento de red, permitiendo que los servicios se comuniquen entre sí de manera eficiente y segura.
+<br>Este archivo Docker Compose permite orquestar múltiples contenedores para desplegar un stack tecnológico de forma unificada. Su principal ventaja es que facilita la conectividad y el aislamiento de red, permitiendo que los servicios se comuniquen entre sí de manera eficiente y segura.
 ```yaml
 services:
   nginx:
