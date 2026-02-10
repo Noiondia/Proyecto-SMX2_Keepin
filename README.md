@@ -280,6 +280,57 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <br>Nginx funciona, aunque todavía no se ve nuestra página web; en cambio, se ve una página predeterminada que te da el propio Nginx. Nosotros, lo único que hicimos fue cambiar el título.
 <img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
 
+<br>Compose
+services:
+  nginx:
+    image: nginx:latest
+    container_name: mi_nginx
+    ports:
+      - "80:80"
+    volumes:
+      - /home/jorge_admin/docker/nginx/conf:/etc/nginx/conf.d
+      - /home/jorge_admin/docker/www:/var/www/html
+    depends_on:
+      - php
+    networks:
+      - keepin-network
+    restart: unless-stopped
+
+  php:
+    image: php:8.3-fpm
+    container_name: mi_php
+    volumes:
+      - /home/jorge_admin/docker/www:/var/www/html
+    networks:
+      - keepin-network
+    restart: unless-stopped
+
+  mysql:
+    image: mysql:8.0
+    container_name: mi_sql
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: keeping
+      MYSQL_USER: JorgeSQL
+      MYSQL_PASSWORD: 1234
+    volumes:
+      - /home/jorge_admin/docker/mysql_data:/var/lib/mysql
+    networks:
+      - keepin-network
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: mi_phpmyadmin
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: mysql
+    networks:
+      - keepin-network
+
+networks:
+  keepin-network:
+    driver: bridge
 <details>
 <summary>Seguridad</summary>
 <br>El firewall lo desactivamos
