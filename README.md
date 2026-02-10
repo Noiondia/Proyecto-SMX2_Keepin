@@ -281,7 +281,7 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
 
 <br>Compose
-services:
+```services:
   nginx:
     image: nginx:latest
     container_name: mi_nginx
@@ -330,7 +330,8 @@ services:
 
 networks:
   keepin-network:
-    driver: bridge
+    driver: bridge´´´
+
 <details>
 <summary>Seguridad</summary>
 <br>El firewall lo desactivamos
