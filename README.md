@@ -253,9 +253,9 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 
 
 <details>
-<summary>Guías de uso</summary>
+<summary><h1>Guías de uso</h1></summary>
 <details>
-<summary>Guías de uso</summary>
+<summary>DNS</summary>
 <br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
 <br>Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
 <br>Funcionamiento.
@@ -264,9 +264,8 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br>
 <br>Esto es la traduccion dominio ip
 <br><img width="699" height="257" alt="image" src="https://github.com/user-attachments/assets/b3d57199-dd82-467e-a06d-904d4f4be73e" />
-</details>
-
 <br>La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.org/doc/rfc9886/>IETF</a><br>
+</details>
 <details>
 <summary>DHCP</summary>
 <br>DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
