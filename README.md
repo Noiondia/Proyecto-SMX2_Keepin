@@ -284,9 +284,9 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
 </details>
 <details>
-<summary>Nginx</summary>
+<summary>Docker</summary>
 <br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
-</details>
+
 
 ```
 services:
@@ -340,6 +340,8 @@ networks:
   keepin-network:
     driver: bridge
 ```
+
+</details>
 <details>
 <summary>PHP y SQL</summary>
 <br>Capa de Abstracción de Datos (PHP ↔ MySQL)
