@@ -277,11 +277,11 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
 
 <br>Nginx
-<br>Nginx funciona, aunque todavía no se ve nuestra página web; en cambio, se ve una página predeterminada que te da el propio Nginx. Nosotros, lo único que hicimos fue cambiar el título.
+<br>Nginx está operando correctamente, aunque actualmente no despliega nuestra aplicación. En su lugar, se visualiza la página de bienvenida por defecto del servidor. Esto sucede porque, aunque el servicio está activo, aún no hemos vinculado nuestro directorio de archivos al archivo de configuración de Nginx (Server Block). Por ahora, solo hemos verificado su funcionamiento modificando el título en el archivo index.html predeterminado.
 <img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
 
 <br>Compose
-<br>Este archivo Docker Compose permite orquestar múltiples contenedores para desplegar un stack tecnológico de forma unificada. Su principal ventaja es que facilita la conectividad y el aislamiento de red, permitiendo que los servicios se comuniquen entre sí de manera eficiente y segura.
+<br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
 ```yaml
 services:
   nginx:
