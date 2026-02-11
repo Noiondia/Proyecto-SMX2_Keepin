@@ -282,7 +282,7 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 
 <br>Compose
 <br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
-```yaml
+```
 services:
   nginx:
     image: nginx:latest
@@ -334,6 +334,18 @@ networks:
   keepin-network:
     driver: bridge
 ```
+<details>
+<summary>PHP y SQL</summary>
+<br>Capa de Abstracción de Datos (PHP ↔ MySQL)
+<br>Uno de los hitos técnicos clave fue la personalización del contenedor de PHP para habilitar la comunicación con el motor de base de datos.
+<br>Dado que las imágenes oficiales de PHP-FPM son minimalistas, se integró un comando de instalación automática (docker-php-ext-install mysqli) dentro del ciclo de vida del contenedor.
+<br>Se forzó la recreación del stack para asegurar que el binario de PHP incluyera la clase mysqli, eliminando errores de "Class not found".
+<br>Se ha desarrollado y testeado el script conexion.php, que actúa como el núcleo de comunicación del sistema.
+	
+<br>Configuración de Host: Se ha utilizado la resolución de nombres interna de Docker, apuntando el host al nombre del servicio mysql en lugar de direcciones IP estáticas.
+<br>Se implementó un control de errores mediante connect_error para diagnosticar fallos de autenticación o de red interna.
+<br>Se verificó la conexión mediante consultas de agregación (SELECT COUNT) sobre la tabla de usuarios, confirmando que el flujo de datos entre el contenedor PHP y el volumen de MySQL es totalmente funcional.
+</details>
 
 <details>
 <summary>Seguridad</summary>
