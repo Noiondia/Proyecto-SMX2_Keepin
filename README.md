@@ -77,11 +77,8 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 </details>
 <details>
 <summary><h2><b></b>Base de datos</h2></b></summary>
-<img width="978" height="841" alt="image" src="https://github.com/user-attachments/assets/e98a95b3-72d6-413a-9a36-79db5ae5b6b5" />
-
 <details>
 <summary><h4>Identidades principales</h4></summary>
-
 <details>
 <summary>Usuario</summary>
 -Usuario 
@@ -183,11 +180,11 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 
 Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
 Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas rojas discontinuas son las tablas secundarias, y las tablas con lineas azules discontinuas son las funcionalidades<br>
-
+<br><img width="978" height="841" alt="image" src="https://github.com/user-attachments/assets/e98a95b3-72d6-413a-9a36-79db5ae5b6b5" />
 </section>
 </details>
 <details>
-<summary><h4>Codigo SQL</h4></summary>
+<summary><h3>Codigo SQL</h3></summary>
 	
 ```
 -- MySQL Workbench Forward Engineering
@@ -352,7 +349,7 @@ DEFAULT CHARACTER SET = utf8mb4;
 <br>
 </details>
 <details>
-<summary><h4>Diagrama de la base de datos</h4></summary>
+<summary><h3>Diagrama de la base de datos</h3></summary>
 	<img width="713" height="675" alt="image" src="https://github.com/user-attachments/assets/36a4ef40-6b85-4980-a61a-62c41b74185c" />
 </details>
 </details>
