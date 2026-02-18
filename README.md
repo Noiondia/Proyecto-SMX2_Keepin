@@ -422,15 +422,19 @@ networks:
 <details>
 <summary><h3>Red</h3></summary>
 
-<br>Esta imagen representa las maquinas que hay en nuestra red, son 4 maquinas virtuales, cada una con su servicio que van a hacer que la pagina funcione, a parte de las 4 maquinas, consta de un switch, un firewall y un router<br>
+<br>Esta imagen representa el como esta echa la red. Nosotros usamos docker con los servicios de phpMyadmin,My SQL, Nginx,php en un stack. Por separado estaria Pi-hole que usaremos como DNS y por ultimo seria DHCP.
+Las ip de cada servidor serian:
+<br>Nginx 172.18.0.3
+<br>php 172.18.0.5
+<br>phpMyadmin 172.18.0.2
+<br>MySQL 172.18.0.4
+<br>Pi-hole 172.18.0.6
+<br>DHCP 12.0.0.1
 <br><b>Servicios </b>
 <br>
-En total vamos a usar 4 maquinas virtuales<br>
-1 Para DNS y DHCP<br>
-1 Para Apache<br>
-1 Para MySQL<br>
-1 Para TrueNAS<br>
-<br><img width="1234" height="723" alt="image" src="https://github.com/user-attachments/assets/4a3c5dc4-e7f7-415c-87af-3f0e6cbde28f" />
+
+<br><img width="890" height="579" alt="image" src="https://github.com/user-attachments/assets/97e57640-694d-4565-a571-5f32e258bfa9" />
+
 
 </section>
 </details>
