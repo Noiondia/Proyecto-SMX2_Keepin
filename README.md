@@ -176,7 +176,7 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 </details>
 
 <details>
-<summary><h4>Diagrama de la base de datos</h4></summary>
+<summary><h4><b>Diagrama de la base de datos</h4></b></summary>
 
 Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
 Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas rojas discontinuas son las tablas secundarias, y las tablas con lineas azules discontinuas son las funcionalidades<br>
@@ -184,7 +184,7 @@ Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas roja
 </section>
 </details>
 <details>
-<summary><h3>Codigo SQL</h3></summary>
+<summary><h4><b>Código SQL</h4></b></summary>
 	
 ```
 -- MySQL Workbench Forward Engineering
