@@ -1,4 +1,4 @@
-[Tabla keeping.sql](https://github.com/user-attachments/files/24794006/Tabla.keeping.sql)<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/e8f34a15-372c-45fc-9547-aaa39bd4f4b2" />
+<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/e8f34a15-372c-45fc-9547-aaa39bd4f4b2" />
 
 <details>
 <summary><h2><b>Abstract</b></h2></summary>
@@ -183,19 +183,177 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 
 Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
 Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas rojas discontinuas son las tablas secundarias, y las tablas con lineas azules discontinuas son las funcionalidades<br>
-<img width="713" height="675" alt="image" src="https://github.com/user-attachments/assets/36a4ef40-6b85-4980-a61a-62c41b74185c" />
 
 </section>
 </details>
 <details>
 <summary><h4>Codigo SQL</h4></summary>
-<br>La base de datos esta echa con MySQL.
+	
+```
+-- MySQL Workbench Forward Engineering
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
 
+-- -----------------------------------------------------
+-- Schema mydb
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+-- Schema keepin2
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema keepin2
+-- -----------------------------------------------------
+
+CREATE SCHEMA IF NOT EXISTS `keepin2` DEFAULT CHARACTER SET utf8mb4 ;
+USE `keepin2` ;
+
+-- -----------------------------------------------------
+-- Table `keepin2`.`efectos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `keepin2`.`efectos` (
+  `IDhabilidades` INT(11) NOT NULL AUTO_INCREMENT,
+  `descripcion_efecto` TEXT NULL DEFAULT NULL,
+  `factor` INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`IDhabilidades`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
+-- -----------------------------------------------------
+-- Table `keepin2`.`mejoras`
+-- ----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `keepin2`.`mejoras` (
+  `Mejora_ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `Nombre` VARCHAR(50) NULL DEFAULT NULL,
+  `Requisitos` TEXT NULL DEFAULT NULL,
+  `Efecto` TEXT NULL DEFAULT NULL,
+  `Descripción` TEXT NULL DEFAULT NULL,
+  `Imagen` VARCHAR(255) NULL DEFAULT NULL,
+  `efectos_IDhabilidades` INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`Mejora_ID`),
+  INDEX `fk_mejoras_efectos` (`efectos_IDhabilidades` ),
+  CONSTRAINT `fk_mejoras_efectos`
+    FOREIGN KEY (`efectos_IDhabilidades`)
+    REFERENCES `keepin2`.`efectos` (`IDhabilidades`)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
+
+
+-- -----------------------------------------------------
+-- Table `keepin2`.`personajes`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `keepin2`.`personajes` (
+  `Personaje_ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `Nombre` VARCHAR(50) NULL DEFAULT NULL,
+  `Requisitos` TEXT NULL DEFAULT NULL,
+  `Descripción` TEXT NULL DEFAULT NULL,
+  `Imagen` VARCHAR(255) NULL DEFAULT NULL,
+  `efectos_IDhabilidades` INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`Personaje_ID`),
+  INDEX `fk_personajes_efectos` (`efectos_IDhabilidades` ),
+  CONSTRAINT `fk_personajes_efectos`
+    FOREIGN KEY (`efectos_IDhabilidades`)
+    REFERENCES `keepin2`.`efectos` (`IDhabilidades`)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
+
+
+-- -----------------------------------------------------
+-- Table `keepin2`.`usuarios`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `keepin2`.`usuarios` (
+  `Usuario_ID` INT(11) NOT NULL AUTO_INCREMENT,
+  `Email` VARCHAR(150) NULL DEFAULT NULL,
+  `Contraseña` VARCHAR(150) NULL DEFAULT NULL,
+  `Nombre_usuario` VARCHAR(30) NULL DEFAULT NULL,
+  `Jorges_actuales` INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`Usuario_ID`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
+
+
+-- -----------------------------------------------------
+-- Table `keepin2`.`usuarios_has_mejoras`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `keepin2`.`usuarios_has_mejoras` (
+  `Usuarios_Usuario_ID` INT(11) NOT NULL,
+  `MEJORAS_Mejora_ID` INT(11) NOT NULL,
+  `MEJORAS_efectos_IDhabilidades` INT(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`Usuarios_Usuario_ID`, `MEJORAS_Mejora_ID`),
+  INDEX `fk_uhm_mejora` (`MEJORAS_Mejora_ID` ),
+  INDEX `fk_uhm_efectos` (`MEJORAS_efectos_IDhabilidades` ),
+  CONSTRAINT `fk_uhm_efectos`
+    FOREIGN KEY (`MEJORAS_efectos_IDhabilidades`)
+    REFERENCES `keepin2`.`efectos` (`IDhabilidades`)
+    ON DELETE SET NULL
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_uhm_mejora`
+    FOREIGN KEY (`MEJORAS_Mejora_ID`)
+    REFERENCES `keepin2`.`mejoras` (`Mejora_ID`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_uhm_usuario`
+    FOREIGN KEY (`Usuarios_Usuario_ID`)
+    REFERENCES `keepin2`.`usuarios` (`Usuario_ID`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
+
+
+-- -----------------------------------------------------
+-- Table `keepin2`.`usuarios_personajes_activos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `keepin2`.`usuarios_personajes_activos` (
+  `Usuarios_Usuario_ID` INT(11) NOT NULL,
+  `PERSONAJES_Personaje_ID` INT(11) NOT NULL,
+  PRIMARY KEY (`Usuarios_Usuario_ID`, `PERSONAJES_Personaje_ID`),
+  INDEX `fk_upa_personaje` (`PERSONAJES_Personaje_ID` ),
+  CONSTRAINT `fk_upa_personaje`
+    FOREIGN KEY (`PERSONAJES_Personaje_ID`)
+    REFERENCES `keepin2`.`personajes` (`Personaje_ID`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_upa_usuario`
+    FOREIGN KEY (`Usuarios_Usuario_ID`)
+    REFERENCES `keepin2`.`usuarios` (`Usuario_ID`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
+
+
+-- -----------------------------------------------------
+-- Table `keepin2`.`usuarios_personajes_comprados`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `keepin2`.`usuarios_personajes_comprados` (
+  `Usuarios_Usuario_ID` INT(11) NOT NULL,
+  `PERSONAJES_Personaje_ID` INT(11) NOT NULL,
+  PRIMARY KEY (`Usuarios_Usuario_ID`, `PERSONAJES_Personaje_ID`),
+  INDEX `fk_upc_personaje` (`PERSONAJES_Personaje_ID` ),
+  CONSTRAINT `fk_upc_personaje`
+    FOREIGN KEY (`PERSONAJES_Personaje_ID`)
+    REFERENCES `keepin2`.`personajes` (`Personaje_ID`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `fk_upc_usuario`
+    FOREIGN KEY (`Usuarios_Usuario_ID`)
+    REFERENCES `keepin2`.`usuarios` (`Usuario_ID`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb4;
+```
 <details>
 <br>
 </details>
 <details>
 <summary><h4>Diagrama de la base de datos</h4></summary>
+	<img width="713" height="675" alt="image" src="https://github.com/user-attachments/assets/36a4ef40-6b85-4980-a61a-62c41b74185c" />
 </details>
 </details>
 <br>
@@ -430,7 +588,7 @@ networks:
 <br>MySQL 172.18.0.4
 <br>Pi-hole 172.18.0.6
 <br>DHCP 12.0.0.1
-<br><b>Servicios </b>
+<br><b><h3>Servicios</h3></b>
 <br>
 <br>
 <br><img width="890" height="579" alt="image" src="https://github.com/user-attachments/assets/97e57640-694d-4565-a571-5f32e258bfa9" />
