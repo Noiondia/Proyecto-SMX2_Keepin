@@ -423,7 +423,7 @@ networks:
 <summary><h3>Red</h3></summary>
 
 <br>Esta imagen representa el como esta echa la red. Nosotros usamos docker con los servicios de phpMyadmin,My SQL, Nginx,php en un stack. Por separado estaria Pi-hole que usaremos como DNS y por ultimo seria DHCP.
-Las ip de cada servidor serian:
+<br>Las ip de cada servidor serian:
 <br>Nginx 172.18.0.3
 <br>php 172.18.0.5
 <br>phpMyadmin 172.18.0.2
@@ -432,7 +432,7 @@ Las ip de cada servidor serian:
 <br>DHCP 12.0.0.1
 <br><b>Servicios </b>
 <br>
-
+<br>
 <br><img width="890" height="579" alt="image" src="https://github.com/user-attachments/assets/97e57640-694d-4565-a571-5f32e258bfa9" />
 
 
