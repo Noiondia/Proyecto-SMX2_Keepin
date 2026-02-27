@@ -408,36 +408,7 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 
 
 <details>
-<summary><h1>Guías de uso</h1></summary>
-<details>
-<summary>DNS</summary>
-<br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
-<br>Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
-<br>Funcionamiento.
-<br>Esto es la prueba de que el servicio dns esta funcionando
-<br><img width="780" height="152" alt="image" src="https://github.com/user-attachments/assets/4cecd103-d636-40cd-a7be-d26bebba666b" />
-<br>
-<br>Esto es la traduccion dominio ip
-<br><img width="699" height="257" alt="image" src="https://github.com/user-attachments/assets/b3d57199-dd82-467e-a06d-904d4f4be73e" />
-<br>La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.org/doc/rfc9886/>IETF</a><br>
-</details>
-<details>
-<summary>DHCP</summary>
-<br>DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
-<br>Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
-<br>Se puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>¡
-<br>En vez de usar el dhcp del pihole, voy a usar otro diferente, ya que el contenedor de pihole, el dns da problemas si esta en modo host, asi que lo vamos a dejar en modo bridge, y como el dhcp pide que este en modo host, vamos a usar otro servicio. ISC DHCP
-ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en el ubuntu server, el cual se basa en dos archivos de configuración, este es el primero, donde se declara el nombre del adaptador de internet por donde se van a dar las ips
-<img width="746" height="427" alt="image" src="https://github.com/user-attachments/assets/24df3da0-0335-4b74-a9ac-be47d2dd91a3" />
-<br>Este otro, que se declaran todas las características del dhcp, las ips, el lease time, el dominio, etc
-<img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
-</details>
-
-<details>
-<summary>Nginx</summary>
-<br>Nginx está operando correctamente, aunque actualmente no despliega nuestra aplicación. En su lugar, se visualiza la página de bienvenida por defecto del servidor. Esto sucede porque, aunque el servicio está activo, aún no hemos vinculado nuestro directorio de archivos al archivo de configuración de Nginx (Server Block). Por ahora, solo hemos verificado su funcionamiento modificando el título en el archivo index.html predeterminado.
-<img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
-</details>
+<summary><h2>Guías de uso</h2></summary>
 <details>
 <summary>Docker</summary>
 <br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
@@ -498,13 +469,53 @@ networks:
 
 </details>
 <details>
+<summary>DNS</summary>
+<br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
+<br>Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
+<br>Nosotros usamos Pi-hole como servicio de DNS.
+<br>Funcionamiento.
+<br>Esto es la prueba de que el servicio dns esta funcionando
+<br><img width="780" height="152" alt="image" src="https://github.com/user-attachments/assets/4cecd103-d636-40cd-a7be-d26bebba666b" />
+<br>
+<br>Esto es la traduccion dominio ip
+<br><img width="699" height="257" alt="image" src="https://github.com/user-attachments/assets/b3d57199-dd82-467e-a06d-904d4f4be73e" />
+<br> Esta imagen representa el container del DNS.
+<img width="1590" height="46" alt="image" src="https://github.com/user-attachments/assets/bc783cd6-6fcb-4db4-921e-63d1f18b711a" />
+<br>La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.org/doc/rfc9886/>IETF</a><br>
+</details>
+<details>
+<summary>DHCP</summary>
+<br>DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
+<br>Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
+<br>Se puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>¡
+<br>En vez de usar el dhcp del pihole, voy a usar otro diferente, ya que el contenedor de pihole, el dns da problemas si esta en modo host, asi que lo vamos a dejar en modo bridge, y como el dhcp pide que este en modo host, vamos a usar otro servicio. ISC DHCP
+ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en el ubuntu server, el cual se basa en dos archivos de configuración, este es el primero, donde se declara el nombre del adaptador de internet por donde se van a dar las ips
+<img width="746" height="427" alt="image" src="https://github.com/user-attachments/assets/24df3da0-0335-4b74-a9ac-be47d2dd91a3" />
+<br>Este otro, que se declaran todas las características del dhcp, las ips, el lease time, el dominio, etc
+<img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
+</details>
+
+<details>
+<summary>Nginx</summary>
+<br>Nginx está operando correctamente, aunque actualmente no despliega nuestra aplicación. En su lugar, se visualiza la página de bienvenida por defecto del servidor. Esto sucede porque, aunque el servicio está activo, aún no hemos vinculado nuestro directorio de archivos al archivo de configuración de Nginx (Server Block). Por ahora, solo hemos verificado su funcionamiento modificando el título en el archivo index.html predeterminado.
+<img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
+<br>Esta imagen representa el container del Nginx.
+<img width="1584" height="48" alt="image" src="https://github.com/user-attachments/assets/448059ad-bc12-4147-a4ab-ace3da083624" />
+
+</details>
+
+<details>
 <summary>PHP y SQL</summary>
 <br>Capa de Abstracción de Datos (PHP ↔ MySQL)
 <br>Uno de los hitos técnicos clave fue la personalización del contenedor de PHP para habilitar la comunicación con el motor de base de datos.
 <br>Dado que las imágenes oficiales de PHP-FPM son minimalistas, se integró un comando de instalación automática (docker-php-ext-install mysqli) dentro del ciclo de vida del contenedor.
 <br>Se forzó la recreación del stack para asegurar que el binario de PHP incluyera la clase mysqli, eliminando errores de "Class not found".
 <br>Se ha desarrollado y testeado el script conexion.php, que actúa como el núcleo de comunicación del sistema.
-	
+<br> Estas imagenes representa los 2 contenedores, el de php y el de MySQL.
+<img width="1586" height="49" alt="image" src="https://github.com/user-attachments/assets/9e84a381-c863-43a3-a169-c8cdd6be3135" />
+<img width="1587" height="48" alt="image" src="https://github.com/user-attachments/assets/b127a043-aff5-44ea-a14b-87216606f94c" />
+
+
 <br>Configuración de Host: Se ha utilizado la resolución de nombres interna de Docker, apuntando el host al nombre del servicio mysql en lugar de direcciones IP estáticas.
 <br>Se implementó un control de errores mediante connect_error para diagnosticar fallos de autenticación o de red interna.
 <br>Se verificó la conexión mediante consultas de agregación (SELECT COUNT) sobre la tabla de usuarios, confirmando que el flujo de datos entre el contenedor PHP y el volumen de MySQL es totalmente funcional.
