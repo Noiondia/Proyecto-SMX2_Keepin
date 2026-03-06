@@ -602,6 +602,7 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <br><img width="890" height="579" alt="image" src="https://github.com/user-attachments/assets/97e57640-694d-4565-a571-5f32e258bfa9" />
 
 
+
 </section>
 </details>
 
