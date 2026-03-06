@@ -410,6 +410,7 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <details>
 <summary><h2>Guías de uso</h2></summary>
 <details>
+<br>Hemos tenido que crear un stack juntando DHCP, nginx, mySQL, PHP y PHPmyadmin. Pi-hole no está en el stack, es un contenedor aparte.
 <summary>Docker</summary>
 <br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
 
@@ -734,16 +735,8 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 </section>
 </details>
 
-<details>
-<summary><h3>Docker</h3></summary>
-<br>Utilizamos Docker, ya que preferimos tener varios containers a tener 4 máquinas virtuales diferentes.
-<br>Hemos instalado un ubuntu server y ahí hemos instalado el docker, hemos configurado que el usuario esté en el grupo docker para que no tengamos que usar “sudo” en cada comando de docker.
-<br>A continuación hemos configurado el primer contenedor con portainer para poder usar un entorno gráfico con docker.
-<br>Foto portainer.
 
-<br><h3>Los servicios.</h3>
-<br>Hemos tenido que crear un stack juntando DHCP, nginx, mySQL, PHP y PHPmyadmin. Pi-hole no está en el stack, es un contenedor aparte.
-<br>Foto de los containers y stack.
+
 
 </details>
 <details>
