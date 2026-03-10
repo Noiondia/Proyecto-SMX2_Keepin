@@ -78,6 +78,10 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <details>
 <summary><h2><b></b>Base de datos</h2></b></summary>
 <details>
+<summary><h2><b></b>SQL</h2></b></summary>
+<br>SQL es el estándar de la industria para la gestión de bases de datos. Hemos optado por esta tecnología para la implementación de nuestra base de datos debido a su madurez, amplia documentación y compatibilidad universal, lo que facilita tanto el mantenimiento como la escalabilidad a largo plazo de nuestra infraestructura.
+<br>La configuración de red de nuestras bases de datos se ha estructurado de la siguiente manera: el servicio de gestión de datos asociado a XAMPP opera sobre el puerto 3307, mientras que las comunicaciones TCP para SQL Server se gestionan a través del puerto 1433.
+<details>
 <summary><h4>Identidades principales</h4></summary>
 <details>
 <summary>Usuario</summary>
@@ -407,138 +411,7 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br>Y el último será el que tenga toda la información, se utilizará MySQL y phpMyAdmin
 
 
-<details>
-<summary><h2>Guías de uso</h2></summary>
-<details>
-<br>Hemos tenido que crear un stack juntando DHCP, nginx, mySQL, PHP y PHPmyadmin. Pi-hole no está en el stack, es un contenedor aparte.
-<summary>Docker</summary>
-<br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
 
-
-```
-services:
-  nginx:
-    image: nginx:latest
-    container_name: mi_nginx
-    ports:
-      - "80:80"
-    volumes:
-      - /home/jorge_admin/docker/nginx/conf:/etc/nginx/conf.d
-      - /home/jorge_admin/docker/www:/var/www/html
-    depends_on:
-      - php
-    networks:
-      - keepin-network
-    restart: unless-stopped
-
-  php:
-    image: php:8.3-fpm
-    container_name: mi_php
-    volumes:
-      - /home/jorge_admin/docker/www:/var/www/html
-    networks:
-      - keepin-network
-    restart: unless-stopped
-
-  mysql:
-    image: mysql:8.0
-    container_name: mi_sql
-    environment:
-      MYSQL_ROOT_PASSWORD: 1234
-      MYSQL_DATABASE: keeping
-      MYSQL_USER: JorgeSQL
-      MYSQL_PASSWORD: 1234
-    volumes:
-      - /home/jorge_admin/docker/mysql_data:/var/lib/mysql
-    networks:
-      - keepin-network
-
-  phpmyadmin:
-    image: phpmyadmin:latest
-    container_name: mi_phpmyadmin
-    ports:
-      - "8081:80"
-    environment:
-      PMA_HOST: mysql
-    networks:
-      - keepin-network
-
-networks:
-  keepin-network:
-    driver: bridge
-```
-
-</details>
-<details>
-<summary>DNS</summary>
-<br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
-<br>Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
-<br>Nosotros usamos Pi-hole como servicio de DNS.
-<br>Funcionamiento.
-<br>Esto es la prueba de que el servicio dns esta funcionando
-<br><img width="780" height="152" alt="image" src="https://github.com/user-attachments/assets/4cecd103-d636-40cd-a7be-d26bebba666b" />
-<br>
-<br>Esto es la traduccion dominio ip
-<br><img width="699" height="257" alt="image" src="https://github.com/user-attachments/assets/b3d57199-dd82-467e-a06d-904d4f4be73e" />
-<br> Esta imagen representa el container del DNS.
-<img width="1590" height="46" alt="image" src="https://github.com/user-attachments/assets/bc783cd6-6fcb-4db4-921e-63d1f18b711a" />
-<br>La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.org/doc/rfc9886/>IETF</a><br>
-</details>
-<details>
-<summary>DHCP</summary>
-<br>DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
-<br>Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
-<br>Se puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>¡
-<br>En vez de usar el dhcp del pihole, voy a usar otro diferente, ya que el contenedor de pihole, el dns da problemas si esta en modo host, asi que lo vamos a dejar en modo bridge, y como el dhcp pide que este en modo host, vamos a usar otro servicio. ISC DHCP
-ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en el ubuntu server, el cual se basa en dos archivos de configuración, este es el primero, donde se declara el nombre del adaptador de internet por donde se van a dar las ips
-<img width="746" height="427" alt="image" src="https://github.com/user-attachments/assets/24df3da0-0335-4b74-a9ac-be47d2dd91a3" />
-<br>Este otro, que se declaran todas las características del dhcp, las ips, el lease time, el dominio, etc
-<img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
-</details>
-
-<details>
-<summary>Nginx</summary>
-<br>Nginx está operando correctamente, aunque actualmente no despliega nuestra aplicación. En su lugar, se visualiza la página de bienvenida por defecto del servidor. Esto sucede porque, aunque el servicio está activo, aún no hemos vinculado nuestro directorio de archivos al archivo de configuración de Nginx (Server Block). Por ahora, solo hemos verificado su funcionamiento modificando el título en el archivo index.html predeterminado.
-<img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
-<br>Esta imagen representa el container del Nginx.
-<img width="1584" height="48" alt="image" src="https://github.com/user-attachments/assets/448059ad-bc12-4147-a4ab-ace3da083624" />
-
-</details>
-
-<details>
-<summary>PHP y SQL</summary>
-<br>Capa de Abstracción de Datos (PHP ↔ MySQL)
-<br>Uno de los hitos técnicos clave fue la personalización del contenedor de PHP para habilitar la comunicación con el motor de base de datos.
-<br>Dado que las imágenes oficiales de PHP-FPM son minimalistas, se integró un comando de instalación automática (docker-php-ext-install mysqli) dentro del ciclo de vida del contenedor.
-<br>Se forzó la recreación del stack para asegurar que el binario de PHP incluyera la clase mysqli, eliminando errores de "Class not found".
-<br>Se ha desarrollado y testeado el script conexion.php, que actúa como el núcleo de comunicación del sistema.
-<br> Estas imagenes representa los 2 contenedores, el de php y el de MySQL.
-<img width="1586" height="49" alt="image" src="https://github.com/user-attachments/assets/9e84a381-c863-43a3-a169-c8cdd6be3135" />
-<img width="1587" height="48" alt="image" src="https://github.com/user-attachments/assets/b127a043-aff5-44ea-a14b-87216606f94c" />
-
-
-<br>Configuración de Host: Se ha utilizado la resolución de nombres interna de Docker, apuntando el host al nombre del servicio mysql en lugar de direcciones IP estáticas.
-<br>Se implementó un control de errores mediante connect_error para diagnosticar fallos de autenticación o de red interna.
-<br>Se verificó la conexión mediante consultas de agregación (SELECT COUNT) sobre la tabla de usuarios, confirmando que el flujo de datos entre el contenedor PHP y el volumen de MySQL es totalmente funcional.
-</details>
-
-<details>
-<summary>Seguridad</summary>
-<br>El firewall lo desactivamos
-	<br><img width="604" height="36" alt="image" src="https://github.com/user-attachments/assets/f7512d83-4006-4c3d-b1c8-cd425a0d7d39" />
-<br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. Como se observa en la imagen, el acceso se realiza mediante la dirección http://192.168.135.28/. Para refrescar el sitio utilice la combinación de teclas Ctrl + Shift + R asi podemos reiniciar la caché
-<br><img width="1918" height="1041" alt="image" src="https://github.com/user-attachments/assets/8e2963a3-9118-49cb-a3e5-ce3e5080fb8d" />
-
-<br>Incidencias
-<br>Al principio no sabiamos entrar al pi-hole.
-<br>Lo conseguimos solucionar el problema ya que Alina nos dijo como y para no olvidarlo lo pusimos en el trello.
-<br>Cuando comenzamos a trabajar con Docker, creamos varios contenedores por separado. Sin embargo, Alina nos comentó que era mejor unificarlos en un solo stack, ya que de esta forma se puede centralizar la configuración y asegurar que todos los servicios queden correctamente interconectados.
-<br>La solución fue sencilla: eliminamos todos los contenedores de Portainer, excepto el de Pi-hole, y luego creamos un stack con el resto de los servicios.
-<br>Las configuraciones de Pi-hole se perdían al apagar el equipo.
-<br>Se detectan problemas en el contenedor de Pi-hole al habilitar simultáneamente los servicios de DHCP y DNS.
-<br>Nginx no aguanta python
-<br>
-</details>
 
 <br><b>Interfaz de usuario (Frontend)</b>
 <details>
@@ -562,12 +435,6 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 </details>
 <br><b>Servidor web </b>
 <details>
-<summary>Servidores</summary>
-<br><b>Como tenemos 4 maquinas virtuales cada maquina tendra una utilidad diferente.</b>
-<br>Para la pagina web se utilizara Apache y php
-<br>El DNS se utiliza Pihole
-<br>La base de datos usamos MySQL y phpMyAdmin
-<br>Por ultimo para las copais de seguridad usaremos TrueNAS
 <br><b>Base de datos </b>
 <details>
 <summary>MySQL</summary>
@@ -597,9 +464,6 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <br>MySQL 172.18.0.4
 <br>Pi-hole 172.18.0.6
 <br>DHCP 12.0.0.1
-<br><b><h3>Servicios</h3></b>
-<br>
-<br>
 <br><img width="890" height="579" alt="image" src="https://github.com/user-attachments/assets/97e57640-694d-4565-a571-5f32e258bfa9" />
 
 <details>
@@ -699,6 +563,8 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 
 <details>
 <summary>PHP y SQL</summary>
+PHP es un lenguaje de programación de código abierto, diseñado específicamente para el desarrollo web backend.
+Hemos optado por integrar PHP debido a su capacidad para gestionar de manera eficiente la comunicación entre el servidor y la base de datos. Además, al tratarse de un lenguaje de procesamiento del lado del servidor, nos permite implementar capas de seguridad robustas que protegen la integridad de nuestros datos frente a exposiciones directas en el cliente.
 <br>Capa de Abstracción de Datos (PHP ↔ MySQL)
 <br>Uno de los hitos técnicos clave fue la personalización del contenedor de PHP para habilitar la comunicación con el motor de base de datos.
 <br>Dado que las imágenes oficiales de PHP-FPM son minimalistas, se integró un comando de instalación automática (docker-php-ext-install mysqli) dentro del ciclo de vida del contenedor.
@@ -721,6 +587,11 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. Como se observa en la imagen, el acceso se realiza mediante la dirección http://192.168.135.28/. Para refrescar el sitio utilice la combinación de teclas Ctrl + Shift + R asi podemos reiniciar la caché
 <br><img width="1918" height="1041" alt="image" src="https://github.com/user-attachments/assets/8e2963a3-9118-49cb-a3e5-ce3e5080fb8d" />
 
+<details>
+<summary>TrueNas</summary>
+<br>Hemos implementado TrueNAS como nuestra solución de almacenamiento en red. Gracias a sus robustas herramientas de gestión de datos, podemos garantizar la integridad de la información y automatizar la creación de snapshots frecuentes. Esto nos permite establecer un plan de recuperación ante desastres efectivo. En caso de un fallo en la máquina virtual, contamos con puntos de restauración recientes que minimizan la pérdida de datos y garantizan la continuidad operativa.
+<br>El servicio de almacenamiento está desplegado en una máquina virtualizada con TrueNAS, configurada con los siguientes recursos asignados: una capacidad de 2 TB de almacenamiento (en un futuro se pondran mas discos), 2 GB de RAM y una CPU dedicada para el procesamiento de datos.
+</details>
 <br>Incidencias
 <br>Al principio no sabiamos entrar al pi-hole.
 <br>Lo conseguimos solucionar el problema ya que Alina nos dijo como y para no olvidarlo lo pusimos en el trello.
