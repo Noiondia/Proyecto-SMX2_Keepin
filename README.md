@@ -594,12 +594,13 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 <summary><h3>TrueNas</h3></summary>
 <br>Hemos implementado TrueNAS como nuestra solución de almacenamiento en red. Gracias a sus robustas herramientas de gestión de datos, podemos garantizar la integridad de la información y automatizar la creación de snapshots frecuentes. Esto nos permite establecer un plan de recuperación ante desastres efectivo. En caso de un fallo en la máquina virtual, contamos con puntos de restauración recientes que minimizan la pérdida de datos y garantizan la continuidad operativa.
 <br>El servicio de almacenamiento está desplegado en una máquina virtualizada con TrueNAS, configurada con los siguientes recursos asignados: una capacidad de 2 TB de almacenamiento (en un futuro se pondran mas discos), 2 GB de RAM y una CPU dedicada para el procesamiento de datos.
-<br>Para poder entrar al entornografico del TrueNas lo hacemos poniendo la ip de la maquina virtual, en este caso 192.168.135.X, la X se cambiaria por la ip de ese momeno, al final se pondria 9090 ya que es el puerto del TrueNas.
-<br>P
+<br>El acceso a la interfaz de administración de TrueNAS se realiza a través de un navegador web, utilizando la dirección IP asignada a la maquina virtual (192.168.135.X) y el puerto configurado 9090. 
+<br>Para permitir el acceso desde la red local, hemos implementado una regla de redirección de puertos (port forwarding), garantizando que el tráfico dirigido a la máquina virtual sea enrutado correctamente hacia el servicio de almacenamiento.
 <br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
 
 </details>
-<br>Incidencias
+<details>
+<summary><h3>Incidencias</h3></summary>
 <br>Al principio no sabiamos entrar al pi-hole.
 <br>Lo conseguimos solucionar el problema ya que Alina nos dijo como y para no olvidarlo lo pusimos en el trello.
 <br>Cuando comenzamos a trabajar con Docker, creamos varios contenedores por separado. Sin embargo, Alina nos comentó que era mejor unificarlos en un solo stack, ya que de esta forma se puede centralizar la configuración y asegurar que todos los servicios queden correctamente interconectados.
@@ -607,7 +608,9 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 <br>Las configuraciones de Pi-hole se perdían al apagar el equipo.
 <br>Se detectan problemas en el contenedor de Pi-hole al habilitar simultáneamente los servicios de DHCP y DNS.
 <br>Nginx no aguanta python
+<br>El dhcp no da ip fijas a los servidores.
 <br>
+</details>
 </details>
 
 </section>
