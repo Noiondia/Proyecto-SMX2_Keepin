@@ -454,7 +454,7 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 </details>
 </details>
 <details>
-<summary><h3>Red</h3></summary>
+<summary><h1>Red</h1></summary>
 
 <br>Esta imagen representa el como esta echa la red. Nosotros usamos docker con los servicios de phpMyadmin,My SQL, Nginx,php en un stack. Por separado estaria Pi-hole que usaremos como DNS y por ultimo seria DHCP.
 <br>Las ip de cada servidor serian:
