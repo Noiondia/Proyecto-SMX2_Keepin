@@ -583,15 +583,18 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 <details>
 <summary>Seguridad</summary>
 <br>El firewall interno de la máquina virtual se mantiene actualmente deshabilitado para facilitar las tareas de integración y despliegue inicial. No obstante, nuestro plan es implementar pfSense, el cual centralizará la gestión de la seguridad, el filtrado de tráfico y la protección de todo el segmento de red.
-<br>PfSense es nuestra solución elegida para la gestión de seguridad de red. Esta plataforma, basada en FreeBSD, nos permite desplegar un firewall y enrutador de nivel empresarial, garantizando un control total sobre las conexiones entrantes y salientes de nuestro sistema.
 <br><img width="604" height="36" alt="image" src="https://github.com/user-attachments/assets/f7512d83-4006-4c3d-b1c8-cd425a0d7d39" />
-<br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. Como se observa en la imagen, el acceso se realiza mediante la dirección http://192.168.135.28/. Para refrescar el sitio utilice la combinación de teclas Ctrl + Shift + R asi podemos reiniciar la caché
+<br>PfSense es nuestra solución elegida para la gestión de seguridad de red. Esta plataforma, basada en FreeBSD, nos permite desplegar un firewall y enrutador de nivel empresarial, garantizando un control total sobre las conexiones entrantes y salientes de nuestro sistema.
+<br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. Como se observa en la imagen, el acceso se realiza mediante la dirección http://192.168.135.X/. Siendo X la ipp de la quina virtual. Para refrescar el sitio utilice la combinación de teclas Ctrl + Shift + R asi podemos reiniciar la caché.
 <br><img width="1918" height="1041" alt="image" src="https://github.com/user-attachments/assets/8e2963a3-9118-49cb-a3e5-ce3e5080fb8d" />
 
 <details>
 <summary>TrueNas</summary>
 <br>Hemos implementado TrueNAS como nuestra solución de almacenamiento en red. Gracias a sus robustas herramientas de gestión de datos, podemos garantizar la integridad de la información y automatizar la creación de snapshots frecuentes. Esto nos permite establecer un plan de recuperación ante desastres efectivo. En caso de un fallo en la máquina virtual, contamos con puntos de restauración recientes que minimizan la pérdida de datos y garantizan la continuidad operativa.
 <br>El servicio de almacenamiento está desplegado en una máquina virtualizada con TrueNAS, configurada con los siguientes recursos asignados: una capacidad de 2 TB de almacenamiento (en un futuro se pondran mas discos), 2 GB de RAM y una CPU dedicada para el procesamiento de datos.
+<br>Para poder entrar al entornografico del TrueNas lo hacemos poniendo la ip de la maquina virtual, en este caso 192.168.135.X, la X se cambiaria por la ip de ese momeno, al final se pondria 9090 ya que es el puerto del TrueNas.
+<br>P
+<br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
 
 </details>
 <br>Incidencias
