@@ -468,6 +468,8 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 
 <details>
 <summary>Docker</summary>
+<br>Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones mediante contenedores ligeros y portátiles. Hemos optado por esta tecnología en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por Docker por su baja sobrecarga de sistema.
+<br>Al trabajar con hardware limitado, la ligereza de los contenedores nos permite desplegar toda la infraestructura necesaria de forma fluida.
 <br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
 
 
@@ -544,8 +546,7 @@ networks:
 <summary>DHCP</summary>
 <br>DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
 <br>Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
-<br>Se puede encontrar informacion oficial en <a href=https://datatracker.ietf.org/doc/html/rfc2131>IETF</a><br>¡
-<br>En vez de usar el dhcp del pihole, voy a usar otro diferente, ya que el contenedor de pihole, el dns da problemas si esta en modo host, asi que lo vamos a dejar en modo bridge, y como el dhcp pide que este en modo host, vamos a usar otro servicio. ISC DHCP
+<br>En vez de usar el dhcp del pihole, vamos a usar otro diferente, ya que el contenedor de pihole, el dns da problemas si esta en modo host, asi que lo vamos a dejar en modo bridge, y como el dhcp pide que este en modo host, vamos a usar otro servicio. ISC DHCP
 ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en el ubuntu server, el cual se basa en dos archivos de configuración, este es el primero, donde se declara el nombre del adaptador de internet por donde se van a dar las ips
 <img width="746" height="427" alt="image" src="https://github.com/user-attachments/assets/24df3da0-0335-4b74-a9ac-be47d2dd91a3" />
 <br>Este otro, que se declaran todas las características del dhcp, las ips, el lease time, el dominio, etc
@@ -554,6 +555,7 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 
 <details>
 <summary>Nginx</summary>
+<br>Nginx es un servidor web de código abierto de alto rendimiento que destaca por sus capacidades como proxy inverso y balanceador de carga. Hemos seleccionado Nginx frente a Apache debido a su arquitectura orientada a eventos, la cual garantiza un menor consumo de recursos y una mayor eficiencia en el manejo de conexiones simultáneas, optimizando así el rendimiento global de nuestra infraestructura.
 <br>Nginx está operando correctamente, aunque actualmente no despliega nuestra aplicación. En su lugar, se visualiza la página de bienvenida por defecto del servidor. Esto sucede porque, aunque el servicio está activo, aún no hemos vinculado nuestro directorio de archivos al archivo de configuración de Nginx (Server Block). Por ahora, solo hemos verificado su funcionamiento modificando el título en el archivo index.html predeterminado.
 <img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
 <br>Esta imagen representa el container del Nginx.
