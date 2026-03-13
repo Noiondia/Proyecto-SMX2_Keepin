@@ -598,7 +598,13 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 <br>El servicio de almacenamiento está desplegado en una máquina virtualizada con TrueNAS, configurada con los siguientes recursos asignados: una capacidad de 2 TB de almacenamiento (en un futuro se pondran mas discos), 2 GB de RAM y una CPU dedicada para el procesamiento de datos.
 <br>El acceso a la interfaz de administración de TrueNAS se realiza a través de un navegador web, utilizando la dirección IP asignada a la maquina virtual (192.168.135.X) y el puerto configurado 9090. 
 <br>Para permitir el acceso desde la red local, hemos implementado una regla de redirección de puertos (port forwarding), garantizando que el tráfico dirigido a la máquina virtual sea enrutado correctamente hacia el servicio de almacenamiento.
+<br>El sistema está programado para realizar respaldos periódicos de los archivos de configuración (docker-compose.yml), los volúmenes de datos de los contenedores y el código fuente de la aplicación web. Esta estrategia asegura que, ante cualquier fallo crítico en el nodo de servicios, la restauración del entorno completo sea rápida y precisa.
 <br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
+
+
+
+
+
 
 </details>
 <details>
