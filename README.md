@@ -603,9 +603,6 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 
 
 
-
-
-
 </details>
 <details>
 <summary><h3>Incidencias</h3></summary>
