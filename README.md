@@ -601,7 +601,10 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 <br>El sistema está programado para realizar respaldos periódicos de los archivos de configuración (docker-compose.yml), los volúmenes de datos de los contenedores y el código fuente de la aplicación web. Esta estrategia asegura que, ante cualquier fallo crítico en el nodo de servicios, la restauración del entorno completo sea rápida y precisa.
 <br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
 
-<img width="1493" height="769" alt="image" src="[https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47](https://cdn.discordapp.com/attachments/1318257970949394533/1481941125320278177/image.png?ex=69b524b9&is=69b3d339&hm=36f7b664438bf5b6c80f6b118abe0f7d2b51c76b4eb6caa6af3e8efec471e7c5&)" />
+
+
+
+<h1> Vamos a suponer que aqui hay una imagen</h1>
 
 </details>
 <details>
