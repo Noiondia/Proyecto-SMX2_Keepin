@@ -581,9 +581,9 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 <br>Se implementó un control de errores mediante connect_error para diagnosticar fallos de autenticación o de red interna.
 <br>Se verificó la conexión mediante consultas de agregación (SELECT COUNT) sobre la tabla de usuarios, confirmando que el flujo de datos entre el contenedor PHP y el volumen de MySQL es totalmente funcional.
 </details>
-
+</details>
 <details>
-<summary>Seguridad</summary>
+<summary><h2>Seguridad</h2></summary>
 <br>El firewall interno de la máquina virtual se mantiene actualmente deshabilitado para facilitar las tareas de integración y despliegue inicial. No obstante, nuestro plan es implementar pfSense, el cual centralizará la gestión de la seguridad, el filtrado de tráfico y la protección de todo el segmento de red.
 <br><img width="604" height="36" alt="image" src="https://github.com/user-attachments/assets/f7512d83-4006-4c3d-b1c8-cd425a0d7d39" />
 <br>PfSense es nuestra solución elegida para la gestión de seguridad de red. Esta plataforma, basada en FreeBSD, nos permite desplegar un firewall y enrutador de nivel empresarial, garantizando un control total sobre las conexiones entrantes y salientes de nuestro sistema.
@@ -623,7 +623,7 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 </details>
 
 </section>
-</details>
+
 
 
 
