@@ -605,7 +605,8 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 
 
 
-<h1> Vamos a suponer que aqui hay una imagen</h1>
+<img width="957" height="627" alt="image" src="https://github.com/user-attachments/assets/f4c2e687-80d3-4aaa-bd8e-82bc4731eae1" />
+
 
 </details>
 <details>
