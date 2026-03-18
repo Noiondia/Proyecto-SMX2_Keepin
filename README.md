@@ -591,7 +591,8 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 <br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. En la ilustración adjunta se detallan las políticas de filtrado y reglas de firewall configuradas en pfSense. La imagen adjunta describe las reglas de Port Forwarding (NAT) configuradas para gestionar el tráfico entrante. Estas reglas permiten la exposición controlada de servicios específicos en la red local, redirigiendo las peticiones externas hacia sus respectivos dispositivos y puertos de escucha de forma granular.
 
 <br><img width="1136" height="304" alt="image" src="https://github.com/user-attachments/assets/d03ae6dd-3031-4e74-a399-0a91e9e6cad3" />
-
+En esta captura se detalla la configuración del servicio SSH restringido a la red LAN. Esta implementación actúa como un puente de comunicación seguro, permitiendo que la instancia de Ubuntu ejecute scripts automatizados para respaldar las reglas de pfSense directamente en el almacenamiento compartido de TrueNAS.
+<img width="910" height="44" alt="image" src="https://github.com/user-attachments/assets/2bcf64a6-31aa-471a-ade3-6f5db46c33db" />
 
 <br>
 <br>
