@@ -588,8 +588,11 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 <br><img width="604" height="36" alt="image" src="https://github.com/user-attachments/assets/f7512d83-4006-4c3d-b1c8-cd425a0d7d39" />
 <br>PfSense es nuestra solución elegida para la gestión de seguridad de red. Esta plataforma, basada en FreeBSD, nos permite desplegar un firewall y enrutador de nivel empresarial, garantizando un control total sobre las conexiones entrantes y salientes de nuestro sistema.
 <br>La instancia de pfSense se ha desplegado en un entorno virtualizado con una asignación de recursos optimizada para funciones de red. Cuenta con una vCPU dedicada y un sistema de almacenamiento de expansión dinámica (Thin Provisioning); este último tiene un umbral inicial de 2 GB y una capacidad máxima escalable de hasta 2 TB, permitiendo un crecimiento flexible según las necesidades de registro de logs y datos.
-<br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. Como se observa en la imagen, el acceso se realiza mediante la dirección http://192.168.135.X/. Siendo X la ipp de la quina virtual. Para refrescar el sitio utilice la combinación de teclas Ctrl + Shift + R asi podemos reiniciar la caché.
-<br><img width="1918" height="1041" alt="image" src="https://github.com/user-attachments/assets/8e2963a3-9118-49cb-a3e5-ce3e5080fb8d" />
+<br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. En la ilustración adjunta se detallan las políticas de filtrado y reglas de firewall configuradas en pfSense. La imagen adjunta describe las reglas de Port Forwarding (NAT) configuradas para gestionar el tráfico entrante. Estas reglas permiten la exposición controlada de servicios específicos en la red local, redirigiendo las peticiones externas hacia sus respectivos dispositivos y puertos de escucha de forma granular.
+
+<br><img width="1136" height="304" alt="image" src="https://github.com/user-attachments/assets/d03ae6dd-3031-4e74-a399-0a91e9e6cad3" />
+
+
 <br>
 <br>
 <br>
