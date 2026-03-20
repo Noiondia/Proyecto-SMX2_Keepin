@@ -586,10 +586,15 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 <summary><h2>Seguridad</h2></summary>
 <br>El firewall interno de la máquina virtual se mantiene actualmente deshabilitado para facilitar las tareas de integración y despliegue inicial. No obstante, nuestro plan es implementar pfSense, el cual centralizará la gestión de la seguridad, el filtrado de tráfico y la protección de todo el segmento de red.
 <br><img width="604" height="36" alt="image" src="https://github.com/user-attachments/assets/f7512d83-4006-4c3d-b1c8-cd425a0d7d39" />
+<h4>PfSense</h4>
 <br>PfSense es nuestra solución elegida para la gestión de seguridad de red. Esta plataforma, basada en FreeBSD, nos permite desplegar un firewall y enrutador de nivel empresarial, garantizando un control total sobre las conexiones entrantes y salientes de nuestro sistema.
-<br>La instancia de pfSense se ha desplegado en un entorno virtualizado con una asignación de recursos optimizada para funciones de red. Cuenta con una vCPU dedicada y un sistema de almacenamiento de expansión dinámica (Thin Provisioning); este último tiene un umbral inicial de 2 GB y una capacidad máxima escalable de hasta 2 TB, permitiendo un crecimiento flexible según las necesidades de registro de logs y datos.
-<br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. En la ilustración adjunta se detallan las políticas de filtrado y reglas de firewall configuradas en pfSense. La imagen adjunta describe las reglas de Port Forwarding (NAT) configuradas para gestionar el tráfico entrante. Estas reglas permiten la exposición controlada de servicios específicos en la red local, redirigiendo las peticiones externas hacia sus respectivos dispositivos y puertos de escucha de forma granular.
 
+<h4>Instalacion</h4>
+<br>La instancia de pfSense se ha desplegado en un entorno virtualizado con una asignación de recursos optimizada para funciones de red. Cuenta con una vCPU dedicada y un sistema de almacenamiento de expansión dinámica (Thin Provisioning); este último tiene un umbral inicial de 2 GB y una capacidad máxima escalable de hasta 2 TB, permitiendo un crecimiento flexible según las necesidades de registro de logs y datos.
+<br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. 
+
+<h4>Reglas</h4>
+En la ilustración adjunta se detallan las políticas de filtrado y reglas de firewall configuradas en pfSense. La imagen adjunta describe las reglas de Port Forwarding (NAT) configuradas para gestionar el tráfico entrante. Estas reglas permiten la exposición controlada de servicios específicos en la red local, redirigiendo las peticiones externas hacia sus respectivos dispositivos y puertos de escucha de forma granular.
 <br><img width="1136" height="304" alt="image" src="https://github.com/user-attachments/assets/d03ae6dd-3031-4e74-a399-0a91e9e6cad3" />
 En esta captura se detalla la configuración del servicio SSH restringido a la red LAN. Esta implementación actúa como un puente de comunicación seguro, permitiendo que la instancia de Ubuntu ejecute scripts automatizados para respaldar las reglas de pfSense directamente en el almacenamiento compartido de TrueNAS.
 <img width="910" height="44" alt="image" src="https://github.com/user-attachments/assets/2bcf64a6-31aa-471a-ade3-6f5db46c33db" />
@@ -603,7 +608,7 @@ En esta captura se detalla la configuración del servicio SSH restringido a la r
 <br>El servicio de almacenamiento está desplegado en una máquina virtualizada con TrueNAS, configurada con los siguientes recursos asignados: una capacidad de 2 TB de almacenamiento (en un futuro se pondran mas discos), 2 GB de RAM y una CPU dedicada para el procesamiento de datos. 
 <h4>Acceso</h4>
 
-<br>El acceso a la interfaz de administración de TrueNAS se realiza a través de un navegador web, utilizando la dirección IP asignada a la maquina virtual (192.168.135.X) y el puerto configurado 9090. 
+<br>El acceso a la interfaz de administración de TrueNAS se realiza a través de un navegador web, utilizando la dirección IP asignada a la maquina virtual <b>(192.168.135.X)</b> y el puerto configurado 9090. 
 <br>Para permitir el acceso desde la red local, hemos implementado una regla de redirección de puertos (port forwarding), garantizando que el tráfico dirigido a la máquina virtual sea enrutado correctamente hacia el servicio de almacenamiento.
 <h4>Plan de Contingencia</h4>
 
@@ -611,8 +616,8 @@ En esta captura se detalla la configuración del servicio SSH restringido a la r
 <br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
 
 
-
-
+<h4>Servicios (TrueNas)</h4>
+La gestión del almacenamiento en TrueNAS se apoya en tres servicios fundamentales. NFS para la conexión de alto rendimiento con los contenedores Docker en la instancia de Ubuntu, SMB para facilitar el acceso a archivos y copias de seguridad desde entornos Windows, y S.M.A.R.T. para la monitorización proactiva de la salud de los discos físicos, garantizando la integridad de los datos.
 <img width="957" height="627" alt="image" src="https://github.com/user-attachments/assets/f4c2e687-80d3-4aaa-bd8e-82bc4731eae1" />
 
 
