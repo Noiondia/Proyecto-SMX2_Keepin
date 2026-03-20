@@ -469,7 +469,9 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <details>
 <summary>Docker</summary>
 <br>Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones mediante contenedores ligeros y portátiles. Hemos optado por esta tecnología en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por Docker por su baja sobrecarga de sistema.
+<h4>Hardware</h4>
 <br>Al trabajar con hardware limitado, la ligereza de los contenedores nos permite desplegar toda la infraestructura necesaria de forma fluida.
+<h4>Configuración</h4>
 <br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
 
 
@@ -532,12 +534,14 @@ networks:
 <br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
 <br>Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
 <br>Nosotros usamos Pi-hole como servicio de DNS.
-<br>Funcionamiento.
+<br><h4>Funcionamiento.</h4>
 <br>Esto es la prueba de que el servicio dns esta funcionando
 <br><img width="780" height="152" alt="image" src="https://github.com/user-attachments/assets/4cecd103-d636-40cd-a7be-d26bebba666b" />
 <br>
+<br><h4>traduccion</h4>
 <br>Esto es la traduccion dominio ip
 <br><img width="699" height="257" alt="image" src="https://github.com/user-attachments/assets/b3d57199-dd82-467e-a06d-904d4f4be73e" />
+<h4>Container</h4>
 <br> Esta imagen representa el container del DNS.
 <img width="1590" height="46" alt="image" src="https://github.com/user-attachments/assets/bc783cd6-6fcb-4db4-921e-63d1f18b711a" />
 <br>La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.org/doc/rfc9886/>IETF</a><br>
