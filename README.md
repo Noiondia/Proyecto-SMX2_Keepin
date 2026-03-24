@@ -616,7 +616,14 @@ En esta captura se detalla la configuración del servicio SSH restringido a la r
 <br>Para permitir el acceso desde la red local, hemos implementado una regla de redirección de puertos (port forwarding), garantizando que el tráfico dirigido a la máquina virtual sea enrutado correctamente hacia el servicio de almacenamiento.
 <h4>Plan de Contingencia</h4>
 
-<br>El sistema está programado para realizar respaldos periódicos de los archivos de configuración (docker-compose.yml), los volúmenes de datos de los contenedores y el código fuente de la aplicación web. Esta estrategia asegura que, ante cualquier fallo crítico en el nodo de servicios, la restauración del entorno completo sea rápida y precisa.
+<br>El sistema está programado para realizar respaldos periódicos de los siguientes archivos:
+<br>Archivos de configuración (docker-compose.yml)
+<br>Los volúmenes de datos de los contenedores 
+<br>El código fuente de la aplicación web
+<br>La base de datos SQL
+<br>El archivo con las configuraciones del Pfsense
+
+Esta estrategia asegura que, ante cualquier fallo crítico en el nodo de servicios, la restauración del entorno completo sea rápida y precisa.
 <br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
 
 
