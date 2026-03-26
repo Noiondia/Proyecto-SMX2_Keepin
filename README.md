@@ -622,6 +622,7 @@ En esta captura se detalla la configuración del servicio SSH restringido a la r
 <br>El código fuente de la aplicación web
 <br>La base de datos SQL
 <br>El archivo con las configuraciones del Pfsense
+<img width="532" height="40" alt="image" src="https://github.com/user-attachments/assets/a191ced6-bfb9-46d2-821b-467f823291f8" />
 
 Esta estrategia asegura que, ante cualquier fallo crítico en el nodo de servicios, la restauración del entorno completo sea rápida y precisa.
 <br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
