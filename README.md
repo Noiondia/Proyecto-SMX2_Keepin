@@ -77,23 +77,22 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 </details>
 <details>
 <summary><h2><b></b>Base de datos</h2></b></summary>
-<details>
-<summary><h2><b></b>SQL</h2></b></summary>
+
+<h4><b></b>SQL</h4>
 <br>SQL es el estándar de la industria para la gestión de bases de datos. Hemos optado por esta tecnología para la implementación de nuestra base de datos debido a su madurez, amplia documentación y compatibilidad universal, lo que facilita tanto el mantenimiento como la escalabilidad a largo plazo de nuestra infraestructura.
 <br>La configuración de red de nuestras bases de datos se ha estructurado de la siguiente manera: el servicio de gestión de datos asociado a XAMPP opera sobre el puerto 3307, mientras que las comunicaciones TCP para SQL Server se gestionan a través del puerto 1433.
-<details>
-<summary><h4>Identidades principales</h4></summary>
-<details>
-<summary>Usuario</summary>
+
+<h4>Identidades principales</h4>
+
+Usuario
 -Usuario 
 <br>-Contraseña: Para que una cuenta sea segura, necesita una contraseña, así que se va a necesitar una para crear la cuenta.
 <br>-Correo electrónico: El correo electrónico hará el funcionamiento de nombre de usuario, guardando la información de cada jugador.
 <br>-Partida: Consta de todos los elementos importantes que se tienen que guardar sobre la partida de cada jugador.
 <br>Puntos actuales de cada jugador: Esto forma parte del progreso de cada jugador, son los puntos que te da al hacer clic a Jorge.
-</details>
 
-<details>
-<summary>Mejoras</summary>
+
+Mejoras
 
 <br>Nombre de la mejora  	-Cada mejora tiene un nombre para identificarla
 <br>Descripción de la mejora - Cada mejora tiene una descripción, para saber     que hace
@@ -103,15 +102,15 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Descripción del personaje - Cada personaje tiene una descripción, incluyendo la mejora que aplica, personalidad o la ropa que lleva.
 <br>Imagen del personaje - Cada personaje se representarà dentro del juego con una imagen
 <br>Efecto del personaje - Cada personaje aplicarà un cambio al juego, parecido al de las mejoras
-</details>
 
-<details>
-<summary>Comentarios</summary>
+
+
+Comentarios
 <br>Comentarios: queremos que la gente que juegue a nuestra página pueda dejar comentarios para saber su opinión y por si quieren hacer sugerencias.
-</details>
 
-<details>
-<summary>Datos a guardar</summary>
+
+
+Datos a guardar
 <br>Datos que se deben guardar de cada entidad (atributos)
 <br>Para cada entidad identificada en el punto anterior, describe qué información concreta se necesita guardar.
 <br>Usuario
@@ -132,19 +131,19 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Descripción del personaje (Varcha
 <br>Efecto del personaje (Varcha)
 <br>Imagen del personaje ()
-</details>
 
-<details>
-<summary>Relaciones</summary>
+
+
+Relaciones
 <br>Relaciones entre las entidades
 <br>El usuario puede obtener puntos y comprar mejoras con los puntos. 
 <br>El usuario puede ver sus mejoras, que hace cada mejora, ver sus personajes y que hacen.
 <br>El usuario puede enviar mensajes para obtener feedback.
 <br>El usuario puede comprar personajes, que luego se quedan guardados en personajes comprados por el jugador
-</details>
 
-<details>
-<summary>Ejemplo</summary>
+
+
+Ejemplo
 <br>Ejemplo de datos (simulación)
 <br>Usuario
 <br>Nombre: Shugus
@@ -163,10 +162,8 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Descripción: Antiguo guerrero en la guerra, ahora retirado y viviendo la vida de granjero
 <br>Efecto: Da 15 zanahorias cada 30 segundos.
 <br>Imagen
-</details>
 
-<details>
-<summary>Reflexiones</summary>
+Reflexiones
 <br>Reflexiones, dificultades y dudas que tienes sobre la base de datos
 <br>Las partes mas complicadas han sido listar los identificadores.
 <br>Una parte que se complico entender fue las relaciones entre entidades.
@@ -175,20 +172,14 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <br>Ejemplo: Cuando compres esta mejora, +5% de puntos por segundo
 <br>No tenemos claro cómo vamos a listar las mejoras y los personajes de cada jugador, si por nombre, identificador, o cualquier otra cosa.
 <br>No tenemos claro algunos de los tipos de datos de algunos atributos, como las imagenes de los personajes, o el efecto de personajes y mejoras.
-</details>
-</section>
-</details>
 
-<details>
-<summary><h4><b>Diagrama de la base de datos</h4></b></summary>
+<h4><b>Diagrama de la base de datos</h4></b>
 
 Este es el diagrama de la base de datos. Se pueden ver todas las tablas, las características de cada tabla y sus características.
 Las tablas estan marcadas por: Linea roja es la tabla principal, las lineas rojas discontinuas son las tablas secundarias, y las tablas con lineas azules discontinuas son las funcionalidades<br>
-<br><img width="978" height="841" alt="image" src="https://github.com/user-attachments/assets/e98a95b3-72d6-413a-9a36-79db5ae5b6b5" />
-</section>
-</details>
-<details>
-<summary><h4><b>Código SQL</h4></b></summary>
+<br><img width="713" height="675" alt="image" src="https://github.com/user-attachments/assets/36a4ef40-6b85-4980-a61a-62c41b74185c" />
+
+<h4><b>Código SQL</h4></b>
 	
 ```
 -- MySQL Workbench Forward Engineering
@@ -349,15 +340,9 @@ CREATE TABLE IF NOT EXISTS `keepin2`.`usuarios_personajes_comprados` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8mb4;
 ```
-<details>
 <br>
 </details>
-<details>
-<summary><h3>Diagrama de la base de datos</h3></summary>
-	<img width="713" height="675" alt="image" src="https://github.com/user-attachments/assets/36a4ef40-6b85-4980-a61a-62c41b74185c" />
-</details>
-</details>
-<br>
+
 </details>
 <details>
 <summary><h2><b>Tecnologías a utilizar</b></h2></summary>
@@ -464,7 +449,8 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br>MySQL 172.18.0.4
 <br>Pi-hole 172.18.0.6
 <br>DHCP 12.0.0.1
-<br><img width="890" height="579" alt="image" src="https://github.com/user-attachments/assets/97e57640-694d-4565-a571-5f32e258bfa9" />
+<br><img width="888" height="691" alt="image" src="https://github.com/user-attachments/assets/9ffa698b-65d7-4efe-abe6-6ad303742d57" />
+
 
 <details>
 <summary>Docker</summary>
