@@ -496,7 +496,7 @@ networks:
 ```
 
 
-DNS
+<h4>DNS</h4>
 <br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
 <br>Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
 <br>Nosotros usamos Pi-hole como servicio de DNS.
