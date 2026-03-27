@@ -387,59 +387,40 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br>Después nos conectamos a Docker por la IP de la máquina virtual. El último número de la IP (en este caso el 29) cambia cada vez que encendemos la VM de Ubuntu Server. Por eso hacemos el comando ip a | grep 192
 <br><img width="347" height="40" alt="image" src="https://github.com/user-attachments/assets/51464a83-2418-4aac-842a-17eac56017eb" />
 
-
-<br><b>Sistema operativo</b>
-<br><b>Utilizaremos diversos sistemas operativos dependiendo de las necesidades.</b>
-<br>Para copias de seguridad utilizaremos TrueNAS, ya que es más seguro y potente.
-<br>Se utilizará un total de 3 Ubuntu server. Uno para la página web, con PHP, Apache y HTML5, con CSS.
-<br>Otro será el servidor DNS con Pi hole.
-<br>Y el último será el que tenga toda la información, se utilizará MySQL y phpMyAdmin
-
-
-
-
 <br><b>Interfaz de usuario (Frontend)</b>
-<details>
-<summary>HTML5</summary>
+
+HTML5
 <br>HTML (Lenguaje de Marcado de Hipertexto) es el lenguaje de código que se utiliza para estructurar el contenido de una página web.
 
 <br>Usaremos HTML5, ya que es el lenguaje que se utiliza para hacer páginas web, aparte de sus beneficios en la compatibilidad con múltiples dispositivos, aparte de que es un lenguaje ya estandarizado para la creación de páginas web.
 
-</details>
-
-<details>
-<summary>CSS</summary>
+CSS
 <br>CSS, o Hojas de Estilo en Cascada, es el lenguaje de estilos que define la apariencia visual de los documentos web, como su color, fuentes y disposición.
 
 <br> Es imprescindible el uso de CSS para el desarrollo, ya que es el estándar para la presentación visual de la web. CSS separa el contenido (HTML) de la apariencia, permitiendo estilizar la página con facilidad. Gracias a esta separación, se puede lograr un diseño mucho más atractivo que optimice la experiencia del usuario.
-</details>
+
 <br><b>Lógica de negocio (Backend)</b>
-<details>
-<summary>Python</summary>
+
+Python
 <br><b>Nuestro objetivo es desarrollar un juego entretenido para nuestros usuarios. Hemos elegido Python como lenguaje de programación, ya que la curva de aprendizaje es sencilla y lo rapido de desarrollo.</b>
-</details>
+
 <br><b>Servidor web </b>
-<details>
+
 <br><b>Base de datos </b>
-<details>
-<summary>MySQL</summary>
+
+MySQL
 <br><b>MySQL es un sistema de gestión de bases de datos relacionales.</b>
 <br><b>La elección de MySQL es porque es sencillo de aprender. Aparte de que al usar HTML5 y CSS, si usamos también MySQL aseguramos de que se integre bien toda la información necesaria.</b>
-</details>
+
 
 <br><b>Sistema gestor de base de datos </b>
-<details>
-<summary>MySQLWorkbench</summary>
+
+MySQLWorkbench
 <br><b>MySQL Workbench es una herramienta visual unificada que permite a los desarrolladores, arquitectos y administradores de bases de datos gestionar y diseñar bases de datos MySQL.</b>
 <br><b>Para la gestión de datos usaremos MySQLWorkbench, ya que para principiantes es más visual y, a la hora de hacer el código de la base de datos, MySQLWorkbench ya te lo da hecho.</b>
 </details>
-
-</section>
-</details>
-</details>
-</details>
 <details>
-<summary><h2>Red</h2></summary>
+<summary><h2><b></b>Red</h2></b></summary>
 
 <br>Esta imagen representa el como esta echa la red. Nosotros usamos docker con los servicios de phpMyadmin,My SQL, Nginx,php en un stack. Por separado estaria Pi-hole que usaremos como DNS y por ultimo seria DHCP.
 <br>Las ip de cada servidor serian:
@@ -452,8 +433,8 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br><img width="888" height="691" alt="image" src="https://github.com/user-attachments/assets/9ffa698b-65d7-4efe-abe6-6ad303742d57" />
 
 
-<details>
-<summary>Docker</summary>
+
+Docker
 <br>Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones mediante contenedores ligeros y portátiles. Hemos optado por esta tecnología en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por Docker por su baja sobrecarga de sistema.
 <h4>Hardware</h4>
 <br>Al trabajar con hardware limitado, la ligereza de los contenedores nos permite desplegar toda la infraestructura necesaria de forma fluida.
@@ -514,9 +495,8 @@ networks:
     driver: bridge
 ```
 
-</details>
-<details>
-<summary>DNS</summary>
+
+DNS
 <br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
 <br>Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
 <br>Nosotros usamos Pi-hole como servicio de DNS.
@@ -531,9 +511,8 @@ networks:
 <br> Esta imagen representa el container del DNS.
 <img width="1590" height="46" alt="image" src="https://github.com/user-attachments/assets/bc783cd6-6fcb-4db4-921e-63d1f18b711a" />
 <br>La informacion que sacamos esta en la pagina <a href=https://datatracker.ietf.org/doc/rfc9886/>IETF</a><br>
-</details>
-<details>
-<summary>DHCP</summary>
+
+DHCP
 <br>DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
 <br>Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
 <br>En vez de usar el dhcp del pihole, vamos a usar otro diferente, ya que el contenedor de pihole, el dns da problemas si esta en modo host, asi que lo vamos a dejar en modo bridge, y como el dhcp pide que este en modo host, vamos a usar otro servicio. ISC DHCP
@@ -541,20 +520,17 @@ ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en
 <img width="746" height="427" alt="image" src="https://github.com/user-attachments/assets/24df3da0-0335-4b74-a9ac-be47d2dd91a3" />
 <br>Este otro, que se declaran todas las características del dhcp, las ips, el lease time, el dominio, etc
 <img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
-</details>
 
-<details>
-<summary>Nginx</summary>
+
+
+Nginx
 <br>Nginx es un servidor web de código abierto de alto rendimiento que destaca por sus capacidades como proxy inverso y balanceador de carga. Hemos seleccionado Nginx frente a Apache debido a su arquitectura orientada a eventos, la cual garantiza un menor consumo de recursos y una mayor eficiencia en el manejo de conexiones simultáneas, optimizando así el rendimiento global de nuestra infraestructura.
 <br>Nginx está operando correctamente, aunque actualmente no despliega nuestra aplicación. En su lugar, se visualiza la página de bienvenida por defecto del servidor. Esto sucede porque, aunque el servicio está activo, aún no hemos vinculado nuestro directorio de archivos al archivo de configuración de Nginx (Server Block). Por ahora, solo hemos verificado su funcionamiento modificando el título en el archivo index.html predeterminado.
 <img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
 <br>Esta imagen representa el container del Nginx.
 <img width="1584" height="48" alt="image" src="https://github.com/user-attachments/assets/448059ad-bc12-4147-a4ab-ace3da083624" />
 
-</details>
-
-<details>
-<summary>PHP y SQL</summary>
+PHP y SQL
 PHP es un lenguaje de programación de código abierto, diseñado específicamente para el desarrollo web backend.
 Hemos optado por integrar PHP debido a su capacidad para gestionar de manera eficiente la comunicación entre el servidor y la base de datos. Además, al tratarse de un lenguaje de procesamiento del lado del servidor, nos permite implementar capas de seguridad robustas que protegen la integridad de nuestros datos frente a exposiciones directas en el cliente.
 <br>Capa de Abstracción de Datos (PHP ↔ MySQL)
@@ -570,7 +546,6 @@ Hemos optado por integrar PHP debido a su capacidad para gestionar de manera efi
 <br>Configuración de Host: Se ha utilizado la resolución de nombres interna de Docker, apuntando el host al nombre del servicio mysql en lugar de direcciones IP estáticas.
 <br>Se implementó un control de errores mediante connect_error para diagnosticar fallos de autenticación o de red interna.
 <br>Se verificó la conexión mediante consultas de agregación (SELECT COUNT) sobre la tabla de usuarios, confirmando que el flujo de datos entre el contenedor PHP y el volumen de MySQL es totalmente funcional.
-</details>
 </details>
 <details>
 <summary><h2>Seguridad</h2></summary>
