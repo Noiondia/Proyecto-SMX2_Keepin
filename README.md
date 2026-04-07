@@ -79,7 +79,7 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <details>
 <summary><h2><b></b>Página Web</h2></b></summary>
 El desarrollo de la interfaz se basa en el estándar HTML5 para la definición de la estructura semántica y el 'esqueleto' de la aplicación. Complementariamente, empleamos CSS para el diseño visual y el estilizado de los componentes, garantizando una experiencia de usuario (UX) fluida y una interfaz (UI) moderna y atractiva.
-
+<b>Programacion</b>
 Para el desarrollo del núcleo del juego, hemos seleccionado Python como lenguaje de programación principal. Su sintaxis clara y legible nos ha permitido centrar nuestros esfuerzos en la lógica del sistema y el diseño de mecánicas, reduciendo los tiempos de desarrollo y facilitando la implementación de funciones complejas de manera eficiente, incluso para perfiles en fase de especialización.
 
 
