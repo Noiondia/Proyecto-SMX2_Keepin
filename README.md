@@ -75,6 +75,15 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <a href="https://www.canva.com/design/DAG18031_jA/xM7zD7MZ9NcQ2PMzfyEBWA/view?utm_content=DAG18031_jA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h578cf79f8b">Mapa de navegación</a>
 </section>
 </details>
+
+<details>
+<summary><h2><b></b>Página Web</h2></b></summary>
+El desarrollo de la interfaz se basa en el estándar HTML5 para la definición de la estructura semántica y el 'esqueleto' de la aplicación. Complementariamente, empleamos CSS para el diseño visual y el estilizado de los componentes, garantizando una experiencia de usuario (UX) fluida y una interfaz (UI) moderna y atractiva.
+
+Para el desarrollo del núcleo del juego, hemos seleccionado Python como lenguaje de programación principal. Su sintaxis clara y legible nos ha permitido centrar nuestros esfuerzos en la lógica del sistema y el diseño de mecánicas, reduciendo los tiempos de desarrollo y facilitando la implementación de funciones complejas de manera eficiente, incluso para perfiles en fase de especialización.
+
+
+</details>
 <details>
 <summary><h2><b></b>Base de datos</h2></b></summary>
 
