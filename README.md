@@ -78,16 +78,31 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 
 <details>
 <summary><h2><b></b>Página Web</h2></b></summary>
+
+<br>La landing page presenta una disposición limpia y temática. El encabezado está presidido por el nombre del proyecto, Keepin', mientras que el lateral derecho alberga el logotipo principal Jorge. Para la interacción, se ha implementado un botón de inicio de sesión con una estética retro, utilizando la tipografía pixelada PressStart2P.
+
+<br><img width="1376" height="800" alt="image" src="https://github.com/user-attachments/assets/d0dcbfa7-9114-4787-b78f-7f82363bceda" />
+
+<br><b>Desarrollo</b>
+
 <br>El desarrollo de la interfaz se basa en el estándar HTML5 para la definición de la estructura semántica y el 'esqueleto' de la aplicación. Complementariamente, empleamos CSS para el diseño visual y el estilizado de los componentes, garantizando una experiencia de usuario (UX) fluida y una interfaz (UI) moderna y atractiva.
 <br>
 
-
+<br>La imagen ilustra el directorio raíz del proyecto, donde se gestiona la arquitectura de archivos de la aplicación web. Se observa la organización de los documentos HTML5, las hojas de estilo CSS y el repositorio de activos estáticos (imágenes y elementos gráficos), estructurados para garantizar una carga eficiente y un mantenimiento organizado del código.
+En el directorio de recursos también se localizan los sprites del videojuego. Dado que el proyecto apuesta por una estética ASCII, estos activos están almacenados en archivos de texto.
 
 <img width="329" height="838" alt="image" src="https://github.com/user-attachments/assets/f9d64080-cc38-4423-9573-fbdcc40c93d0" />
 
 <br><b>Programacion</b>
 
 <br>Para el desarrollo del núcleo del juego, hemos seleccionado Python como lenguaje de programación principal. Su sintaxis clara y legible nos ha permitido centrar nuestros esfuerzos en la lógica del sistema y el diseño de mecánicas, reduciendo los tiempos de desarrollo y facilitando la implementación de funciones complejas de manera eficiente, incluso para perfiles en fase de especialización.
+
+<br>En la captura también se aprecia el archivo fuente principal del videojuego. Actualmente, el script de Python se denomina pruebas.py. Este archivo contiene la lógica base y las mecánicas fundamentales que están siendo testeadas.
+<br><img width="174" height="74" alt="image" src="https://github.com/user-attachments/assets/91023238-6e37-4a2d-ae83-08640ca18b91" />
+
+<br><b>Juego</b>
+<br>Tras el proceso de autenticación, el sistema redirige al usuario a la interfaz principal del juego, lo primero que veria el usuario seria el sprite de Jorge en arte ASCII. La mecánica principal se basa en la interacción mediante clics para la acumulación de Jorges, lo cual activa de forma dinámica un sistema de progresión. Al alcanzar ciertos Jorges, se desbloquea una tienda de mejoras que permite optimizar la tasa de produccion.
+<br><img width="732" height="839" alt="image" src="https://github.com/user-attachments/assets/402c29ab-ac1c-4db9-b1d3-3fc5b6176fa4" />
 
 
 </details>
