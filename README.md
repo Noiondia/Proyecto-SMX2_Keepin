@@ -80,7 +80,6 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 <summary><h2><b></b>Página Web</h2></b></summary>
 
 <br>La landing page presenta una disposición limpia y temática. El encabezado está presidido por el nombre del proyecto, Keepin', mientras que el lateral derecho alberga el logotipo principal Jorge. Para la interacción, se ha implementado un botón de inicio de sesión con una estética retro, utilizando la tipografía pixelada PressStart2P.
-
 <br><img width="1376" height="800" alt="image" src="https://github.com/user-attachments/assets/d0dcbfa7-9114-4787-b78f-7f82363bceda" />
 
 <br><b>Desarrollo</b>
