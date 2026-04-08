@@ -3,7 +3,7 @@
 <details>
 <summary><h2><b>Abstract</b></h2></summary>
 <section id="Abstract">
-Somos TDGamblers, un equipo formado por 3 chicos que querían hacer un juego divertido, tanto para jugar como para pasarlo bien haciéndolo. 
+Somos TDjJorge, un equipo formado por 3 chicos que querían hacer un juego divertido, tanto para jugar como para pasarlo bien haciéndolo. 
 Nuestra idea fue hacer un juego clicker, como por ejemplo Cookie Clicker, ya que que creemos que es relativamente fácil de programar, accesible para que lo entienda todo el mundo y muy divertido a pesar de todo.
 Aunque al contrario que Cookie Clicker, decidimos hacer el diseño gráfico en ASCII para simplificar las cosas y a la vez darle un estilo más original.
 </section>
@@ -397,18 +397,19 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br>Nombre: phpMyAdmin
 <br>Imagen: php:8.3.30RC1-fpm-alpine3.23
 <br>IP:172.18.0.2
-<br>Puerto: -
+<br>Puerto: 8081
 
 <br>Nombre: Pi-Hole
 <br>Imagen: pihole/pihole:latest
-<br>IP: -
-<br>Puerto: -
+<br>IP: 172.18.0.6
+<br>Puerto: 8080
 
 <br>Nombre: portainer
 <br>Imagen: portainer/portainer-ce:lts
 <br>IP: 172.17.0.2
 <br>Puerto: 8000: 8000 9443: 9443
 
+<h1>Cambiar esta foto</h1>
 <br><img width="1587" height="339" alt="image" src="https://github.com/user-attachments/assets/9ec36250-b8f3-41d5-a92b-c058d5cd95bd" />
 
 <br>Para conectarnos a la máquina virtual (Ubuntu Server) desde el CMD mediante SSH, debemos usar el comando ssh usuario@ip. En la imagen se ve cómo se hace; lo único que se tendría que hacer es cambiar la "x" por la IP de la máquina virtual.
@@ -464,7 +465,7 @@ MySQLWorkbench
 
 
 
-Docker
+<b>Docker</b>
 <br>Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones mediante contenedores ligeros y portátiles. Hemos optado por esta tecnología en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por Docker por su baja sobrecarga de sistema.
 <h4>Hardware</h4>
 <br>Al trabajar con hardware limitado, la ligereza de los contenedores nos permite desplegar toda la infraestructura necesaria de forma fluida.
@@ -534,7 +535,7 @@ networks:
 <br>Esto es la prueba de que el servicio dns esta funcionando
 <br><img width="780" height="152" alt="image" src="https://github.com/user-attachments/assets/4cecd103-d636-40cd-a7be-d26bebba666b" />
 <br>
-<br><h4>traduccion</h4>
+<br><h4>Traduccion</h4>
 <br>Esto es la traduccion dominio ip
 <br><img width="699" height="257" alt="image" src="https://github.com/user-attachments/assets/b3d57199-dd82-467e-a06d-904d4f4be73e" />
 <h4>Container</h4>
