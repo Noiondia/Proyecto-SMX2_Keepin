@@ -47,7 +47,7 @@ La tipografia del Mockup se cambiara a futuro.
 En el mockup, la primera página que sale es la página principal, cuyo ÚNICO objetivo es que el usuario cree su cuenta o inicie sesión y entre al juego.<br>
 <br>
 <img width="1134" height="637" alt="image" src="https://github.com/user-attachments/assets/d1bcce97-39d3-4eee-9052-6b7afaf9a6b8" />
-Dentro del juego hay varias pestañas pero todas estan enfocadas en la misma, las tres paginas de dentro del juego, son variaciones de la misma, no  seràn diferentes pestañas, en caso de la pagina de quipación de personajes serà un pop up que aparecerà en la misma pagina. En verdad, la pagina web entera, solo tendrà dos paginas, el inicio y el juego.
+Dentro del juego hay varias pestañas pero todas estan enfocadas en la misma, las tres paginas de dentro del juego, son variaciones de la misma, no seràn diferentes pestañas, en caso de la pagina de quipación de personajes serà un pop up que aparecerà en la misma pagina. En verdad, la pagina web entera, solo tendrà dos paginas, el inicio y el juego.
 
 <br><img width="1133" height="636" alt="image" src="https://github.com/user-attachments/assets/be5c4eb5-51b1-495b-a34f-0a38a0234507" />
 <br>
@@ -106,7 +106,7 @@ En el directorio de recursos también se localizan los sprites del videojuego. D
 
 </details>
 <details>
-<summary><h2><b></b>Base de datos</h2></b></summary>
+<summary><h2><b>Base de datos</h2></b></summary>
 
 <h4><b></b>SQL</h4>
 <br>SQL es el estándar de la industria para la gestión de bases de datos. Hemos optado por esta tecnología para la implementación de nuestra base de datos debido a su madurez, amplia documentación y compatibilidad universal, lo que facilita tanto el mantenimiento como la escalabilidad a largo plazo de nuestra infraestructura.
@@ -114,15 +114,15 @@ En el directorio de recursos también se localizan los sprites del videojuego. D
 
 <h4>Identidades principales</h4>
 
-Usuario
--Usuario 
+<b>Usuario</b>
+<br>-Usuario 
 <br>-Contraseña: Para que una cuenta sea segura, necesita una contraseña, así que se va a necesitar una para crear la cuenta.
 <br>-Correo electrónico: El correo electrónico hará el funcionamiento de nombre de usuario, guardando la información de cada jugador.
 <br>-Partida: Consta de todos los elementos importantes que se tienen que guardar sobre la partida de cada jugador.
 <br>Puntos actuales de cada jugador: Esto forma parte del progreso de cada jugador, son los puntos que te da al hacer clic a Jorge.
 
 
-Mejoras
+<b>Mejoras</b>
 
 <br>Nombre de la mejora  	-Cada mejora tiene un nombre para identificarla
 <br>Descripción de la mejora - Cada mejora tiene una descripción, para saber     que hace
@@ -135,12 +135,12 @@ Mejoras
 
 
 
-Comentarios
+<b>Comentarios</b>
 <br>Comentarios: queremos que la gente que juegue a nuestra página pueda dejar comentarios para saber su opinión y por si quieren hacer sugerencias.
 
 
 
-Datos a guardar
+<b>Datos a guardar</b>
 <br>Datos que se deben guardar de cada entidad (atributos)
 <br>Para cada entidad identificada en el punto anterior, describe qué información concreta se necesita guardar.
 <br>Usuario
@@ -164,7 +164,7 @@ Datos a guardar
 
 
 
-Relaciones
+<b>Relaciones</b>
 <br>Relaciones entre las entidades
 <br>El usuario puede obtener puntos y comprar mejoras con los puntos. 
 <br>El usuario puede ver sus mejoras, que hace cada mejora, ver sus personajes y que hacen.
@@ -173,7 +173,7 @@ Relaciones
 
 
 
-Ejemplo
+<b>Ejemplo</b>
 <br>Ejemplo de datos (simulación)
 <br>Usuario
 <br>Nombre: Shugus
@@ -193,7 +193,7 @@ Ejemplo
 <br>Efecto: Da 15 zanahorias cada 30 segundos.
 <br>Imagen
 
-Reflexiones
+<b>Reflexiones</b>
 <br>Reflexiones, dificultades y dudas que tienes sobre la base de datos
 <br>Las partes mas complicadas han sido listar los identificadores.
 <br>Una parte que se complico entender fue las relaciones entre entidades.
