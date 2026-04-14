@@ -384,25 +384,30 @@ Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y 
 <br>IP:172.18.0.3
 <br>Puerto: 80 : 80
 
+
 <br>Nombre: mySQL
 <br>Imagen: mysql:8.0.44-debian
 <br>IP:172.18.0.4
 <br>Puerto: -
+
 
 <br>Nombre: PHP
 <br>Imagen: php:8.3.30RC1-fpm-alpine3.23
 <br>IP:172.18.0.5
 <br>Puerto: 8081 : 80
 
+
 <br>Nombre: phpMyAdmin
 <br>Imagen: php:8.3.30RC1-fpm-alpine3.23
 <br>IP:172.18.0.2
 <br>Puerto: 8081
 
+
 <br>Nombre: Pi-Hole
 <br>Imagen: pihole/pihole:latest
 <br>IP: 172.18.0.6
 <br>Puerto: 8080
+
 
 <br>Nombre: portainer
 <br>Imagen: portainer/portainer-ce:lts
