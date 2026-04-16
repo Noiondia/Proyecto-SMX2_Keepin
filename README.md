@@ -376,107 +376,12 @@ DEFAULT CHARACTER SET = utf8mb4;
 </details>
 <details>
 <summary><h2><b>Tecnologías a utilizar</b></h2></summary>
-Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y no en diferentes maquinas virtuales.
-<img width="1606" height="98" alt="image" src="https://github.com/user-attachments/assets/b38c53e2-67c0-4b8e-94ae-0bc59ea56ee2" />
-
-<br>Nombre: mi_nginx
-<br>Imagen: nginx:latest
-<br>IP:172.18.0.3
-<br>Puerto: 80 : 80
-
-
-<br>Nombre: mySQL
-<br>Imagen: mysql:8.0.44-debian
-<br>IP:172.18.0.4
-<br>Puerto: -
-
-
-<br>Nombre: PHP
-<br>Imagen: php:8.3.30RC1-fpm-alpine3.23
-<br>IP:172.18.0.5
-<br>Puerto: 8081 : 80
-
-
-<br>Nombre: phpMyAdmin
-<br>Imagen: php:8.3.30RC1-fpm-alpine3.23
-<br>IP:172.18.0.2
-<br>Puerto: 8081
-
-
-<br>Nombre: Pi-Hole
-<br>Imagen: pihole/pihole:latest
-<br>IP: 172.18.0.6
-<br>Puerto: 8080
-
-
-<br>Nombre: portainer
-<br>Imagen: portainer/portainer-ce:lts
-<br>IP: 172.17.0.2
-<br>Puerto: 8000: 8000 9443: 9443
-
-<br><img width="1608" height="578" alt="image" src="https://github.com/user-attachments/assets/69cd4bb3-279d-45f4-90c9-0a862eb32dea" />
-
-
-<br>Para conectarnos a la máquina virtual (Ubuntu Server) desde el CMD mediante SSH, debemos usar el comando ssh usuario@ip. En la imagen se ve cómo se hace; lo único que se tendría que hacer es cambiar la "x" por la IP de la máquina virtual.
-<br><img width="461" height="62" alt="image" src="https://github.com/user-attachments/assets/34a0dc1b-8fb4-40f2-863c-2bbbd8c3ad93" />
-
-<br>Después nos conectamos a Docker por la IP de la máquina virtual. El último número de la IP (en este caso el 29) cambia cada vez que encendemos la VM de Ubuntu Server. Por eso hacemos el comando ip a | grep 192
-<br><img width="347" height="40" alt="image" src="https://github.com/user-attachments/assets/51464a83-2418-4aac-842a-17eac56017eb" />
-
-<br><b>Interfaz de usuario (Frontend)</b>
-
-HTML5
-<br>HTML (Lenguaje de Marcado de Hipertexto) es el lenguaje de código que se utiliza para estructurar el contenido de una página web.
-
-<br>Usaremos HTML5, ya que es el lenguaje que se utiliza para hacer páginas web, aparte de sus beneficios en la compatibilidad con múltiples dispositivos, aparte de que es un lenguaje ya estandarizado para la creación de páginas web.
-
-CSS
-<br>CSS, o Hojas de Estilo en Cascada, es el lenguaje de estilos que define la apariencia visual de los documentos web, como su color, fuentes y disposición.
-
-<br> Es imprescindible el uso de CSS para el desarrollo, ya que es el estándar para la presentación visual de la web. CSS separa el contenido (HTML) de la apariencia, permitiendo estilizar la página con facilidad. Gracias a esta separación, se puede lograr un diseño mucho más atractivo que optimice la experiencia del usuario.
-
-<br><b>Lógica de negocio (Backend)</b>
-
-Python
-<br><b>Nuestro objetivo es desarrollar un juego entretenido para nuestros usuarios. Hemos elegido Python como lenguaje de programación, ya que la curva de aprendizaje es sencilla y lo rapido de desarrollo.</b>
-
-<br><b>Servidor web </b>
-
-<br><b>Base de datos </b>
-
-MySQL
-<br><b>MySQL es un sistema de gestión de bases de datos relacionales.</b>
-<br><b>La elección de MySQL es porque es sencillo de aprender. Aparte de que al usar HTML5 y CSS, si usamos también MySQL aseguramos de que se integre bien toda la información necesaria.</b>
-
-
-<br><b>Sistema gestor de base de datos </b>
-
-MySQLWorkbench
-<br><b>MySQL Workbench es una herramienta visual unificada que permite a los desarrolladores, arquitectos y administradores de bases de datos gestionar y diseñar bases de datos MySQL.</b>
-<br><b>Para la gestión de datos usaremos MySQLWorkbench, ya que para principiantes es más visual y, a la hora de hacer el código de la base de datos, MySQLWorkbench ya te lo da hecho.</b>
-</details>
-<details>
-<summary><h2><b></b>Red</h2></b></summary>
-
-<br>Esta imagen representa el como esta echa la red. Nosotros usamos docker con los servicios de phpMyadmin,My SQL, Nginx,php en un stack. Por separado estaria Pi-hole que usaremos como DNS y por ultimo seria DHCP.
-<br>Las ip de cada servidor serian:
-<br>Nginx 172.18.0.3
-<br>php 172.18.0.5
-<br>phpMyadmin 172.18.0.2
-<br>MySQL 172.18.0.4
-<br>Pi-hole 172.18.0.6
-<br>DHCP 12.0.0.1
-<br><img width="888" height="691" alt="image" src="https://github.com/user-attachments/assets/9ffa698b-65d7-4efe-abe6-6ad303742d57" />
-
-
-
-<b>Docker</b>
-<br>Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones mediante contenedores ligeros y portátiles. Hemos optado por esta tecnología en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por Docker por su baja sobrecarga de sistema.
-<h4>Hardware</h4>
+Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones mediante contenedores ligeros y portátiles. Hemos optado por esta tecnología en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por Docker por su baja sobrecarga de sistema..Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y no en diferentes maquinas virtuales.
 <br>Al trabajar con hardware limitado, la ligereza de los contenedores nos permite desplegar toda la infraestructura necesaria de forma fluida.
-<h4>Configuración</h4>
-<br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
 
+<details>
+<summary>Configuración</summary>
+<br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
 
 ```
 services:
@@ -530,6 +435,123 @@ networks:
   keepin-network:
     driver: bridge
 ```
+
+<img width="1606" height="98" alt="image" src="https://github.com/user-attachments/assets/b38c53e2-67c0-4b8e-94ae-0bc59ea56ee2" />
+</details>
+
+<br>Nombre: mi_nginx
+<br>Imagen: nginx:latest
+<br>IP:172.18.0.3
+<br>Puerto: 80 : 80
+
+
+<br>Nombre: mySQL
+<br>Imagen: mysql:8.0.44-debian
+<br>IP:172.18.0.4
+<br>Puerto: -
+
+
+<br>Nombre: PHP
+<br>Imagen: php:8.3.30RC1-fpm-alpine3.23
+<br>IP:172.18.0.5
+<br>Puerto: 8081 : 80
+
+
+<br>Nombre: phpMyAdmin
+<br>Imagen: php:8.3.30RC1-fpm-alpine3.23
+<br>IP:172.18.0.2
+<br>Puerto: 8081
+
+
+<br>Nombre: Pi-Hole
+<br>Imagen: pihole/pihole:latest
+<br>IP: 172.18.0.6
+<br>Puerto: 8080
+
+<br>Nosotros usamos Pi-hole como servicio de DNS.
+<br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
+<br>Es necesario ya que traduce nombres de dominios fáciles de recordar a direcciones IP que las máquinas entienden, haciendo posible la navegacióm web,correo electrónico y otros servicios.
+
+<H4>Funcionamiento.</H4>
+
+<br>Esto es la prueba de que el servicio dns esta funcionando
+<br><img width="780" height="152" alt="image" src="https://github.com/user-attachments/assets/5f3ed3d4-2d99-4771-a6ba-9302815dd9a2" />
+<br>Esta imagen representa el container del DNS.
+<br><img width="1590" height="46" alt="image" src="https://github.com/user-attachments/assets/154f0b14-664b-4f62-8080-5a8efff3b8b0" />
+
+
+<H4>Traduccion</H4>
+
+<br>Esto es la traduccion dominio ip
+<br>
+<br><img width="699" height="257" alt="image" src="https://github.com/user-attachments/assets/c41b5ff0-f08d-4ba1-ac12-dcecf3acebf3" />
+
+
+<br>Nombre: portainer
+<br>Imagen: portainer/portainer-ce:lts
+<br>IP: 172.17.0.2
+<br>Puerto: 8000: 8000 9443: 9443
+
+<br><img width="1608" height="578" alt="image" src="https://github.com/user-attachments/assets/69cd4bb3-279d-45f4-90c9-0a862eb32dea" />
+
+
+Para conectarnos a la máquina virtual (Ubuntu Server) desde el CMD mediante SSH, debemos usar el comando ssh usuario@ip. En la imagen se ve cómo se hace; lo único que se tendría que hacer es cambiar la "x" por la IP de la máquina virtual.
+<br><img width="461" height="62" alt="image" src="https://github.com/user-attachments/assets/34a0dc1b-8fb4-40f2-863c-2bbbd8c3ad93" />
+
+<br>Después nos conectamos a Docker por la IP de la máquina virtual. El último número de la IP (en este caso el 29) cambia cada vez que encendemos la VM de Ubuntu Server. Por eso hacemos el comando ip a | grep 192
+<img width="347" height="40" alt="image" src="https://github.com/user-attachments/assets/51464a83-2418-4aac-842a-17eac56017eb" />
+
+<br><b>Interfaz de usuario (Frontend)</b>
+
+HTML5
+<br>HTML (Lenguaje de Marcado de Hipertexto) es el lenguaje de código que se utiliza para estructurar el contenido de una página web.
+
+<br>Usaremos HTML5, ya que es el lenguaje que se utiliza para hacer páginas web, aparte de sus beneficios en la compatibilidad con múltiples dispositivos, aparte de que es un lenguaje ya estandarizado para la creación de páginas web.
+
+CSS
+<br>CSS, o Hojas de Estilo en Cascada, es el lenguaje de estilos que define la apariencia visual de los documentos web, como su color, fuentes y disposición.
+
+<br> Es imprescindible el uso de CSS para el desarrollo, ya que es el estándar para la presentación visual de la web. CSS separa el contenido (HTML) de la apariencia, permitiendo estilizar la página con facilidad. Gracias a esta separación, se puede lograr un diseño mucho más atractivo que optimice la experiencia del usuario.
+
+<br><b>Lógica de negocio (Backend)</b>
+
+Python
+<br><b>Nuestro objetivo es desarrollar un juego entretenido para nuestros usuarios. Hemos elegido Python como lenguaje de programación, ya que la curva de aprendizaje es sencilla y lo rapido de desarrollo.</b>
+
+<br><b>Servidor web </b>
+
+<br><b>Base de datos </b>
+
+MySQL
+<br><b>MySQL es un sistema de gestión de bases de datos relacionales.</b>
+<br><b>La elección de MySQL es porque es sencillo de aprender. Aparte de que al usar HTML5 y CSS, si usamos también MySQL aseguramos de que se integre bien toda la información necesaria.</b>
+
+
+<br><b>Sistema gestor de base de datos </b>
+
+MySQLWorkbench
+<br><b>MySQL Workbench es una herramienta visual unificada que permite a los desarrolladores, arquitectos y administradores de bases de datos gestionar y diseñar bases de datos MySQL.</b>
+<br><b>Para la gestión de datos usaremos MySQLWorkbench, ya que para principiantes es más visual y, a la hora de hacer el código de la base de datos, MySQLWorkbench ya te lo da hecho.</b>
+</details>
+<details>
+<summary><h2><b></b>Red</h2></b></summary>
+
+<br>Esta imagen representa el como esta echa la red. Nosotros usamos docker con los servicios de phpMyadmin,My SQL, Nginx,php en un stack. Por separado estaria Pi-hole que usaremos como DNS y por ultimo seria DHCP.
+<br>Las ip de cada servidor serian:
+<br>Nginx 172.18.0.3
+<br>php 172.18.0.5
+<br>phpMyadmin 172.18.0.2
+<br>MySQL 172.18.0.4
+<br>Pi-hole 172.18.0.6
+<br>DHCP 12.0.0.1
+<br><img width="888" height="691" alt="image" src="https://github.com/user-attachments/assets/9ffa698b-65d7-4efe-abe6-6ad303742d57" />
+
+
+
+<b>Docker</b>
+<br>Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones mediante contenedores ligeros y portátiles. Hemos optado por esta tecnología en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por Docker por su baja sobrecarga de sistema.
+<h4>Hardware</h4>
+
 
 
 <h4>DNS</h4>
