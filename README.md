@@ -84,6 +84,8 @@ Y este es el mapa de navegación, que explica cada botón clicable, qué hace y 
 
 <br><b>Desarrollo</b>
 
+
+<br>HTML (Lenguaje de Marcado de Hipertexto) es el lenguaje de código que se utiliza para estructurar el contenido de una página web.
 <br>El desarrollo de la interfaz se basa en el estándar HTML5 para la definición de la estructura semántica y el 'esqueleto' de la aplicación. Complementariamente, empleamos CSS para el diseño visual y el estilizado de los componentes, garantizando una experiencia de usuario (UX) fluida y una interfaz (UI) moderna y atractiva.
 <br>
 
@@ -380,7 +382,7 @@ Docker es una plataforma de código abierto que permite empaquetar, distribuir y
 <br>Al trabajar con hardware limitado, la ligereza de los contenedores nos permite desplegar toda la infraestructura necesaria de forma fluida.
 
 <details>
-<summary>Configuración</summary>
+<summary>Configuración Docker</summary>
 <br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
 
 ```
@@ -451,22 +453,64 @@ networks:
 <br>Puerto: -
 
 
+<details>
+<summary><h4><b>MySQL</b></h4></summary>
+MySQL es un sistema de gestión de bases de datos relacionales.
+La elección de MySQL es porque es sencillo de aprender. Aparte de que al usar HTML5 y CSS, si usamos también MySQL aseguramos de que se integre bien toda la información necesaria.
+
+
+<h4>Sistema gestor de base de datos</h4>
+
+MySQLWorkbench
+MySQL Workbench es una herramienta visual unificada que permite a los desarrolladores, arquitectos y administradores de bases de datos gestionar y diseñar bases de datos MySQL.
+Para la gestión de datos usaremos MySQLWorkbench, ya que para principiantes es más visual y, a la hora de hacer el código de la base de datos, MySQLWorkbench ya te lo da hecho.
+
+</details>
+
 <br>Nombre: PHP
 <br>Imagen: php:8.3.30RC1-fpm-alpine3.23
 <br>IP:172.18.0.5
 <br>Puerto: 8081 : 80
 
 
+<details>
+<summary><h4><b>php</b></h4></summary>
+
+Hemos implementado PHP como el motor de procesamiento del lado del servidor. Su uso es fundamental para dotar al sitio de interactividad, permitiendo la gestión dinámica de la base de datos, la administración de sesiones de usuario y la generación de contenido personalizado en tiempo real según las acciones del jugador. La implementación de PHP resuelve el desafío crítico de la comunicación entre la página web y la base de datos. Esta integración no solo garantiza un flujo de información bidireccional y seguro, sino que aporta un valor añadido al permitir que la interfaz reaccione dinámicamente a las acciones del usuario, mejorando la experiencia del usuario.
+
+</details>
+
 <br>Nombre: phpMyAdmin
 <br>Imagen: php:8.3.30RC1-fpm-alpine3.23
 <br>IP:172.18.0.2
 <br>Puerto: 8081
+
+<details>
+<summary><h4><b>PhpMyAdmin</b></h4></summary>
+
+
+<h4>PhpMyAdmin</h4>
+<br>Para la gestión y administración de la base de datos, hemos implementado phpMyAdmin. Esta herramienta nos proporciona una interfaz gráfica basada en web que facilita la supervisión de las tablas, la ejecución de consultas y la manipulación de datos de forma intuitiva, optimizando las tareas de mantenimiento de nuestra infraestructura MySQL. PhpMyAdmin actúa como el panel de administración centralizado de nuestra base de datos. Al proporcionar una interfaz gráfica basada en web, simplifica la ejecución de consultas, la visualización de estructuras de columnas y la manipulación de registros. 
+
+
+<h4>Uso</h4>
+<br>Esta herramienta es clave para agilizar el mantenimiento y asegurar que los datos del juego se gestionen de forma intuitiva. La combinación de PHP y phpMyAdmin resuelve el desafío técnico de la conectividad y gestión de datos. Mientras PHP actúa como el nexo lógico que comunica la web con el servidor, phpMyAdmin proporciona el entorno visual necesario para administrar esa base de datos. Esta arquitectura elimina la complejidad de trabajar con código crudo, facilitando la edición de tablas y la validación de consultas en tiempo real.
+
+<h4>Aspecto</h4>
+<br>Aunque la captura no muestra la totalidad de las tablas, su propósito fundamental es validar la correcta instalación y despliegue de la base de datos en el entorno de phpMyAdmin. Esta vista confirma que el esquema de datos está correctamente cargado y accesible para su gestión.
+<img width="225" height="794" alt="image" src="https://github.com/user-attachments/assets/01ccc0ce-e1d4-4521-a17e-de4c0c5e3302" />
+</details>
+
+
 
 
 <br>Nombre: Pi-Hole
 <br>Imagen: pihole/pihole:latest
 <br>IP: 172.18.0.6
 <br>Puerto: 8080
+
+<details>
+<summary><h4><b>Pi-Hole</b></h4></summary>
 
 <br>Nosotros usamos Pi-hole como servicio de DNS.
 <br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
@@ -486,7 +530,7 @@ networks:
 <br>
 <br><img width="699" height="257" alt="image" src="https://github.com/user-attachments/assets/c41b5ff0-f08d-4ba1-ac12-dcecf3acebf3" />
 
-
+</details>
 <br>Nombre: portainer
 <br>Imagen: portainer/portainer-ce:lts
 <br>IP: 172.17.0.2
