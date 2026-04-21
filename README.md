@@ -3,7 +3,7 @@
 <details>
 <summary><h2><b>Abstract</b></h2></summary>
 <section id="Abstract">
-Somos TDjJorge, un equipo formado por 3 chicos que querían hacer un juego divertido, tanto para jugar como para pasarlo bien haciéndolo. 
+Somos TDJorge, un equipo formado por 3 chicos que querían hacer un juego divertido, tanto para jugar como para pasarlo bien haciéndolo. 
 Nuestra idea fue hacer un juego clicker, como por ejemplo Cookie Clicker, ya que que creemos que es relativamente fácil de programar, accesible para que lo entienda todo el mundo y muy divertido a pesar de todo.
 Aunque al contrario que Cookie Clicker, decidimos hacer el diseño gráfico en ASCII para simplificar las cosas y a la vez darle un estilo más original.
 </section>
@@ -378,7 +378,7 @@ DEFAULT CHARACTER SET = utf8mb4;
 </details>
 <details>
 <summary><h2><b>Tecnologías a utilizar</b></h2></summary>
-Hemos optado por esta tecnología en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por Docker por su baja sobrecarga de sistema..Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y no en diferentes maquinas virtuales.
+Hemos optado por Docker en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por esa tecnología por su baja sobrecarga de sistema.Decidimos usar docker ya que se nos hacia más como el tener todo en un stack y no en diferentes maquinas virtuales.
 <br>Al trabajar con hardware limitado, la ligereza de los contenedores nos permite desplegar toda la infraestructura necesaria de forma fluida.Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones mediante contenedores ligeros y portátiles. 
 
 <details>
@@ -439,6 +439,9 @@ networks:
 ```
 
 <img width="1606" height="98" alt="image" src="https://github.com/user-attachments/assets/b38c53e2-67c0-4b8e-94ae-0bc59ea56ee2" />
+
+
+
 </details>
 
 
