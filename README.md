@@ -378,8 +378,8 @@ DEFAULT CHARACTER SET = utf8mb4;
 </details>
 <details>
 <summary><h2><b>Tecnologías a utilizar</b></h2></summary>
-Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones mediante contenedores ligeros y portátiles. Hemos optado por esta tecnología en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por Docker por su baja sobrecarga de sistema..Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y no en diferentes maquinas virtuales.
-<br>Al trabajar con hardware limitado, la ligereza de los contenedores nos permite desplegar toda la infraestructura necesaria de forma fluida.
+Hemos optado por esta tecnología en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por Docker por su baja sobrecarga de sistema..Decidimos hacer docker ya que se nos hacia mas como el tener todo en un stack y no en diferentes maquinas virtuales.
+<br>Al trabajar con hardware limitado, la ligereza de los contenedores nos permite desplegar toda la infraestructura necesaria de forma fluida.Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones mediante contenedores ligeros y portátiles. 
 
 <details>
 <summary>Configuración Docker</summary>
@@ -441,33 +441,47 @@ networks:
 <img width="1606" height="98" alt="image" src="https://github.com/user-attachments/assets/b38c53e2-67c0-4b8e-94ae-0bc59ea56ee2" />
 </details>
 
-<br>Nombre: mi_nginx
-<br>Imagen: nginx:latest
-<br>IP:172.18.0.3
-<br>Puerto: 80 : 80
+
 
 
 <details>
 <summary><h4><b>Nginx</b></h4></summary>
+<br>Nombre: mi_nginx
+<br>Imagen: nginx:latest
+<br>IP:172.18.0.3
+<br>Puerto: 80 : 80
 Nginx es un servidor web de código abierto de alto rendimiento que destaca por sus capacidades como proxy inverso y balanceador de carga. Hemos seleccionado Nginx frente a Apache debido a su arquitectura orientada a eventos, la cual garantiza un menor consumo de recursos y una mayor eficiencia en el manejo de conexiones simultáneas, optimizando así el rendimiento global de nuestra infraestructura.
 Nginx está operando correctamente, aunque actualmente no despliega nuestra aplicación. En su lugar, se visualiza la página de bienvenida por defecto del servidor. Esto sucede porque, aunque el servicio está activo, aún no hemos vinculado nuestro directorio de archivos al archivo de configuración de Nginx (Server Block). Por ahora, solo hemos verificado su funcionamiento modificando el título en el archivo index.html predeterminado.
 
 <img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
 <br>Esta imagen representa el container del Nginx.
 <img width="1584" height="48" alt="image" src="https://github.com/user-attachments/assets/448059ad-bc12-4147-a4ab-ace3da083624" />
+
+
+<br>La implementación mediante Docker permite una optimización de recursos significativamente superior a la virtualización tradicional, al evitar la sobrecarga de ejecutar múltiples sistemas operativos completos. A pesar de esta eficiencia, cada microservicio requiere un aprovisionamiento mínimo para garantizar su estabilidad. A continuación, se detallan los recursos asignados para el contenedor de Nginx.
+
+| Recurso | Asignación | Observaciones Técnicas |
+| :--- | :--- | :--- |
+| **CPU** | `< 0.1 Core` | Consumo residual al no realizar cifrado intensivo (SSL/HTTPS). |
+| **RAM** | `32 MB - 64 MB` | Gestión optimizada de procesos para servir contenido estático (HTML/CSS). |
+| **Almacenamiento** | `Mínimo` | El espacio en disco se reserva principalmente para la persistencia de logs. |
+
+
 </details>
 
 
-<br>Nombre: mySQL
-<br>Imagen: mysql:8.0.44-debian
-<br>IP:172.18.0.4
-<br>Puerto: -
+
 
 
 <details>
 <summary><h4><b>MySQL</b></h4></summary>
-MySQL es un sistema de gestión de bases de datos relacionales.
-La elección de MySQL es porque es sencillo de aprender. Aparte de que al usar HTML5 y CSS, si usamos también MySQL aseguramos de que se integre bien toda la información necesaria.
+<br>Nombre: mySQL
+<br>Imagen: mysql:8.0.44-debian
+<br>IP:172.18.0.4
+<br>Puerto: -
+<br>
+<br>MySQL es un sistema de gestión de bases de datos relacionales.
+<br>La elección de MySQL es porque es sencillo de aprender. Aparte de que al usar HTML5 y CSS, si usamos también MySQL aseguramos de que se integre bien toda la información necesaria.
 
 
 <h4>Sistema gestor de base de datos</h4>
@@ -476,29 +490,47 @@ MySQLWorkbench
 MySQL Workbench es una herramienta visual unificada que permite a los desarrolladores, arquitectos y administradores de bases de datos gestionar y diseñar bases de datos MySQL.
 Para la gestión de datos usaremos MySQLWorkbench, ya que para principiantes es más visual y, a la hora de hacer el código de la base de datos, MySQLWorkbench ya te lo da hecho.
 
+<br>La implementación mediante Docker permite una optimización de recursos significativamente superior a la virtualización tradicional, al evitar la sobrecarga de ejecutar múltiples sistemas operativos completos. A pesar de esta eficiencia, cada microservicio requiere un aprovisionamiento mínimo para garantizar su estabilidad. A continuación, se detallan los recursos asignados para el contenedor de MySQL.
+
+| Recurso | Asignación | Justificación Técnica |
+| :--- | :--- | :--- |
+| **CPU** | `0.5 - 1.0 vCPU` | Prioriza la velocidad de núcleo para queries complejas y procesos de fondo. |
+| **RAM** | `512 MB` | Configurado para optimizar el `innodb_buffer_pool_size` y la indexación rápida. |
+| **Almacenamiento** | `> 2 GB` | Requiere baja latencia (SSD/NVMe) para maximizar los IOPS en operaciones de lectura/escritura. |
+
+
+
 </details>
 
+
+
+<details>
+<summary><h4><b>php</b></h4></summary>
 <br>Nombre: PHP
 <br>Imagen: php:8.3.30RC1-fpm-alpine3.23
 <br>IP:172.18.0.5
 <br>Puerto: 8081 : 80
 
-
-<details>
-<summary><h4><b>php</b></h4></summary>
-
 Hemos implementado PHP como el motor de procesamiento del lado del servidor. Su uso es fundamental para dotar al sitio de interactividad, permitiendo la gestión dinámica de la base de datos, la administración de sesiones de usuario y la generación de contenido personalizado en tiempo real según las acciones del jugador. La implementación de PHP resuelve el desafío crítico de la comunicación entre la página web y la base de datos. Esta integración no solo garantiza un flujo de información bidireccional y seguro, sino que aporta un valor añadido al permitir que la interfaz reaccione dinámicamente a las acciones del usuario, mejorando la experiencia del usuario.
+
+<br>La implementación mediante Docker permite una optimización de recursos significativamente superior a la virtualización tradicional, al evitar la sobrecarga de ejecutar múltiples sistemas operativos completos. A pesar de esta eficiencia, cada microservicio requiere un aprovisionamiento mínimo para garantizar su estabilidad. A continuación, se detallan los recursos asignados para el contenedor de php.
+
+
+| Recurso | Asignación | Justificación Técnica |
+| :--- | :--- | :--- |
+| **CPU** | `0.2 - 0.5 Core` | Potencia necesaria para la interpretación de scripts y generación de HTML dinámico. |
+| **RAM** | `128 MB - 256 MB` | Gestión de procesos por petición. Escalable según el volumen de usuarios concurrentes. |
+| **Almacenamiento** | `Mínimo` | Acceso a archivos en el directorio `/www`. Se recomienda montaje en modo **Ready-Only** por seguridad. |
 
 </details>
 
+
+<details>
+<summary><h4><b>PhpMyAdmin</b></h4></summary>
 <br>Nombre: phpMyAdmin
 <br>Imagen: php:8.3.30RC1-fpm-alpine3.23
 <br>IP:172.18.0.2
 <br>Puerto: 8081
-
-<details>
-<summary><h4><b>PhpMyAdmin</b></h4></summary>
-
 
 <h4>PhpMyAdmin</h4>
 <br>Para la gestión y administración de la base de datos, hemos implementado phpMyAdmin. Esta herramienta nos proporciona una interfaz gráfica basada en web que facilita la supervisión de las tablas, la ejecución de consultas y la manipulación de datos de forma intuitiva, optimizando las tareas de mantenimiento de nuestra infraestructura MySQL. PhpMyAdmin actúa como el panel de administración centralizado de nuestra base de datos. Al proporcionar una interfaz gráfica basada en web, simplifica la ejecución de consultas, la visualización de estructuras de columnas y la manipulación de registros. 
@@ -510,18 +542,23 @@ Hemos implementado PHP como el motor de procesamiento del lado del servidor. Su 
 <h4>Aspecto</h4>
 <br>Aunque la captura no muestra la totalidad de las tablas, su propósito fundamental es validar la correcta instalación y despliegue de la base de datos en el entorno de phpMyAdmin. Esta vista confirma que el esquema de datos está correctamente cargado y accesible para su gestión.
 <img width="225" height="794" alt="image" src="https://github.com/user-attachments/assets/01ccc0ce-e1d4-4521-a17e-de4c0c5e3302" />
+
+<br>La implementación mediante Docker permite una optimización de recursos significativamente superior a la virtualización tradicional, al evitar la sobrecarga de ejecutar múltiples sistemas operativos completos. A pesar de esta eficiencia, cada microservicio requiere un aprovisionamiento mínimo para garantizar su estabilidad. A continuación, se detallan los recursos asignados para el contenedor de php.
+
+| Recurso | Asignación | Justificación Técnica |
+| :--- | :--- | :--- |
+| **CPU** | `0.1 Core` | Consumo mínimo; la carga de procesamiento se delega principalmente al motor SQL. |
+| **RAM** | `64 MB - 128 MB` | Consumo bajo en reposo, con picos moderados durante la navegación y consulta de tablas extensas. |
+| **Almacenamiento** | `Mínimo` | Uso exclusivo para archivos temporales y gestión de variables de sesión. |
+
 </details>
 
-
-
-
+<details>
+<summary><h4><b>Pi-Hole</b></h4></summary>
 <br>Nombre: Pi-Hole
 <br>Imagen: pihole/pihole:latest
 <br>IP: 172.18.0.6
 <br>Puerto: 8080
-
-<details>
-<summary><h4><b>Pi-Hole</b></h4></summary>
 
 <br>Nosotros usamos Pi-hole como servicio de DNS.
 <br>DNS es la "agenda telefónica" de Internet, un sistema que traduce nombres de dominio fáciles de recordar en direcciones IP numéricas.
@@ -541,6 +578,16 @@ Hemos implementado PHP como el motor de procesamiento del lado del servidor. Su 
 <br>
 <br><img width="699" height="257" alt="image" src="https://github.com/user-attachments/assets/c41b5ff0-f08d-4ba1-ac12-dcecf3acebf3" />
 
+<br>La implementación mediante Docker permite una optimización de recursos significativamente superior a la virtualización tradicional, al evitar la sobrecarga de ejecutar múltiples sistemas operativos completos. A pesar de esta eficiencia, cada microservicio requiere un aprovisionamiento mínimo para garantizar su estabilidad. A continuación, se detallan los recursos asignados para el contenedor de Pi-hole.
+
+
+| Recurso | Asignación | Justificación Técnica |
+| :--- | :--- | :--- |
+| **CPU** | `1.0 vCPU` | Necesaria para procesar las ráfagas de consultas DNS y la generación de estadísticas en tiempo real. |
+| **RAM** | `512 MB - 1 GB` | El consumo escala según el tamaño de las listas de bloqueo cargadas en memoria (Gravity lists). |
+| **Almacenamiento** | `2 GB` | Espacio destinado a la base de datos de logs (FTL) y la persistencia de las listas de bloqueo. |
+
+
 </details>
 <br>Nombre: portainer
 <br>Imagen: portainer/portainer-ce:lts
@@ -555,6 +602,8 @@ Para conectarnos a la máquina virtual (Ubuntu Server) desde el CMD mediante SSH
 
 <br>Después nos conectamos a Docker por la IP de la máquina virtual. El último número de la IP (en este caso el 29) cambia cada vez que encendemos la VM de Ubuntu Server. Por eso hacemos el comando ip a | grep 192
 <img width="347" height="40" alt="image" src="https://github.com/user-attachments/assets/51464a83-2418-4aac-842a-17eac56017eb" />
+
+
 </details>
 <details>
 <summary><h2><b></b>Red</h2></b></summary>
