@@ -385,6 +385,8 @@ Hemos optado por Docker en lugar de las máquinas virtuales tradicionales para o
 <summary>Configuración Docker</summary>
 <br>Este archivo docker-compose.yml actúa como el manifiesto de configuración para orquestar un stack tecnológico completo. A diferencia de gestionar contenedores individuales, Compose permite definir redes virtuales aisladas y volúmenes de persistencia de forma declarativa. Su principal ventaja radica en la resolución de nombres mediante el DNS interno de Docker, lo que permite que los servicios se descubran y comuniquen entre sí usando sus nombres de servicio (ej. db o api), eliminando la necesidad de gestionar IPs manuales y reforzando la seguridad al no exponer puertos innecesarios al host.
 
+El script de despliegue automatiza la creación del stack de servicios, definiendo para cada contenedor el nombre del servicio, la imagen base, el mapeo de puertos y la persistencia de datos mediante volúmenes. Cabe destacar que, para el entorno de desarrollo de SQL, se ha optado por una configuración de seguridad simplificada con acceso vía root y credenciales básicas. Esta vulnerabilidad es conocida y se mantiene únicamente con fines de facilitar las pruebas internas antes del paso a un entorno de producción seguro.
+
 ```
 services:
   nginx:
