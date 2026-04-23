@@ -474,6 +474,20 @@ Nginx está operando correctamente, aunque actualmente no despliega nuestra apli
 
 </details>
 
+Cifs Utils
+
+Cifs utils es un paquete de codigo abierto que se usa para gestionar montajes de sistemas de archivos en red, tanto SMB como CIFS.
+En nuestro caso, lo usamos para montar en el ubuntu server, la carpeta compartida del truenas donde se guardan los backups.
+Podríamos usar rsync para hacer los backups, pero hemos decidido usar el cifs utils ya que cuando el script de las copias de seguridad, crea el archivo con todos los datos a copiar, lo crea directamente en el truenas, a diferencia del rsync, que lo crea dentro del ubuntu server y luego lo envía.
+Con rsync, si llega a haber un problema de espacio y no hay suficiente espacio en el servidor como para crear la copia, esta dará un error, y no se completarà.
+Con Cifs utils, podemos saltarnos estos errores, ya que no depende de el espacio que quede en el servidor, solo del que quede en el truenas.
+
+En que equipo se instala cifs utils y que requisitos necessita?
+Se puede instalar en cualquier distribución de Linux, y con que tenga salida a internet y 50MB libres, lo vas a poder instalar.
+
+Que parametros debo configurar?
+cifs utils usa SMB, así que el puerto 445 deberá estar abierto.
+Para usarlo, necessitas que en 
 
 
 
