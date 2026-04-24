@@ -494,7 +494,9 @@ En nuestro caso, se ha instalado en el servidor principal, cuya ip es 192.168.6.
 Que parametros debo configurar?
 cifs utils usa SMB, así que el puerto 445 deberá estar abierto.
 Para usarlo, necessitas que en tu servidor crear una carpeta, en la qual se va a montar el directorio compartido, después, ejecutar el comando necessario y ya esta.
-Como se reinicia cada vez que se apaga la maquina, hemos configurado el archivo ```/etc/fstab```
+Como se reinicia cada vez que se apaga la maquina, hemos configurado el archivo ```/etc/fstab``` para dejar configurado el comando de montaje, y solo tener que hacer un ```sudo mount -a```
+esto es el contenido del archivo
+```//192.168.6.20/docker_files /mnt/Backups_Docker/docker_files cifs credentials=/home/jorge_admin/.truenas_creds,iocharset=utf8,uid=1000,gid=1000 0 0```
 
 
 
