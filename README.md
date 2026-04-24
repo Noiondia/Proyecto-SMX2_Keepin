@@ -489,10 +489,12 @@ Con Cifs utils, podemos saltarnos estos errores, ya que no depende de el espacio
 
 En que equipo se instala cifs utils y que requisitos necessita?
 Se puede instalar en cualquier distribución de Linux, y con que tenga salida a internet y 50MB libres, lo vas a poder instalar.
+En nuestro caso, se ha instalado en el servidor principal, cuya ip es 192.168.6.10
 
 Que parametros debo configurar?
 cifs utils usa SMB, así que el puerto 445 deberá estar abierto.
-Para usarlo, necessitas que en 
+Para usarlo, necessitas que en tu servidor crear una carpeta, en la qual se va a montar el directorio compartido, después, ejecutar el comando necessario y ya esta.
+Como se reinicia cada vez que se apaga la maquina, hemos configurado el archivo ```/etc/fstab```
 
 
 
