@@ -527,6 +527,42 @@ Que aspectos de seguridad debo revisar?
 -Solo necessita el puerto 445 abierto
 -Como hemos puesto el usuario y contraseña del propietario de la carpeta del truenas en el fstab, cualquiera que tenga acceso al servidor, tambien lo tiene al servidor de copias.
 
+
+
+
+
+Flask
+Flask es un contenedor que sirve para ejecutar el juego en python, sin este contenedor, el juego no podría funcionar, ya que nginx, no es capaz de procesar python.
+
+Se instala como un contenedor en el servidor principal, estos son los requisitos minimos
+
+### 📦 Configuración del Contenedor Flask
+| Componente | Especificación | Detalle Técnico |
+| :--- | :--- | :--- |
+| **Imagen Base** | `python:3.9-slim` | Imagen optimizada basada en Debian |
+| **Servidor WSGI** | `Gunicorn` | Manejo de producción (evita el servidor Werkzeug de dev) |
+| **Binding Host** | `0.0.0.0` | Permite escucha externa desde el bridge de Docker |
+| **Puerto Interno** | `5000` | Puerto nativo de la aplicación Flask |
+| **Dependencias** | `requirements.txt` | Flask, Gunicorn, (opcionalmente) Flask-Cors |
+| **RAM Mínima** | `128 MB` | Consumo base del microservicio |
+| **Arquitectura** | `x86_64` | Desplegado sobre Ubuntu Server |
+
+
+Que parametros basicos debo configurar?
+
+En el Docker-Compose, se tienen que configurar los siguientes parametros:
+
+Primero de todo, por el tema de los reenvíos de puertos, lo hemos configurado en el puerto 5000.
+
+Binding a 0.0.0.0, si se pone en 127.0.0.1, el que esta por defecto, el contenedor serà inaccesible desde fuera
+
+Se tiene que configurar el directorio del archivo python del juego, que va a ser el archivo que el contenedor busque para mostrar en la web
+
+
+Como verifico que funciona correctamente?
+
+La mejor manera para comprobar si todo funciona como tiene que funcionar, es ir a google y buscar 192.168.135.71:5000, que es la ip del pfsense con el puerto configurado para flask, de esta manera, se comprueba que los puertos esten bien configurados, a parte de la posibilidad de poder entrar al juego para comprobar si se ejecuta correctamente
+
 <details>
 <summary><h4><b>MySQL</b></h4></summary>
 <br>Nombre: mySQL
