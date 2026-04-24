@@ -493,13 +493,39 @@ En nuestro caso, se ha instalado en el servidor principal, cuya ip es 192.168.6.
 
 Que parametros debo configurar?
 cifs utils usa SMB, así que el puerto 445 deberá estar abierto.
+
 Para usarlo, necessitas que en tu servidor crear una carpeta, en la qual se va a montar el directorio compartido, después, ejecutar el comando necessario y ya esta.
+
 Como se reinicia cada vez que se apaga la maquina, hemos configurado el archivo ```/etc/fstab``` para dejar configurado el comando de montaje, y solo tener que hacer un ```sudo mount -a```
+
 esto es el contenido del archivo
+
 ```//192.168.6.20/docker_files /mnt/Backups_Docker/docker_files cifs credentials=/home/jorge_admin/.truenas_creds,iocharset=utf8,uid=1000,gid=1000 0 0```
 
 
+Como verifico que la carpeta esta montada correctamente y funcionando?
+Para verificar que todo funciona, es tan facil como ejecutar alguno de estos comandos:
 
+Este comando tienes que acompañarlo con la ruta específica de la carpeta a compartir, y simplemente te dice si hay un montaje en esa carpeta o no
+```mountpoint (dirección de la carpeta)```
+Este comando tiene dos salidas
+... is a mountpoint
+... is not a mountpoint
+
+Por otro lado, también se puede usar este
+```df -h```
+normalmente, cuando usamos este, lo acompañamos de un ```| grep docker_files``` para que solo muestre el montaje que le pedimos, así no perdemos tiempo buscando entre todo el resultado.
+La salida de este comando, te dice:
+-El origen del montaje con su IP
+-La capacidad total del volúmen
+-El espacio real que queda para escribir
+-El porcentaje de espacio ocupado
+-El directorio local donde esta montado el volúmen
+
+
+Que aspectos de seguridad debo revisar?
+-Solo necessita el puerto 445 abierto
+-Como hemos puesto el usuario y contraseña del propietario de la carpeta del truenas en el fstab, cualquiera que tenga acceso al servidor, tambien lo tiene al servidor de copias.
 
 <details>
 <summary><h4><b>MySQL</b></h4></summary>
