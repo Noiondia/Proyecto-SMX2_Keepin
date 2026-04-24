@@ -15,6 +15,8 @@ Será un juego sencillo, un clicker, donde el objetivo es hacer click a Jorge y 
 El objetivo será conseguir la mayor cantidad de puntos posibles, utilizando las mejoras desbloqueadas y los personajes en el equipo, para lo que habrá un guardado de partida en el que se utilizará el correo electrónico.
 Utilizamos como referencia un juego llamado cookie clicker, ya que tiene un objetivo parecido al de nuestro juego, hacer click a un botón, ganar puntos y comprar mejoras para progresar en el juego.
 Queremos hacer un juego sencillo. Si acabamos nuestros objetivos principales, agregaremos más contenido a la página.
+
+
 </section>
 </details>
 
@@ -378,6 +380,8 @@ DEFAULT CHARACTER SET = utf8mb4;
 </details>
 <details>
 <summary><h2><b>Tecnologías a utilizar</b></h2></summary>
+La viabilidad técnica del proyecto se basa en una arquitectura modular de red y servicios. La infraestructura cuenta con Pi-hole para la resolución de nombres y el filtrado preventivo de tráfico DNS. La seguridad perimetral es gestionada por pfSense, que centraliza las funciones de firewall, servidor DHCP y puerta de enlace (gateway). Para el servicio web, se ha optado por Nginx debido a su eficiencia. La persistencia de datos se apoya en SQL, administrado mediante phpMyAdmin. Para articular estos componentes, se utiliza PHP como lenguaje de backend, actuando como el nexo crítico que permite la comunicación entre el servidor web y la base de datos, procesando la lógica de negocio y dinamizando la experiencia del usuario.
+
 Hemos optado por Docker en lugar de las máquinas virtuales tradicionales para optimizar el consumo de recursos y aprovechar su capacidad de aislamiento. Optamos por esa tecnología por su baja sobrecarga de sistema.Decidimos usar docker ya que se nos hacia más como el tener todo en un stack y no en diferentes maquinas virtuales.
 <br>Al trabajar con hardware limitado, la ligereza de los contenedores nos permite desplegar toda la infraestructura necesaria de forma fluida.Docker es una plataforma de código abierto que permite empaquetar, distribuir y ejecutar aplicaciones mediante contenedores ligeros y portátiles. 
 
