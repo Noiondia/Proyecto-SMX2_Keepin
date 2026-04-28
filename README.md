@@ -747,6 +747,10 @@ El diagrama de la red detalla una infraestructura híbrida diseñada para la alt
 <br>La instancia de pfSense se ha desplegado en un entorno virtualizado con una asignación de recursos optimizada para funciones de red. Cuenta con una vCPU dedicada y un sistema de almacenamiento de expansión dinámica (Thin Provisioning); este último tiene un umbral inicial de 2 GB y una capacidad máxima escalable de hasta 2 TB, permitiendo un crecimiento flexible según las necesidades de registro de logs y datos.
 <br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. 
 
+<h4>Port forwarding</h4>
+El Port Forwarding (o Redireccionamiento de Puertos) es la técnica de red esencial que permite a dispositivos externos en internet atravesar nuestro firewall para acceder a servicios específicos dentro de la red local privada.
+
+
 <h4>Reglas</h4>
 En la ilustración adjunta se detallan las políticas de filtrado y reglas de firewall configuradas en pfSense. La imagen adjunta describe las reglas de Port Forwarding (NAT) configuradas para gestionar el tráfico entrante. Estas reglas permiten la exposición controlada de servicios específicos en la red local, redirigiendo las peticiones externas hacia sus respectivos dispositivos y puertos de escucha de forma granular.
 <br><img width="1136" height="304" alt="image" src="https://github.com/user-attachments/assets/d03ae6dd-3031-4e74-a399-0a91e9e6cad3" />
