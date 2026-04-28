@@ -748,7 +748,10 @@ El diagrama de la red detalla una infraestructura híbrida diseñada para la alt
 <br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. 
 
 <h4>Port forwarding</h4>
-El Port Forwarding (o Redireccionamiento de Puertos) es la técnica de red esencial que permite a dispositivos externos en internet atravesar nuestro firewall para acceder a servicios específicos dentro de la red local privada.
+PfSense actúa como el núcleo de inteligencia y seguridad de la infraestructura, estableciendo una barrera crítica entre la red externa e Internet y el entorno de confianza donde residen los microservicios. Su función principal es la inspección y el filtrado proactivo de paquetes, garantizando que solo el tráfico legítimo atraviese el firewall hacia la red doméstica o el stack de servidores.
+
+Para permitir el acceso controlado desde el exterior sin comprometer la integridad del sistema, se ha implementado la técnica de Port Forwarding. Este mecanismo de red es esencial para que dispositivos externos puedan alcanzar servicios específicos dentro de nuestra red privada. Mediante reglas de NAT, el tráfico entrante es redirigido de forma precisa hacia el contenedor correspondiente, manteniendo el resto de la infraestructura oculta y protegida tras el firewall.
+
 
 
 <h4>Reglas</h4>
