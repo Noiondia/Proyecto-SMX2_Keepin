@@ -6,6 +6,24 @@
 Somos TDJorge, un equipo formado por 3 chicos que querían hacer un juego divertido, tanto para jugar como para pasarlo bien haciéndolo. 
 Nuestra idea fue hacer un juego clicker, como por ejemplo Cookie Clicker, ya que que creemos que es relativamente fácil de programar, accesible para que lo entienda todo el mundo y muy divertido a pesar de todo.
 Aunque al contrario que Cookie Clicker, decidimos hacer el diseño gráfico en ASCII para simplificar las cosas y a la vez darle un estilo más original.
+
+<br>La viabilidad de este proyecto se apoya en la integración de 7 tecnologías clave, seleccionadas para garantizar un entorno de producción eficiente, seguro y redundante.
+<br>
+<br>Servidor Web (Nginx): Actúa como el punto de entrada de la aplicación, gestionando las peticiones HTTP con un alto rendimiento y bajo consumo de recursos.
+<br>
+<br>Gestión de Datos (MariaDB/SQL): Proporciona la persistencia de información necesaria para el registro de usuarios y datos del sistema, siguiendo los estándares de la industria.
+<br>
+<br>Administración Visual (phpMyAdmin): Interfaz gráfica basada en web que facilita la auditoría, consulta y manipulación de la base de datos sin depender exclusivamente de la terminal.
+<br>
+<br>Lógica de Negocio (PHP): Funciona como el lenguaje de backend y nexo crítico, permitiendo la comunicación fluida entre el servidor web y el motor SQL.
+<br>
+<br>Seguridad Perimetral (pfSense): Firewall de nivel empresarial que protege la infraestructura contra accesos no autorizados y gestiona la segmentación de red.
+<br>
+<br>Almacenamiento de Red (TrueNAS): Sistema dedicado para la gestión de copias de seguridad externas, garantizando que los datos críticos estén a salvo en caso de fallo del servidor principal.
+<br>
+<br>Automatización de Backups (Script con CIFS-Utils): Mediante el uso de cifs-utils, se ha implementado un script automatizado que monta recursos compartidos de red para realizar copias de seguridad de forma eficiente y programada.
+
+
 </section>
 </details>
 
@@ -382,7 +400,7 @@ DEFAULT CHARACTER SET = utf8mb4;
 <summary><h2><b>Tecnologías a utilizar</b></h2></summary>
 La viabilidad técnica del proyecto se basa en una arquitectura modular de red y servicios. La infraestructura cuenta con Pi-hole para la resolución de nombres y el filtrado preventivo de tráfico DNS. La seguridad perimetral es gestionada por pfSense, que centraliza las funciones de firewall, servidor DHCP y puerta de enlace (gateway). Para el servicio web, se ha optado por Nginx debido a su eficiencia. La persistencia de datos se apoya en SQL, administrado mediante phpMyAdmin. Para articular estos componentes, se utiliza PHP como lenguaje de backend, actuando como el nexo crítico que permite la comunicación entre el servidor web y la base de datos, procesando la lógica de negocio y dinamizando la experiencia del usuario.
 
-
+<br>
 <details>
 <summary>Configuración Docker</summary>
 <br>La elección de Docker como eje central de la infraestructura responde a la necesidad de optimizar el hardware disponible. A diferencia de la virtualización tradicional, que requiere un sistema operativo completo por cada máquina virtual, Docker permite empaquetar y ejecutar aplicaciones en contenedores ligeros que comparten el mismo núcleo del sistema. Esta baja sobrecarga (overhead) es crítica en entornos de hardware limitado, permitiéndonos desplegar el stack completo de forma fluida, aislada y portátil, facilitando además la gestión centralizada de todos los servicios.
@@ -698,14 +716,24 @@ Para conectarnos a la máquina virtual (Ubuntu Server) desde el CMD mediante SSH
 <details>
 <summary><h2><b></b>Red</h2></b></summary>
 
-<br>Esta imagen representa el como esta echa la red. Nosotros usamos docker con los servicios de phpMyadmin,My SQL, Nginx,php en un stack. Por separado estaria Pi-hole que usaremos como DNS y por ultimo seria DHCP.
-<br>Las ip de cada servidor serian:
-<br>Nginx 172.18.0.3
-<br>php 172.18.0.5
-<br>phpMyadmin 172.18.0.2
-<br>MySQL 172.18.0.4
-<br>Pi-hole 172.18.0.6
-<br>DHCP 12.0.0.1
+
+
+El diagrama de la red detalla una infraestructura híbrida diseñada para la alta eficiencia y seguridad.
+
+<br>Seguridad Perimetral: El firewall pfSense actúa como el núcleo de la red, segmentando el tráfico entre la WAN (Internet) y nuestras subredes internas.
+<br>Orquestación de Microservicios: Mediante Docker, separamos las funciones de servidor web, procesamiento y base de datos, permitiendo que cada componente consuma solo los recursos necesarios.
+<br>Privacidad DNS: El despliegue de Pi-hole asegura que todas las peticiones de red internas sean filtradas, eliminando publicidad y rastreadores antes de que salgan a internet.
+<br>Resiliencia de Datos: La arquitectura incluye una unidad de almacenamiento TrueNAS dedicada exclusivamente a backups, vinculada mediante un script automatizado para garantizar la recuperación ante desastres.
+
+| Servicio | Dirección IP | Red / Interfaz | Función Crítica |
+| :--- | :--- | :--- | :--- |
+| **Nginx** | `172.18.0.3` | Docker Bridge | Proxy inverso y servidor web frontal. |
+| **PHP-FPM** | `172.18.0.5` | Docker Bridge | Procesamiento de scripts y lógica de backend. |
+| **MySQL** | `172.18.0.4` | Docker Bridge | Almacenamiento y persistencia de datos SQL. |
+| **phpMyAdmin** | `172.18.0.2` | Docker Bridge | Panel visual de administración de base de datos. |
+| **Pi-hole** | `172.18.0.6` | Docker Bridge | Resolución DNS y filtrado de tráfico de red. |
+| **DHCP Server** | `12.0.0.1` | LAN / Nativo | Asignación dinámica de direcciones a clientes. |
+<br>
 <br><img width="888" height="691" alt="image" src="https://github.com/user-attachments/assets/9ffa698b-65d7-4efe-abe6-6ad303742d57" />
 </details>
 <details>
