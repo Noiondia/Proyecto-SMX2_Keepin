@@ -399,7 +399,7 @@ DEFAULT CHARACTER SET = utf8mb4;
 <details>
 <summary><h2><b>Tecnologías a utilizar</b></h2></summary>
 La viabilidad técnica del proyecto se basa en una arquitectura modular de red y servicios. La infraestructura cuenta con Pi-hole para la resolución de nombres y el filtrado preventivo de tráfico DNS. La seguridad perimetral es gestionada por pfSense, que centraliza las funciones de firewall, servidor DHCP y puerta de enlace (gateway). Para el servicio web, se ha optado por Nginx debido a su eficiencia. La persistencia de datos se apoya en SQL, administrado mediante phpMyAdmin. Para articular estos componentes, se utiliza PHP como lenguaje de backend, actuando como el nexo crítico que permite la comunicación entre el servidor web y la base de datos, procesando la lógica de negocio y dinamizando la experiencia del usuario.
-
+<br>
 <br>
 <details>
 <summary>Configuración Docker</summary>
