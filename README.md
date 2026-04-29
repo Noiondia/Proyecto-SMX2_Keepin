@@ -497,64 +497,79 @@ Nginx está operando correctamente, aunque actualmente no despliega nuestra apli
 
 </details>
 
-Cifs Utils
+Pfsense
+
+<br>PfSense es nuestra solución elegida para la gestión de seguridad de red. Esta plataforma, basada en FreeBSD, nos permite desplegar un firewall y enrutador de nivel empresarial, garantizando un control total sobre las conexiones entrantes y salientes de nuestro sistema.
+Instalacion
+
+<br>La instancia de pfSense se ha desplegado en un entorno virtualizado con una asignación de recursos optimizada para funciones de red. Cuenta con una vCPU dedicada y un sistema de almacenamiento de expansión dinámica (Thin Provisioning); este último tiene un umbral inicial de 2 GB y una capacidad máxima escalable de hasta 2 TB, permitiendo un crecimiento flexible según las necesidades de registro de logs y datos.
+Procedemos a desactivarlo para permitir la conexión a la web a través de la red local.
+
+<br>Port forwarding
+
+<br>PfSense actúa como el núcleo de inteligencia y seguridad de la infraestructura, estableciendo una barrera crítica entre la red externa e Internet y el entorno de confianza donde residen los microservicios. Su función principal es la inspección y el filtrado proactivo de paquetes, garantizando que solo el tráfico legítimo atraviese el firewall hacia la red doméstica o el stack de servidores.
+
+<br>Para permitir el acceso controlado desde el exterior sin comprometer la integridad del sistema, se ha implementado la técnica de Port Forwarding. Este mecanismo de red es esencial para que dispositivos externos puedan alcanzar servicios específicos dentro de nuestra red privada. Mediante reglas de NAT, el tráfico entrante es redirigido de forma precisa hacia el contenedor correspondiente, manteniendo el resto de la infraestructura oculta y protegida tras el firewall.
+
+<br>
+<h3>Cifs Utils</h3>
 
 Cifs utils es un paquete de codigo abierto que se usa para gestionar montajes de sistemas de archivos en red, tanto SMB como CIFS.
-En nuestro caso, lo usamos para montar en el ubuntu server, la carpeta compartida del truenas donde se guardan los backups.
-Podríamos usar rsync para hacer los backups, pero hemos decidido usar el cifs utils ya que cuando el script de las copias de seguridad, crea el archivo con todos los datos a copiar, lo crea directamente en el truenas, a diferencia del rsync, que lo crea dentro del ubuntu server y luego lo envía.
-Con rsync, si llega a haber un problema de espacio y no hay suficiente espacio en el servidor como para crear la copia, esta dará un error, y no se completarà.
-Con Cifs utils, podemos saltarnos estos errores, ya que no depende de el espacio que quede en el servidor, solo del que quede en el truenas.
+<br>En nuestro caso, lo usamos para montar en el ubuntu server, la carpeta compartida del truenas donde se guardan los backups.
+<br>Podríamos usar rsync para hacer los backups, pero hemos decidido usar el cifs utils ya que cuando el script de las copias de seguridad, crea el archivo con todos los datos a copiar, lo crea directamente en el truenas, a diferencia del rsync, que lo crea dentro del ubuntu server y luego lo envía.
+<br>Con rsync, si llega a haber un problema de espacio y no hay suficiente espacio en el servidor como para crear la copia, esta dará un error, y no se completarà.
+<br>Con Cifs utils, podemos saltarnos estos errores, ya que no depende de el espacio que quede en el servidor, solo del que quede en el truenas.
 
-En que equipo se instala cifs utils y que requisitos necessita?
-Se puede instalar en cualquier distribución de Linux, y con que tenga salida a internet y 50MB libres, lo vas a poder instalar.
-En nuestro caso, se ha instalado en el servidor principal, cuya ip es 192.168.6.10
+<br>En que equipo se instala cifs utils y que requisitos necessita?
+<br>Se puede instalar en cualquier distribución de Linux, y con que tenga salida a internet y 50MB libres, lo vas a poder instalar.
+<br>En nuestro caso, se ha instalado en el servidor principal, cuya ip es 192.168.6.10
 
-Que parametros debo configurar?
-cifs utils usa SMB, así que el puerto 445 deberá estar abierto.
+<br>Que parametros debo configurar?
+<br>cifs utils usa SMB, así que el puerto 445 deberá estar abierto.
 
-Para usarlo, necessitas que en tu servidor crear una carpeta, en la qual se va a montar el directorio compartido, después, ejecutar el comando necessario y ya esta.
+<br>Para usarlo, necessitas que en tu servidor crear una carpeta, en la qual se va a montar el directorio compartido, después, ejecutar el comando necessario y ya esta.
 
-Como se reinicia cada vez que se apaga la maquina, hemos configurado el archivo ```/etc/fstab``` para dejar configurado el comando de montaje, y solo tener que hacer un ```sudo mount -a```
+<br>Como se reinicia cada vez que se apaga la maquina, hemos configurado el archivo ```/etc/fstab``` para dejar configurado el comando de montaje, y solo tener que hacer un ```sudo mount -a```
 
-esto es el contenido del archivo
+<br>Esto es el contenido del archivo
 
 ```//192.168.6.20/docker_files /mnt/Backups_Docker/docker_files cifs credentials=/home/jorge_admin/.truenas_creds,iocharset=utf8,uid=1000,gid=1000 0 0```
 
 
-Como verifico que la carpeta esta montada correctamente y funcionando?
-Para verificar que todo funciona, es tan facil como ejecutar alguno de estos comandos:
+<br>Como verifico que la carpeta esta montada correctamente y funcionando?
+<br>Para verificar que todo funciona, es tan facil como ejecutar alguno de estos comandos:
 
-Este comando tienes que acompañarlo con la ruta específica de la carpeta a compartir, y simplemente te dice si hay un montaje en esa carpeta o no
+<br>Este comando tienes que acompañarlo con la ruta específica de la carpeta a compartir, y simplemente te dice si hay un montaje en esa carpeta o no
 ```mountpoint (dirección de la carpeta)```
-Este comando tiene dos salidas
-... is a mountpoint
-... is not a mountpoint
+<br>Este comando tiene dos salidas
+<br>... is a mountpoint
+<br>... is not a mountpoint
 
-Por otro lado, también se puede usar este
+<br>Por otro lado, también se puede usar este
 ```df -h```
-normalmente, cuando usamos este, lo acompañamos de un ```| grep docker_files``` para que solo muestre el montaje que le pedimos, así no perdemos tiempo buscando entre todo el resultado.
-La salida de este comando, te dice:
--El origen del montaje con su IP
--La capacidad total del volúmen
--El espacio real que queda para escribir
--El porcentaje de espacio ocupado
--El directorio local donde esta montado el volúmen
+<br>Normalmente, cuando usamos este, lo acompañamos de un ```| grep docker_files``` para que solo muestre el montaje que le pedimos, así no perdemos tiempo buscando entre todo el resultado.
+<br>La salida de este comando, te dice:
+<br>-El origen del montaje con su IP
+<br>-La capacidad total del volúmen
+<br>-El espacio real que queda para escribir
+<br>-El porcentaje de espacio ocupado
+<br>-El directorio local donde esta montado el volúmen
 
 
-Que aspectos de seguridad debo revisar?
--Solo necessita el puerto 445 abierto
--Como hemos puesto el usuario y contraseña del propietario de la carpeta del truenas en el fstab, cualquiera que tenga acceso al servidor, tambien lo tiene al servidor de copias.
+<br>Que aspectos de seguridad debo revisar?
+<br>-Solo necessita el puerto 445 abierto
+<br>-Como hemos puesto el usuario y contraseña del propietario de la carpeta del truenas en el fstab, cualquiera que tenga acceso al servidor, tambien lo tiene al servidor de copias.
 
 
 
 
 
-Flask
-Flask es un contenedor que sirve para ejecutar el juego en python, sin este contenedor, el juego no podría funcionar, ya que nginx, no es capaz de procesar python.
+<br>Flask
+<br>Flask es un contenedor que sirve para ejecutar el juego en python, sin este contenedor, el juego no podría funcionar, ya que nginx, no es capaz de procesar python.
 
-Se instala como un contenedor en el servidor principal, estos son los requisitos minimos
+<br>Se instala como un contenedor en el servidor principal, estos son los requisitos minimos
 
-### 📦 Configuración del Contenedor Flask
+### Configuración del Contenedor Flask
 | Componente | Especificación | Detalle Técnico |
 | :--- | :--- | :--- |
 | **Imagen Base** | `python:3.9-slim` | Imagen optimizada basada en Debian |
@@ -566,20 +581,20 @@ Se instala como un contenedor en el servidor principal, estos son los requisitos
 | **Arquitectura** | `x86_64` | Desplegado sobre Ubuntu Server |
 
 
-Que parametros basicos debo configurar?
+<br>Que parametros basicos debo configurar?
 
-En el Docker-Compose, se tienen que configurar los siguientes parametros:
+<br>En el Docker-Compose, se tienen que configurar los siguientes parametros:
 
-Primero de todo, por el tema de los reenvíos de puertos, lo hemos configurado en el puerto 5000.
+<br>Primero de todo, por el tema de los reenvíos de puertos, lo hemos configurado en el puerto 5000.
 
-Binding a 0.0.0.0, si se pone en 127.0.0.1, el que esta por defecto, el contenedor serà inaccesible desde fuera
+<br>Binding a 0.0.0.0, si se pone en 127.0.0.1, el que esta por defecto, el contenedor serà inaccesible desde fuera
 
-Se tiene que configurar el directorio del archivo python del juego, que va a ser el archivo que el contenedor busque para mostrar en la web
+<br>Se tiene que configurar el directorio del archivo python del juego, que va a ser el archivo que el contenedor busque para mostrar en la web
 
 
-Como verifico que funciona correctamente?
+<br>Como verifico que funciona correctamente?
 
-La mejor manera para comprobar si todo funciona como tiene que funcionar, es ir a google y buscar 192.168.135.71:5000, que es la ip del pfsense con el puerto configurado para flask, de esta manera, se comprueba que los puertos esten bien configurados, a parte de la posibilidad de poder entrar al juego para comprobar si se ejecuta correctamente
+<br>La mejor manera para comprobar si todo funciona como tiene que funcionar, es ir a google y buscar 192.168.135.71:5000, que es la ip del pfsense con el puerto configurado para flask, de esta manera, se comprueba que los puertos esten bien configurados, a parte de la posibilidad de poder entrar al juego para comprobar si se ejecuta correctamente
 
 <details>
 <summary><h4><b>MySQL</b></h4></summary>
