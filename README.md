@@ -805,58 +805,7 @@ El diagrama de la red detalla una infraestructura híbrida diseñada para la alt
 <br>
 <br><img width="888" height="691" alt="image" src="https://github.com/user-attachments/assets/9ffa698b-65d7-4efe-abe6-6ad303742d57" />
 </details>
-<details>
-<summary><h2>Seguridad</h2></summary>
-<br>Nuestro plan actual es tener configurado el Pfsense como firewall y como DHCP a la vez.
-<br><img width="604" height="36" alt="image" src="https://github.com/user-attachments/assets/f7512d83-4006-4c3d-b1c8-cd425a0d7d39" />
-<h4>PfSense</h4>
-<br>PfSense es nuestra solución elegida para la gestión de seguridad de red. Esta plataforma, basada en FreeBSD, nos permite desplegar un firewall y enrutador de nivel empresarial, garantizando un control total sobre las conexiones entrantes y salientes de nuestro sistema.
 
-<h4>Instalacion</h4>
-<br>La instancia de pfSense se ha desplegado en un entorno virtualizado con una asignación de recursos optimizada para funciones de red. Cuenta con una vCPU dedicada y un sistema de almacenamiento de expansión dinámica (Thin Provisioning); este último tiene un umbral inicial de 2 GB y una capacidad máxima escalable de hasta 2 TB, permitiendo un crecimiento flexible según las necesidades de registro de logs y datos.
-<br>Procedemos a desactivarlo para permitir la conexión a la web a través de la red local. 
-
-<h4>Port forwarding</h4>
-<br>PfSense actúa como el núcleo de inteligencia y seguridad de la infraestructura, estableciendo una barrera crítica entre la red externa e Internet y el entorno de confianza donde residen los microservicios. Su función principal es la inspección y el filtrado proactivo de paquetes, garantizando que solo el tráfico legítimo atraviese el firewall hacia la red doméstica o el stack de servidores.
-
-<br>Para permitir el acceso controlado desde el exterior sin comprometer la integridad del sistema, se ha implementado la técnica de Port Forwarding. Este mecanismo de red es esencial para que dispositivos externos puedan alcanzar servicios específicos dentro de nuestra red privada. Mediante reglas de NAT, el tráfico entrante es redirigido de forma precisa hacia el contenedor correspondiente, manteniendo el resto de la infraestructura oculta y protegida tras el firewall.
-
-
-
-
-<br>
-
-<br>
-<br>
-<br>
-<details>
-<summary><h3>TrueNas</h3></summary>
-<br>Hemos implementado TrueNAS como nuestra solución de almacenamiento en red. Gracias a sus robustas herramientas de gestión de datos, podemos garantizar la integridad de la información y automatizar la creación de snapshots frecuentes. Esto nos permite establecer un plan de recuperación ante desastres efectivo. En caso de un fallo en la máquina virtual, contamos con puntos de restauración recientes que minimizan la pérdida de datos y garantizan la continuidad operativa.
-<br>El servicio de almacenamiento está desplegado en una máquina virtualizada con TrueNAS, configurada con los siguientes recursos asignados: una capacidad de 2 TB de almacenamiento (en un futuro se pondran mas discos), 2 GB de RAM y una CPU dedicada para el procesamiento de datos. 
-<h4>Acceso</h4>
-
-<br>El acceso a la interfaz de administración de TrueNAS se realiza a través de un navegador web, utilizando la dirección IP asignada a la maquina virtual <b>(192.168.135.X)</b> y el puerto configurado 9090. 
-<br>Para permitir el acceso desde la red local, hemos implementado una regla de redirección de puertos (port forwarding), garantizando que el tráfico dirigido a la máquina virtual sea enrutado correctamente hacia el servicio de almacenamiento.
-<h4>Plan de Contingencia</h4>
-
-<br>El sistema está programado para realizar respaldos periódicos de los siguientes archivos:
-<br>Archivos de configuración (docker-compose.yml)
-<br>Los volúmenes de datos de los contenedores 
-<br>El código fuente de la aplicación web
-<br>La base de datos SQL
-<br>El archivo con las configuraciones del Pfsense
-<img width="532" height="40" alt="image" src="https://github.com/user-attachments/assets/a191ced6-bfb9-46d2-821b-467f823291f8" />
-
-Esta estrategia asegura que, ante cualquier fallo crítico en el nodo de servicios, la restauración del entorno completo sea rápida y precisa.
-<br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
-
-
-<h4>Servicios (TrueNas)</h4>
-La gestión del almacenamiento en TrueNAS se apoya en tres servicios fundamentales. NFS para la conexión de alto rendimiento con los contenedores Docker en la instancia de Ubuntu, SMB para facilitar el acceso a archivos y copias de seguridad desde entornos Windows, y S.M.A.R.T. para la monitorización proactiva de la salud de los discos físicos, garantizando la integridad de los datos.
-<img width="957" height="627" alt="image" src="https://github.com/user-attachments/assets/f4c2e687-80d3-4aaa-bd8e-82bc4731eae1" />
-
-
-</details>
 <details>
 <summary><h3>Incidencias</h3></summary>
 <br>Al principio no sabiamos entrar al pi-hole.
