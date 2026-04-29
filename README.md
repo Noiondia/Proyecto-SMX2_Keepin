@@ -497,19 +497,43 @@ Nginx está operando correctamente, aunque actualmente no despliega nuestra apli
 
 </details>
 
-Pfsense
+<br>
+<h3>Pfsense</h3>
 
-<br>PfSense es nuestra solución elegida para la gestión de seguridad de red. Esta plataforma, basada en FreeBSD, nos permite desplegar un firewall y enrutador de nivel empresarial, garantizando un control total sobre las conexiones entrantes y salientes de nuestro sistema.
+PfSense es nuestra solución elegida para la gestión de seguridad de red. Esta plataforma, basada en FreeBSD, nos permite desplegar un firewall y enrutador de nivel empresarial, garantizando un control total sobre las conexiones entrantes y salientes de nuestro sistema.
 Instalacion
 
 <br>La instancia de pfSense se ha desplegado en un entorno virtualizado con una asignación de recursos optimizada para funciones de red. Cuenta con una vCPU dedicada y un sistema de almacenamiento de expansión dinámica (Thin Provisioning); este último tiene un umbral inicial de 2 GB y una capacidad máxima escalable de hasta 2 TB, permitiendo un crecimiento flexible según las necesidades de registro de logs y datos.
 Procedemos a desactivarlo para permitir la conexión a la web a través de la red local.
 
-<br>Port forwarding
+<br>
+<h3>Port forwarding</h3>
 
-<br>PfSense actúa como el núcleo de inteligencia y seguridad de la infraestructura, estableciendo una barrera crítica entre la red externa e Internet y el entorno de confianza donde residen los microservicios. Su función principal es la inspección y el filtrado proactivo de paquetes, garantizando que solo el tráfico legítimo atraviese el firewall hacia la red doméstica o el stack de servidores.
+PfSense actúa como el núcleo de inteligencia y seguridad de la infraestructura, estableciendo una barrera crítica entre la red externa e Internet y el entorno de confianza donde residen los microservicios. Su función principal es la inspección y el filtrado proactivo de paquetes, garantizando que solo el tráfico legítimo atraviese el firewall hacia la red doméstica o el stack de servidores.
 
 <br>Para permitir el acceso controlado desde el exterior sin comprometer la integridad del sistema, se ha implementado la técnica de Port Forwarding. Este mecanismo de red es esencial para que dispositivos externos puedan alcanzar servicios específicos dentro de nuestra red privada. Mediante reglas de NAT, el tráfico entrante es redirigido de forma precisa hacia el contenedor correspondiente, manteniendo el resto de la infraestructura oculta y protegida tras el firewall.
+
+<br>
+<h3>Reglas</h3>
+En la ilustración adjunta se detallan las políticas de filtrado y reglas de firewall configuradas en pfSense. La imagen adjunta describe las reglas de Port Forwarding (NAT) configuradas para gestionar el tráfico entrante. Estas reglas permiten la exposición controlada de servicios específicos en la red local, redirigiendo las peticiones externas hacia sus respectivos dispositivos y puertos de escucha de forma granular.
+<br><img width="1136" height="304" alt="image" src="https://github.com/user-attachments/assets/d03ae6dd-3031-4e74-a399-0a91e9e6cad3" />
+En esta captura se detalla la configuración del servicio SSH restringido a la red LAN. Esta implementación actúa como un puente de comunicación seguro, permitiendo que la instancia de Ubuntu ejecute scripts automatizados para respaldar las reglas de pfSense directamente en el almacenamiento compartido de TrueNAS.
+<img width="910" height="44" alt="image" src="https://github.com/user-attachments/assets/2bcf64a6-31aa-471a-ade3-6f5db46c33db" />
+
+<h3>DHCP</h3>
+<br>DHCP es el protocolo de red encargado de automatizar la asignación de direcciones IP y la entrega de parámetros críticos de configuración a los dispositivos conectados. En esta infraestructura, se ha delegado la función de servidor DHCP al propio firewall pfSense. Esta integración permite centralizar la gestión de la red en un único nodo, facilitando el control sobre el direccionamiento dinámico, la reserva de IPs estáticas y la definición de la puerta de enlace, todo bajo un entorno de administración unificado y seguro.
+
+<br>
+<h3>Función</h3>
+Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
+
+<br>
+<h3>Configuración</h3>
+<br>En vez de usar el dhcp del pihole, vamos a usar otro diferente, ya que el contenedor de pihole, el dns da problemas si esta en modo host, asi que lo vamos a dejar en modo bridge, y como el dhcp pide que este en modo host, vamos a usar otro servicio. ISC DHCP
+ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en el ubuntu server, el cual se basa en dos archivos de configuración, este es el primero, donde se declara el nombre del adaptador de internet por donde se van a dar las ips
+<img width="746" height="427" alt="image" src="https://github.com/user-attachments/assets/24df3da0-0335-4b74-a9ac-be47d2dd91a3" />
+<br>Este otro, que se declaran todas las características del dhcp, las ips, el lease time, el dominio, etc
+<img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
 
 <br>
 <h3>Cifs Utils</h3>
@@ -769,22 +793,8 @@ El diagrama de la red detalla una infraestructura híbrida diseñada para la alt
 
 
 
-<h4>Reglas</h4>
-En la ilustración adjunta se detallan las políticas de filtrado y reglas de firewall configuradas en pfSense. La imagen adjunta describe las reglas de Port Forwarding (NAT) configuradas para gestionar el tráfico entrante. Estas reglas permiten la exposición controlada de servicios específicos en la red local, redirigiendo las peticiones externas hacia sus respectivos dispositivos y puertos de escucha de forma granular.
-<br><img width="1136" height="304" alt="image" src="https://github.com/user-attachments/assets/d03ae6dd-3031-4e74-a399-0a91e9e6cad3" />
-En esta captura se detalla la configuración del servicio SSH restringido a la red LAN. Esta implementación actúa como un puente de comunicación seguro, permitiendo que la instancia de Ubuntu ejecute scripts automatizados para respaldar las reglas de pfSense directamente en el almacenamiento compartido de TrueNAS.
-<img width="910" height="44" alt="image" src="https://github.com/user-attachments/assets/2bcf64a6-31aa-471a-ade3-6f5db46c33db" />
+
 <br>
-<h4>DHCP</h4>
-<br>DHCP es un protocolo de red que asigna automáticamente direcciones IP y otros parámetros de configuración.
-<br><h4>Funcion</h4>
-<br>Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
-<h4>Configuracion</h4>
-<br>En vez de usar el dhcp del pihole, vamos a usar otro diferente, ya que el contenedor de pihole, el dns da problemas si esta en modo host, asi que lo vamos a dejar en modo bridge, y como el dhcp pide que este en modo host, vamos a usar otro servicio. ISC DHCP
-ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en el ubuntu server, el cual se basa en dos archivos de configuración, este es el primero, donde se declara el nombre del adaptador de internet por donde se van a dar las ips
-<img width="746" height="427" alt="image" src="https://github.com/user-attachments/assets/24df3da0-0335-4b74-a9ac-be47d2dd91a3" />
-<br>Este otro, que se declaran todas las características del dhcp, las ips, el lease time, el dominio, etc
-<img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
 
 <br>
 <br>
