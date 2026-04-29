@@ -529,11 +529,41 @@ Es necesario porque automatiza la asignación de direcciones IP y otros parámet
 
 <br>
 <h3>Configuración</h3>
-<br>En vez de usar el dhcp del pihole, vamos a usar otro diferente, ya que el contenedor de pihole, el dns da problemas si esta en modo host, asi que lo vamos a dejar en modo bridge, y como el dhcp pide que este en modo host, vamos a usar otro servicio. ISC DHCP
-ISC DHCP no va a ser un contenedor mas, es un servicio instalado directamente en el ubuntu server, el cual se basa en dos archivos de configuración, este es el primero, donde se declara el nombre del adaptador de internet por donde se van a dar las ips
+<br>En proceso de explicación.
+
 <img width="746" height="427" alt="image" src="https://github.com/user-attachments/assets/24df3da0-0335-4b74-a9ac-be47d2dd91a3" />
-<br>Este otro, que se declaran todas las características del dhcp, las ips, el lease time, el dominio, etc
+
 <img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
+
+<br>
+<h3>TrueNas</h3>
+Hemos implementado TrueNAS como nuestra solución de almacenamiento en red. Gracias a sus robustas herramientas de gestión de datos, podemos garantizar la integridad de la información y automatizar la creación de snapshots frecuentes. Esto nos permite establecer un plan de recuperación ante desastres efectivo. En caso de un fallo en la máquina virtual, contamos con puntos de restauración recientes que minimizan la pérdida de datos y garantizan la continuidad operativa.
+<br>El servicio de almacenamiento está desplegado en una máquina virtualizada con TrueNAS, configurada con los siguientes recursos asignados: una capacidad de 2 TB de almacenamiento (en un futuro se pondran mas discos), 2 GB de RAM y una CPU dedicada para el procesamiento de datos. 
+
+<br>
+<h4>Acceso</h4>
+
+El acceso a la interfaz de administración de TrueNAS se realiza a través de un navegador web, utilizando la dirección IP asignada a la maquina virtual <b>(192.168.135.X)</b> y el puerto configurado 9090. 
+<br>Para permitir el acceso desde la red local, hemos implementado una regla de redirección de puertos (port forwarding), garantizando que el tráfico dirigido a la máquina virtual sea enrutado correctamente hacia el servicio de almacenamiento.
+<h4>Plan de Contingencia</h4>
+
+<br>El sistema está programado para realizar respaldos periódicos de los siguientes archivos:
+<br>Archivos de configuración (docker-compose.yml)
+<br>Los volúmenes de datos de los contenedores 
+<br>El código fuente de la aplicación web
+<br>La base de datos SQL
+<br>El archivo con las configuraciones del Pfsense
+<img width="532" height="40" alt="image" src="https://github.com/user-attachments/assets/a191ced6-bfb9-46d2-821b-467f823291f8" />
+
+Esta estrategia asegura que, ante cualquier fallo crítico en el nodo de servicios, la restauración del entorno completo sea rápida y precisa.
+<br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
+
+<br>
+<h3>Servicios</h3>
+La gestión del almacenamiento en TrueNAS se apoya en tres servicios fundamentales. NFS para la conexión de alto rendimiento con los contenedores Docker en la instancia de Ubuntu, SMB para facilitar el acceso a archivos y copias de seguridad desde entornos Windows, y S.M.A.R.T. para la monitorización proactiva de la salud de los discos físicos, garantizando la integridad de los datos.
+<img width="957" height="627" alt="image" src="https://github.com/user-attachments/assets/f4c2e687-80d3-4aaa-bd8e-82bc4731eae1" />
+
+
 
 <br>
 <h3>Cifs Utils</h3>
