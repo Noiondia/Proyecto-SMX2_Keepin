@@ -401,8 +401,8 @@ DEFAULT CHARACTER SET = utf8mb4;
 La viabilidad técnica del proyecto se basa en una arquitectura modular de red y servicios. La infraestructura cuenta con Pi-hole para la resolución de nombres y el filtrado preventivo de tráfico DNS. La seguridad perimetral es gestionada por pfSense, que centraliza las funciones de firewall, servidor DHCP y puerta de enlace (gateway). Para el servicio web, se ha optado por Nginx debido a su eficiencia. La persistencia de datos se apoya en SQL, administrado mediante phpMyAdmin. Para articular estos componentes, se utiliza PHP como lenguaje de backend, actuando como el nexo crítico que permite la comunicación entre el servidor web y la base de datos, procesando la lógica de negocio y dinamizando la experiencia del usuario.
 <br>
 <br>
-<details>
-<summary>Configuración Docker</summary>
+
+<h3>Configuración Docker</h3>
 <br>La elección de Docker como eje central de la infraestructura responde a la necesidad de optimizar el hardware disponible. A diferencia de la virtualización tradicional, que requiere un sistema operativo completo por cada máquina virtual, Docker permite empaquetar y ejecutar aplicaciones en contenedores ligeros que comparten el mismo núcleo del sistema. Esta baja sobrecarga (overhead) es crítica en entornos de hardware limitado, permitiéndonos desplegar el stack completo de forma fluida, aislada y portátil, facilitando además la gestión centralizada de todos los servicios.
 
 
@@ -462,23 +462,21 @@ networks:
   keepin-network:
     driver: bridge
 ```
+Siguiendo la identidad visual de nuestra propuesta, el stack se ha nombrado bajo la etiqueta del proyecto. La función primordial de este script es automatizar la creación y el levantamiento de los distintos microservicios, consolidándolos todos dentro de un único stack de contenedores. Este método asegura que todos los componentes (Nginx, PHP, SQL, entre otros) se desplieguen de forma simultánea, garantizando la interoperabilidad inmediata entre ellos.
 
 <img width="1606" height="98" alt="image" src="https://github.com/user-attachments/assets/b38c53e2-67c0-4b8e-94ae-0bc59ea56ee2" />
 
 
 
-</details>
 
 
 
-
-<details>
-<summary><h4><b>Nginx</b></h4></summary>
+<h3>Nginx</h4>
 <br>Nombre: mi_nginx
 <br>Imagen: nginx:latest
 <br>IP:172.18.0.3
 <br>Puerto: 80 : 80
-Nginx es un servidor web de código abierto de alto rendimiento que destaca por sus capacidades como proxy inverso y balanceador de carga. Hemos seleccionado Nginx frente a Apache debido a su arquitectura orientada a eventos, la cual garantiza un menor consumo de recursos y una mayor eficiencia en el manejo de conexiones simultáneas, optimizando así el rendimiento global de nuestra infraestructura.
+<br>Nginx es un servidor web de código abierto de alto rendimiento que destaca por sus capacidades como proxy inverso y balanceador de carga. Hemos seleccionado Nginx frente a Apache debido a su arquitectura orientada a eventos, la cual garantiza un menor consumo de recursos y una mayor eficiencia en el manejo de conexiones simultáneas, optimizando así el rendimiento global de nuestra infraestructura.
 Nginx está operando correctamente, aunque actualmente no despliega nuestra aplicación. En su lugar, se visualiza la página de bienvenida por defecto del servidor. Esto sucede porque, aunque el servicio está activo, aún no hemos vinculado nuestro directorio de archivos al archivo de configuración de Nginx (Server Block). Por ahora, solo hemos verificado su funcionamiento modificando el título en el archivo index.html predeterminado.
 
 <img width="1376" height="865" alt="image" src="https://github.com/user-attachments/assets/cdb44920-a533-4b15-ad96-1fd878373838" />
@@ -495,7 +493,7 @@ Nginx está operando correctamente, aunque actualmente no despliega nuestra apli
 | **Almacenamiento** | `Mínimo` | El espacio en disco se reserva principalmente para la persistencia de logs. |
 
 
-</details>
+
 
 <br>
 <h3>Pfsense</h3>
@@ -521,12 +519,11 @@ En esta captura se detalla la configuración del servicio SSH restringido a la r
 <img width="910" height="44" alt="image" src="https://github.com/user-attachments/assets/2bcf64a6-31aa-471a-ade3-6f5db46c33db" />
 
 <h3>DHCP</h3>
-<br>DHCP es el protocolo de red encargado de automatizar la asignación de direcciones IP y la entrega de parámetros críticos de configuración a los dispositivos conectados. En esta infraestructura, se ha delegado la función de servidor DHCP al propio firewall pfSense. Esta integración permite centralizar la gestión de la red en un único nodo, facilitando el control sobre el direccionamiento dinámico, la reserva de IPs estáticas y la definición de la puerta de enlace, todo bajo un entorno de administración unificado y seguro.
+<br>DHCP constituye el estándar de red fundamental para la automatización en la asignación de direcciones IP y la distribución de parámetros de configuración críticos hacia los terminales conectados. En el diseño de esta infraestructura, la función de servidor DHCP se ha centralizado en el firewall pfSense. Esta integración estratégica permite consolidar la gobernanza de la red en un nodo único, optimizando el control sobre el direccionamiento dinámico, la gestión de reservas estáticas (static leases) y la propagación de la puerta de enlace, todo ello bajo un entorno de administración unificado, robusto y seguro.
 
 <br>
 <h3>Función</h3>
-Es necesario porque automatiza la asignación de direcciones IP y otros parámetros de red, eliminando la configuración manual, previniendo errores
-
+La implementación de este servicio es indispensable, ya que permite la automatización del direccionamiento IP y la entrega de parámetros de red críticos de forma dinámica. Al eliminar la necesidad de intervención manual en cada dispositivo, no solo se optimiza la eficiencia operativa, sino que se previene el riesgo de errores humanos, como la duplicación de direcciones o configuraciones de máscara incorrectas.
 <br>
 <h3>Configuración</h3>
 <br>En proceso de explicación.
@@ -541,7 +538,7 @@ Hemos implementado TrueNAS como nuestra solución de almacenamiento en red. Grac
 <br>El servicio de almacenamiento está desplegado en una máquina virtualizada con TrueNAS, configurada con los siguientes recursos asignados: una capacidad de 2 TB de almacenamiento (en un futuro se pondran mas discos), 2 GB de RAM y una CPU dedicada para el procesamiento de datos. 
 
 <br>
-<h4>Acceso</h4>
+<h3>Acceso</h3>
 
 El acceso a la interfaz de administración de TrueNAS se realiza a través de un navegador web, utilizando la dirección IP asignada a la maquina virtual <b>(192.168.135.X)</b> y el puerto configurado 9090. 
 <br>Para permitir el acceso desde la red local, hemos implementado una regla de redirección de puertos (port forwarding), garantizando que el tráfico dirigido a la máquina virtual sea enrutado correctamente hacia el servicio de almacenamiento.
@@ -650,8 +647,8 @@ Cifs utils es un paquete de codigo abierto que se usa para gestionar montajes de
 
 <br>La mejor manera para comprobar si todo funciona como tiene que funcionar, es ir a google y buscar 192.168.135.71:5000, que es la ip del pfsense con el puerto configurado para flask, de esta manera, se comprueba que los puertos esten bien configurados, a parte de la posibilidad de poder entrar al juego para comprobar si se ejecuta correctamente
 
-<details>
-<summary><h4><b>MySQL</b></h4></summary>
+
+<h3>MySQL</h3>
 <br>Nombre: mySQL
 <br>Imagen: mysql:8.0.44-debian
 <br>IP:172.18.0.4
@@ -661,7 +658,7 @@ Cifs utils es un paquete de codigo abierto que se usa para gestionar montajes de
 <br>La elección de MySQL es porque es sencillo de aprender. Aparte de que al usar HTML5 y CSS, si usamos también MySQL aseguramos de que se integre bien toda la información necesaria.
 
 
-<h4>Sistema gestor de base de datos</h4>
+<h3>Sistema gestor de base de datos</h3>
 
 MySQLWorkbench
 MySQL Workbench es una herramienta visual unificada que permite a los desarrolladores, arquitectos y administradores de bases de datos gestionar y diseñar bases de datos MySQL.
@@ -676,13 +673,7 @@ Para la gestión de datos usaremos MySQLWorkbench, ya que para principiantes es 
 | **Almacenamiento** | `> 2 GB` | Requiere baja latencia (SSD/NVMe) para maximizar los IOPS en operaciones de lectura/escritura. |
 
 
-
-</details>
-
-
-
-<details>
-<summary><h4><b>php</b></h4></summary>
+<h3>php</h3>
 <br>Nombre: PHP
 <br>Imagen: php:8.3.30RC1-fpm-alpine3.23
 <br>IP:172.18.0.5
@@ -699,11 +690,8 @@ Hemos implementado PHP como el motor de procesamiento del lado del servidor. Su 
 | **RAM** | `128 MB - 256 MB` | Gestión de procesos por petición. Escalable según el volumen de usuarios concurrentes. |
 | **Almacenamiento** | `Mínimo` | Acceso a archivos en el directorio `/www`. Se recomienda montaje en modo **Ready-Only** por seguridad. |
 
-</details>
 
-
-<details>
-<summary><h4><b>PhpMyAdmin</b></h4></summary>
+<h3>PhpMyAdmin</h3>
 <br>Nombre: phpMyAdmin
 <br>Imagen: php:8.3.30RC1-fpm-alpine3.23
 <br>IP:172.18.0.2
@@ -728,10 +716,8 @@ Hemos implementado PHP como el motor de procesamiento del lado del servidor. Su 
 | **RAM** | `64 MB - 128 MB` | Consumo bajo en reposo, con picos moderados durante la navegación y consulta de tablas extensas. |
 | **Almacenamiento** | `Mínimo` | Uso exclusivo para archivos temporales y gestión de variables de sesión. |
 
-</details>
 
-<details>
-<summary><h4><b>Pi-Hole</b></h4></summary>
+<h3>Pi-Hole</h3>
 <br>Nombre: Pi-Hole
 <br>Imagen: pihole/pihole:latest
 <br>IP: 172.18.0.6
@@ -765,7 +751,7 @@ Hemos implementado PHP como el motor de procesamiento del lado del servidor. Su 
 | **Almacenamiento** | `2 GB` | Espacio destinado a la base de datos de logs (FTL) y la persistencia de las listas de bloqueo. |
 
 
-</details>
+
 <br>Nombre: portainer
 <br>Imagen: portainer/portainer-ce:lts
 <br>IP: 172.17.0.2
@@ -780,7 +766,7 @@ Para conectarnos a la máquina virtual (Ubuntu Server) desde el CMD mediante SSH
 <br>Después nos conectamos a Docker por la IP de la máquina virtual. El último número de la IP (en este caso el 29) cambia cada vez que encendemos la VM de Ubuntu Server. Por eso hacemos el comando ip a | grep 192
 <img width="347" height="40" alt="image" src="https://github.com/user-attachments/assets/51464a83-2418-4aac-842a-17eac56017eb" />
 
-
+</details>
 </details>
 <details>
 <summary><h2><b></b>Red</h2></b></summary>
