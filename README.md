@@ -501,7 +501,7 @@ Nginx está operando correctamente, aunque actualmente no despliega nuestra apli
 PfSense es nuestra solución elegida para la gestión de seguridad de red. Esta plataforma, basada en FreeBSD, nos permite desplegar un firewall y enrutador de nivel empresarial, garantizando un control total sobre las conexiones entrantes y salientes de nuestro sistema.
 Instalacion
 
-<br>La instancia de pfSense se ha desplegado en un entorno virtualizado con una asignación de recursos optimizada para funciones de red. Cuenta con una vCPU dedicada y un sistema de almacenamiento de expansión dinámica (Thin Provisioning); este último tiene un umbral inicial de 2 GB y una capacidad máxima escalable de hasta 2 TB, permitiendo un crecimiento flexible según las necesidades de registro de logs y datos.
+<br>La instancia de pfSense se ha desplegado en un entorno virtualizado con una asignación de recursos optimizada para funciones de red. Cuenta con una vCPU dedicada y un sistema de almacenamiento de expansión dinámica, este último tiene un umbral inicial de 2 GB y una capacidad máxima escalable de hasta 2 TB, permitiendo un crecimiento flexible según las necesidades de registro de logs y datos.
 Procedemos a desactivarlo para permitir la conexión a la web a través de la red local.
 
 <br>
@@ -542,7 +542,9 @@ Hemos implementado TrueNAS como nuestra solución de almacenamiento en red. Grac
 
 El acceso a la interfaz de administración de TrueNAS se realiza a través de un navegador web, utilizando la dirección IP asignada a la maquina virtual <b>(192.168.135.X)</b> y el puerto configurado 9090. 
 <br>Para permitir el acceso desde la red local, hemos implementado una regla de redirección de puertos (port forwarding), garantizando que el tráfico dirigido a la máquina virtual sea enrutado correctamente hacia el servicio de almacenamiento.
-<h4>Plan de Contingencia</h4>
+
+
+<h3>Plan de Contingencia</h3>
 
 <br>El sistema está programado para realizar respaldos periódicos de los siguientes archivos:
 <br>Archivos de configuración (docker-compose.yml)
@@ -551,6 +553,8 @@ El acceso a la interfaz de administración de TrueNAS se realiza a través de un
 <br>La base de datos SQL
 <br>El archivo con las configuraciones del Pfsense
 <img width="532" height="40" alt="image" src="https://github.com/user-attachments/assets/a191ced6-bfb9-46d2-821b-467f823291f8" />
+
+La copia funciona gracias a un script, usa la tecnologia de Cifs Utils, en el siguiente apartado explicaremos a mayor detalle que es y porque lo estamos usando.
 
 Esta estrategia asegura que, ante cualquier fallo crítico en el nodo de servicios, la restauración del entorno completo sea rápida y precisa.
 <br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
