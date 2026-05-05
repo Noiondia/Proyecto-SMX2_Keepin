@@ -542,6 +542,18 @@ Hemos implementado TrueNAS como nuestra solución de almacenamiento en red. Grac
 
 El acceso a la interfaz de administración de TrueNAS se realiza a través de un navegador web, utilizando la dirección IP asignada a la maquina virtual <b>(192.168.135.X)</b> y el puerto configurado 9090. 
 <br>Para permitir el acceso desde la red local, hemos implementado una regla de redirección de puertos (port forwarding), garantizando que el tráfico dirigido a la máquina virtual sea enrutado correctamente hacia el servicio de almacenamiento.
+<br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
+
+
+Para entrar a las carpetas con todas las copias de seguridad tenemos que entrar desde la red, ponemos la IP del TrueNas, en nuestro caso la 192.168.135.71, y ponemos el usuario y contraseñas ya configurados anteriormente.
+<img width="463" height="422" alt="image" src="https://github.com/user-attachments/assets/64694b89-498b-4cb6-86f7-9b9cb53b33b3" />
+
+Una vez dentro se tendria que ver algo similar a la imagen. Una carpeta creada donde se ira guardando todas las copias de seguridad
+<img width="531" height="188" alt="image" src="https://github.com/user-attachments/assets/e3026b88-4940-4a16-93c9-a9840da8d48d" />
+
+Como ya mencione nosotros solo guardamos archivos de configuración (docker-compose.yml), los volúmenes de datos de los contenedores, el código fuente de la aplicación web, la base de datos SQL, el archivo con las configuraciones del Pfsense
+
+<img width="907" height="288" alt="image" src="https://github.com/user-attachments/assets/2be202e4-4aae-4316-93ff-157530b5ea6b" />
 
 
 <h3>Plan de Contingencia</h3>
@@ -554,10 +566,81 @@ El acceso a la interfaz de administración de TrueNAS se realiza a través de un
 <br>El archivo con las configuraciones del Pfsense
 <img width="532" height="40" alt="image" src="https://github.com/user-attachments/assets/a191ced6-bfb9-46d2-821b-467f823291f8" />
 
-La copia funciona gracias a un script, usa la tecnologia de Cifs Utils, en el siguiente apartado explicaremos a mayor detalle que es y porque lo estamos usando.
 
-Esta estrategia asegura que, ante cualquier fallo crítico en el nodo de servicios, la restauración del entorno completo sea rápida y precisa.
-<br><img width="1493" height="769" alt="image" src="https://github.com/user-attachments/assets/76297bc3-2f2c-4160-9925-98ce48143f47" />
+
+
+
+
+El sistema de respaldo se apoya en un script de automatización que integra la suite de herramientas cifs-utils. Esta tecnología es fundamental para la operatividad de las copias de seguridad, ya que permite la interacción nativa con sistemas de archivos compartidos mediante el protocolo CIFS. Esta estrategia asegura que, ante cualquier fallo crítico en el nodo de servicios, la restauración del entorno completo sea rápida y precisa.
+
+
+En el siguiente apartado, profundizaremos en las especificaciones técnicas de esta herramienta, analizando su arquitectura y justificando su implementación como la solución óptima para garantizar la integridad y disponibilidad de los datos en nuestro entorno de red.
+
+
+
+```
+#!/bin/bash
+
+CARGAR SECRETOS
+source /home/jorgeadmin/secretos.conf
+
+--- CONFIGURACIÓN ---
+FECHA=$(date +%Y-%m-%d%H%M)
+DESTINO_RAIZ="/mnt/Backups_Docker/docker_files"
+Esta es la subcarpeta que se creará:
+NOMBRESUBCARPETA="Copia completa$FECHA"
+DESTINO="$DESTINO_RAIZ/$NOMBRE_SUBCARPETA"
+
+DIR_DOCKER="/home/jorge_admin/docker"
+IP_PFSENSE="192.168.6.1"
+CONTENEDOR_DB="mi_sql"
+USER_DB="root"
+
+echo "------------------------------------------"
+echo "🚀 Iniciando copia de: $NOMBRE_SUBCARPETA"
+echo "------------------------------------------"
+
+VERIFICAR MONTAJE
+if ! mountpoint -q "$DESTINO_RAIZ"; then
+    echo "❌ ERROR: TrueNAS no montado en $DESTINO_RAIZ. Abortando."
+    exit 1
+fi
+
+CREAR LA SUB-CARPETA DE LA COPIA
+mkdir -p "$DESTINO"
+
+[1/3] BASE DE DATOS
+echo "💾 Exportando Base de Datos..."
+docker exec $CONTENEDOR_DB mysqldump -u $USER_DB -p$PASSMYSQL --all-databases > "$DESTINO/db$FECHA.sql"
+
+[2/3] ARCHIVOS DOCKER
+echo "📦 Comprimiendo archivos de Docker..."
+tar -czf "$DESTINO/docker_$FECHA.tar.gz" --exclude='mysql_data' "$DIR_DOCKER"
+
+[3/3] CONFIGURACIÓN PFSENSE
+echo "🛡️ Descargando config de pfSense..."
+scp -i /home/jorge_admin/.ssh/id_rsa -o BatchMode=yes admin@$IPPFSENSE:/conf/config.xml "$DESTINO/pfsense$FECHA.xml"
+
+if [ $? -eq 0 ]; then
+    echo "✅ Config de pfSense guardada."
+else
+    echo "❌ ERROR: pfSense rechazó la conexión."
+fi
+```
+
+<br>
+
+
+
+<h3>Requisitós</h3>
+
+| Componente       | Requisito Mínimo           | Configuración en el Proyecto | Notas Técnicas |
+| :--------------- | :------------------------- | :-------------------------- | :------------- |
+| **Procesador** | x86-64 de 2 núcleos        | 2 vCPUs                     | Se recomienda soporte para virtualización si se aloja en VM. |
+| **Memoria RAM** | 8 GB                       | 8 GB                        | **Crítico:** ZFS utiliza la RAM como caché de lectura (ARC). |
+| **Disco de SO** | 16 GB                      | 32 GB                       | Se recomienda un dispositivo independiente del pool de datos. |
+| **Almacenamiento**| 1 o más discos             | 2 Discos (Mirror/Espejo)    | Configurado en RAID 1 para tolerancia a fallos de hardware. |
+
 
 <br>
 <h3>Servicios</h3>
