@@ -525,12 +525,6 @@ En esta captura se detalla la configuración del servicio SSH restringido a la r
 <h3>Función</h3>
 La implementación de este servicio es indispensable, ya que permite la automatización del direccionamiento IP y la entrega de parámetros de red críticos de forma dinámica. Al eliminar la necesidad de intervención manual en cada dispositivo, no solo se optimiza la eficiencia operativa, sino que se previene el riesgo de errores humanos, como la duplicación de direcciones o configuraciones de máscara incorrectas.
 <br>
-<h3>Configuración</h3>
-<br>En proceso de explicación.
-
-<img width="746" height="427" alt="image" src="https://github.com/user-attachments/assets/24df3da0-0335-4b74-a9ac-be47d2dd91a3" />
-
-<img width="743" height="355" alt="image" src="https://github.com/user-attachments/assets/ca13f84e-acd2-4d7f-b696-a0f322ac9e3a" />
 
 <br>
 <h3>TrueNas</h3>
