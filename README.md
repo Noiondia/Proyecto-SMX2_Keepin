@@ -439,10 +439,10 @@ services:
     image: mysql:8.0
     container_name: mi_sql
     environment:
-      MYSQL_ROOT_PASSWORD: 1234
-      MYSQL_DATABASE: keeping
-      MYSQL_USER: JorgeSQL
-      MYSQL_PASSWORD: 1234
+      MYSQL_ROOT_PASSWORD: ****
+      MYSQL_DATABASE: ****
+      MYSQL_USER: ****
+      MYSQL_PASSWORD: ****
     volumes:
       - /home/jorge_admin/docker/mysql_data:/var/lib/mysql
     networks:
