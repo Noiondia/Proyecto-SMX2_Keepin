@@ -811,7 +811,7 @@ Parámetros técnicos del despliegue:
 
 <h4>Aspecto</h4>
 <br>Aunque la captura no muestra la totalidad de las tablas, su propósito fundamental es validar la correcta instalación y despliegue de la base de datos en el entorno de phpMyAdmin. Esta vista confirma que el esquema de datos está correctamente cargado y accesible para su gestión.
-<img width="225" height="794" alt="image" src="https://github.com/user-attachments/assets/01ccc0ce-e1d4-4521-a17e-de4c0c5e3302" />
+<br><img width="225" height="794" alt="image" src="https://github.com/user-attachments/assets/01ccc0ce-e1d4-4521-a17e-de4c0c5e3302" />
 
 <br>La implementación mediante Docker permite una optimización de recursos significativamente superior a la virtualización tradicional, al evitar la sobrecarga de ejecutar múltiples sistemas operativos completos. A pesar de esta eficiencia, cada microservicio requiere un aprovisionamiento mínimo para garantizar su estabilidad. A continuación, se detallan los recursos asignados para el contenedor de php.
 
