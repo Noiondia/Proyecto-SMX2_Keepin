@@ -471,7 +471,7 @@ Siguiendo la identidad visual de nuestra propuesta, el stack se ha nombrado bajo
 
 
 
-<h3>Nginx</h4>
+<h3>Nginx</h3>
 <br>Nombre: mi_nginx
 <br>Imagen: nginx:latest
 <br>IP:172.18.0.3
@@ -491,6 +491,20 @@ Nginx está operando correctamente, aunque actualmente no despliega nuestra apli
 | **CPU** | `< 0.1 Core` | Consumo residual al no realizar cifrado intensivo (SSL/HTTPS). |
 | **RAM** | `32 MB - 64 MB` | Gestión optimizada de procesos para servir contenido estático (HTML/CSS). |
 | **Almacenamiento** | `Mínimo` | El espacio en disco se reserva principalmente para la persistencia de logs. |
+
+<h3>Configuración</h3>
+
+Configuración del Servidor Web (Nginx)
+
+El despliegue de Nginx se ha estandarizado mediante los siguientes parámetros técnicos:
+
+<br>Networking: Redirección de los puertos `80` y `443` hacia la subred del adaptador puente (`192.168.135.x`).
+<br>Estructura de Archivos:
+<br>Configuración principal: `nginx.conf`.
+<br>Definición de sitios: `/etc/nginx/conf.d/default.conf`.
+<br>Persistencia: Mapeo de volúmenes en `docker-compose.yml` para logs, configuraciones y código fuente.
+<br>Diagnóstico rápido: `bash docker ps | grep nginx`
+
 
 
 
@@ -721,6 +735,32 @@ Para la gestión de datos usaremos MySQLWorkbench, ya que para principiantes es 
 | **RAM** | `512 MB` | Configurado para optimizar el `innodb_buffer_pool_size` y la indexación rápida. |
 | **Almacenamiento** | `> 2 GB` | Requiere baja latencia (SSD/NVMe) para maximizar los IOPS en operaciones de lectura/escritura. |
 
+<h3>Configuración</h3>
+
+Gestión de Datos (MySQL)
+
+Parámetros técnicos de la base de datos:
+
+<br>Credenciales y Esquema: Configuración mediante variables de entorno para `ROOT`, `USER` y nombre de la `DB`.
+<br>Persistencia: Implementación de volúmenes para el almacenamiento de los archivos de base de datos en el host.
+<br>Seguridad de Red: Acceso restringido al ámbito interno del stack (comunicación inter-contenedor). Sin exposición de puertos externos.
+<br>Comando de Verificación:
+   ```bash
+   docker ps | grep mysql
+```
+
+
+<h3>Seguridad</h3>
+
+Seguridad de Datos (MySQL Hardening)
+
+Se han implementado medidas de seguridad de grado de producción para proteger la integridad del proyecto "Keepin'":
+
+<br>Aislamiento Total: El puerto `3306` no está expuesto al host ni al exterior; solo es accesible desde la red interna de docker.
+<br>Hardening de Acceso: - Desactivación de login remoto para `root`.
+<br>Eliminación de usuarios anónimos y bases de datos de prueba.
+<br>Privilegios Mínimos: Uso de una cuenta de servicio dedicada con acceso restringido únicamente a la base de datos `keeping`.
+<br>Persistencia Segura: Volúmenes de datos con permisos a nivel de sistema de archivos para mitigar accesos no autorizados desde el host.
 
 <h3>php</h3>
 <br>Nombre: PHP
@@ -738,6 +778,22 @@ Hemos implementado PHP como el motor de procesamiento del lado del servidor. Su 
 | **CPU** | `0.2 - 0.5 Core` | Potencia necesaria para la interpretación de scripts y generación de HTML dinámico. |
 | **RAM** | `128 MB - 256 MB` | Gestión de procesos por petición. Escalable según el volumen de usuarios concurrentes. |
 | **Almacenamiento** | `Mínimo` | Acceso a archivos en el directorio `/www`. Se recomienda montaje en modo **Ready-Only** por seguridad. |
+
+<h3>Configuración</h3>
+
+Procesamiento Lógico (PHP 8.3 FPM)
+
+Parámetros técnicos del despliegue:
+
+<br>Versión: PHP 8.3 (Seguridad y Rendimiento).
+<br>Persistencia: Volumen configurado en `/var/www/html/` para sincronización de código en tiempo real.
+<br>Networking Interno: - Conexión a DB mediante el nombre de servicio `mysql`.
+<br>Puerto `9000` oculto al exterior (comunicación interna vía Nginx).
+<br>Verificación de ejecución:
+   ```bash
+   docker ps | grep php
+   ```
+
 
 
 <h3>PhpMyAdmin</h3>
