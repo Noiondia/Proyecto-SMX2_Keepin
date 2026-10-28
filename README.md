@@ -898,7 +898,7 @@ El diagrama de la red detalla una infraestructura híbrida diseñada para la alt
 </details>
 
 <details>
-<summary><h3>Incidencias</h3></summary>
+<summary><h1>Incidencias</h1></summary>
 <br>Al principio no sabiamos entrar al pi-hole.
 <br>Lo conseguimos solucionar el problema ya que Alina nos dijo como y para no olvidarlo lo pusimos en el trello.
 <br>Cuando comenzamos a trabajar con Docker, creamos varios contenedores por separado. Sin embargo, Alina nos comentó que era mejor unificarlos en un solo stack, ya que de esta forma se puede centralizar la configuración y asegurar que todos los servicios queden correctamente interconectados.
